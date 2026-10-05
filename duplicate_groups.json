@@ -1,0 +1,72 @@
+[
+  [
+    {
+      "id": "73",
+      "title": "BEAUTY AND THE BEAST",
+      "artist": "Kanye West",
+      "stems": 4
+    },
+    {
+      "id": "89",
+      "title": "BEAUTY AND THE BEAST",
+      "artist": "Ye;Kanye West",
+      "stems": 4
+    }
+  ],
+  [
+    {
+      "id": "819",
+      "title": "Jenn Jenn Jenn",
+      "artist": "Kyle Richh;Jenn Carter;TaTa",
+      "stems": 4
+    },
+    {
+      "id": "768",
+      "title": "Jenn Jenn Jenn",
+      "artist": "41;Jenn Carter",
+      "stems": 4
+    }
+  ],
+  [
+    {
+      "id": "131",
+      "title": "Tartan",
+      "artist": "EsDeeKid;Fimiguerrero",
+      "stems": 4
+    },
+    {
+      "id": "258",
+      "title": "Tartan",
+      "artist": "Fimiguerrero;Reekz MB",
+      "stems": 4
+    }
+  ],
+  [
+    {
+      "id": "125",
+      "title": "Teddy Bruckshot",
+      "artist": "Harlem Spartans;Loski",
+      "stems": 4
+    },
+    {
+      "id": "400",
+      "title": "Teddy Bruckshot",
+      "artist": "Loski",
+      "stems": 4
+    }
+  ],
+  [
+    {
+      "id": "626",
+      "title": "Tony Montana Flow",
+      "artist": "Chief Keef",
+      "stems": 4
+    },
+    {
+      "id": "1076",
+      "title": "Tony Montana Flow",
+      "artist": "Chief Keef;Akachi",
+      "stems": 4
+    }
+  ]
+]

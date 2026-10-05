@@ -1,0 +1,314 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id                                          String             @id @default(uuid()) @db.Uuid
+  appleSub                                    String?            @unique @map("apple_sub")
+  username                                    String             @unique
+  displayName                                 String?            @map("display_name")
+  avatarUrl                                   String?            @map("avatar_url")
+  createdAt                                   DateTime           @default(now()) @map("created_at") @db.Timestamptz(6)
+  bio                                         String?
+  artistFollows                               ArtistFollow[]
+  comment_likes                               CommentLike[]
+  comments                                    Comment[]
+  edges                                       Edge[]
+  events                                      Event[]
+  followers                                   Follow[]           @relation("followers")
+  following                                   Follow[]           @relation("following")
+  listens                                     Listen[]
+  sentMessages                                Message[]          @relation("sentMessages")
+  receivedMessages                            Message[]          @relation("receivedMessages")
+  playlistInvitesSent                         PlaylistMember[]   @relation("memberInviter")
+  playlistMemberships                         PlaylistMember[]   @relation("memberUser")
+  playlistTracksAdded                         PlaylistTrack[]    @relation("trackAdder")
+  ownedPlaylists                              Playlist[]         @relation("playlistOwner")
+  reactions                                   Reaction[]
+  reports                                     Report[]
+  tracks                                      Track[]
+  user_affinity_user_affinity_other_idTousers UserAffinity[]     @relation("user_affinity_other_idTousers")
+  user_affinity_user_affinity_user_idTousers  UserAffinity[]     @relation("user_affinity_user_idTousers")
+  user_song_affinity                          UserSongAffinity[]
+
+  @@map("users")
+}
+
+model Follow {
+  followerId String   @map("follower_id") @db.Uuid
+  followeeId String   @map("followee_id") @db.Uuid
+  createdAt  DateTime @default(now()) @map("created_at") @db.Timestamptz(6)
+  followee   User     @relation("followers", fields: [followeeId], references: [id], onDelete: Cascade)
+  follower   User     @relation("following", fields: [followerId], references: [id], onDelete: Cascade)
+
+  @@id([followerId, followeeId])
+  @@index([followeeId])
+  @@map("follows")
+}
+
+model Listen {
+  id           String     @id @default(uuid()) @db.Uuid
+  userId       String     @map("user_id") @db.Uuid
+  songId       String     @map("song_id")
+  source       String?
+  startedAt    DateTime   @default(now()) @map("started_at") @db.Timestamptz(6)
+  lastHeardAt  DateTime   @default(now()) @map("last_heard_at") @db.Timestamptz(6)
+  endedAt      DateTime?  @map("ended_at") @db.Timestamptz(6)
+  endReason    String?    @map("end_reason")
+  msPlayed     Int?       @map("ms_played")
+  visibility   String     @default("followers")
+  clientPlayId String     @map("client_play_id") @db.Uuid
+  user         User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  reactions    Reaction[]
+
+  @@unique([userId, clientPlayId], map: "listens_idem")
+  @@index([userId, startedAt(sort: Desc)], map: "listens_user_recent")
+  @@map("listens")
+}
+
+model Track {
+  id           String    @id @default(uuid()) @db.Uuid
+  ownerId      String    @map("owner_id") @db.Uuid
+  title        String
+  artist       String?
+  producers    String?
+  writers      String?
+  year         Int?
+  recordLabel  String?   @map("record_label")
+  bpm          Int?
+  songKey      String?   @map("song_key")
+  durationSec  Int?      @map("duration_sec")
+  coverUrl     String?   @map("cover_url")
+  bassUrl      String?   @map("bass_url")
+  drumsUrl     String?   @map("drums_url")
+  vocalsUrl    String?   @map("vocals_url")
+  otherUrl     String?   @map("other_url")
+  originalUrl  String?   @map("original_url")
+  visibility   String    @default("public")
+  status       String    @default("uploaded")
+  splitSource  String?   @map("split_source")
+  claimedBy    String?   @map("claimed_by")
+  claimedAt    DateTime? @map("claimed_at") @db.Timestamptz(6)
+  attempts     Int       @default(0)
+  error        String?
+  createdAt    DateTime  @default(now()) @map("created_at") @db.Timestamptz(6)
+  readyAt      DateTime? @map("ready_at") @db.Timestamptz(6)
+  metaAnalyzed Boolean   @default(false) @map("meta_analyzed")
+  featuring    String?
+  releaseDate  DateTime? @map("release_date") @db.Date
+  album        String?
+  release_type String?
+  genres       String?
+  owner        User      @relation(fields: [ownerId], references: [id], onDelete: Cascade)
+
+  @@index([ownerId, createdAt(sort: Desc)], map: "tracks_owner_recent")
+  @@map("tracks")
+}
+
+model Reaction {
+  id        String   @id @default(uuid()) @db.Uuid
+  listenId  String   @map("listen_id") @db.Uuid
+  userId    String   @map("user_id") @db.Uuid
+  emoji     String
+  createdAt DateTime @default(now()) @map("created_at") @db.Timestamptz(6)
+  listen    Listen   @relation(fields: [listenId], references: [id], onDelete: Cascade)
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([listenId, userId, emoji], map: "reactions_unique")
+  @@index([listenId], map: "reactions_listen")
+  @@map("reactions")
+}
+
+model Message {
+  id        String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  fromId    String    @map("from_id") @db.Uuid
+  toId      String    @map("to_id") @db.Uuid
+  body      String
+  createdAt DateTime  @default(now()) @map("created_at") @db.Timestamptz(6)
+  readAt    DateTime? @map("read_at") @db.Timestamptz(6)
+  from      User      @relation("sentMessages", fields: [fromId], references: [id], onDelete: Cascade, onUpdate: NoAction)
+  to        User      @relation("receivedMessages", fields: [toId], references: [id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@index([toId, createdAt(sort: Desc)], map: "messages_to_recent")
+  @@index([fromId, toId, createdAt(sort: Desc)], map: "messages_thread")
+  @@map("messages")
+}
+
+model Comment {
+  id            String        @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  songId        String        @map("song_id")
+  userId        String        @map("user_id") @db.Uuid
+  body          String
+  positionMs    Int           @default(0) @map("position_ms")
+  createdAt     DateTime      @default(now()) @map("created_at") @db.Timestamptz(6)
+  parentId      String?       @map("parent_id") @db.Uuid
+  comment_likes CommentLike[]
+  parent        Comment?      @relation("commentReplies", fields: [parentId], references: [id], onDelete: Cascade, onUpdate: NoAction)
+  replies       Comment[]     @relation("commentReplies")
+  user          User          @relation(fields: [userId], references: [id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@index([songId, positionMs], map: "comments_song")
+  @@index([parentId, createdAt], map: "comments_parent")
+  @@map("comments")
+}
+
+model ArtistFollow {
+  userId    String   @map("user_id") @db.Uuid
+  artistKey String   @map("artist_key")
+  createdAt DateTime @default(now()) @map("created_at") @db.Timestamptz(6)
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@id([userId, artistKey])
+  @@index([artistKey], map: "artist_follows_key")
+  @@map("artist_follows")
+}
+
+model Event {
+  id            BigInt   @id @default(autoincrement())
+  actorId       String   @map("actor_id") @db.Uuid
+  verb          String
+  objectType    String?  @map("object_type")
+  objectId      String?  @map("object_id")
+  targetType    String?  @map("target_type")
+  targetId      String?  @map("target_id")
+  sessionId     String?  @map("session_id") @db.Uuid
+  source        String?
+  value         Float?
+  weight        Float    @default(1) @db.Real
+  meta          Json     @default("{}")
+  createdAt     DateTime @default(now()) @map("created_at") @db.Timestamptz(6)
+  clientEventId String?  @map("client_event_id") @db.Uuid
+  users         User     @relation(fields: [actorId], references: [id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@index([actorId, createdAt(sort: Desc)], map: "events_actor_recent")
+  @@index([objectType, objectId, createdAt(sort: Desc)], map: "events_object")
+  @@index([verb, createdAt(sort: Desc)], map: "events_verb_recent")
+  @@index([meta], map: "events_meta_gin", type: Gin)
+  @@map("events")
+}
+
+model Edge {
+  srcId     String   @map("src_id") @db.Uuid
+  kind      String
+  dstType   String   @map("dst_type")
+  dstId     String   @map("dst_id")
+  weight    Float    @default(1) @db.Real
+  meta      Json     @default("{}")
+  createdAt DateTime @default(now()) @map("created_at") @db.Timestamptz(6)
+  updatedAt DateTime @default(now()) @map("updated_at") @db.Timestamptz(6)
+  users     User     @relation(fields: [srcId], references: [id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@id([srcId, kind, dstType, dstId])
+  @@index([srcId, kind, weight(sort: Desc)], map: "edges_src_kind")
+  @@index([kind, dstType, dstId], map: "edges_kind_dst")
+  @@map("edges")
+}
+
+model UserSongAffinity {
+  userId       String    @map("user_id") @db.Uuid
+  songId       String    @map("song_id")
+  playCount    Int       @default(0) @map("play_count")
+  finishCount  Int       @default(0) @map("finish_count")
+  skipCount    Int       @default(0) @map("skip_count")
+  msPlayed     BigInt    @default(0) @map("ms_played")
+  lastPlayedAt DateTime? @map("last_played_at") @db.Timestamptz(6)
+  score        Float     @default(0) @db.Real
+  meta         Json      @default("{}")
+  users        User      @relation(fields: [userId], references: [id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@id([userId, songId])
+  @@index([userId, score(sort: Desc)], map: "usa_user_score")
+  @@index([songId, score(sort: Desc)], map: "usa_song_score")
+  @@map("user_song_affinity")
+}
+
+model UserAffinity {
+  userId                              String   @map("user_id") @db.Uuid
+  otherId                             String   @map("other_id") @db.Uuid
+  score                               Float    @default(0) @db.Real
+  shared                              Int      @default(0)
+  computedAt                          DateTime @default(now()) @map("computed_at") @db.Timestamptz(6)
+  meta                                Json     @default("{}")
+  users_user_affinity_other_idTousers User     @relation("user_affinity_other_idTousers", fields: [otherId], references: [id], onDelete: Cascade, onUpdate: NoAction)
+  users_user_affinity_user_idTousers  User     @relation("user_affinity_user_idTousers", fields: [userId], references: [id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@id([userId, otherId])
+  @@index([userId, score(sort: Desc)], map: "ua_user_score")
+  @@map("user_affinity")
+}
+
+model CommentLike {
+  commentId String   @map("comment_id") @db.Uuid
+  userId    String   @map("user_id") @db.Uuid
+  createdAt DateTime @default(now()) @map("created_at") @db.Timestamptz(6)
+  comments  Comment  @relation(fields: [commentId], references: [id], onDelete: Cascade, onUpdate: NoAction)
+  users     User     @relation(fields: [userId], references: [id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@id([commentId, userId])
+  @@index([commentId], map: "comment_likes_comment")
+  @@map("comment_likes")
+}
+
+model Report {
+  id         String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  reporterId String   @map("reporter_id") @db.Uuid
+  targetType String   @map("target_type")
+  targetId   String   @map("target_id")
+  reason     String?
+  createdAt  DateTime @default(now()) @map("created_at") @db.Timestamptz(6)
+  users      User     @relation(fields: [reporterId], references: [id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@index([createdAt(sort: Desc)], map: "reports_recent")
+  @@index([targetType, targetId], map: "reports_target")
+  @@map("reports")
+}
+
+model Playlist {
+  id        String           @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  ownerId   String           @map("owner_id") @db.Uuid
+  name      String
+  createdAt DateTime         @default(now()) @map("created_at") @db.Timestamptz(6)
+  updatedAt DateTime         @default(now()) @map("updated_at") @db.Timestamptz(6)
+  members   PlaylistMember[]
+  tracks    PlaylistTrack[]
+  owner     User             @relation("playlistOwner", fields: [ownerId], references: [id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@index([ownerId, createdAt(sort: Desc)], map: "playlists_owner")
+  @@map("playlists")
+}
+
+model PlaylistMember {
+  playlistId  String    @map("playlist_id") @db.Uuid
+  userId      String    @map("user_id") @db.Uuid
+  role        String    @default("member")
+  status      String    @default("invited")
+  invitedBy   String?   @map("invited_by") @db.Uuid
+  createdAt   DateTime  @default(now()) @map("created_at") @db.Timestamptz(6)
+  respondedAt DateTime? @map("responded_at") @db.Timestamptz(6)
+  inviter     User?     @relation("memberInviter", fields: [invitedBy], references: [id], onUpdate: NoAction)
+  playlist    Playlist  @relation(fields: [playlistId], references: [id], onDelete: Cascade, onUpdate: NoAction)
+  user        User      @relation("memberUser", fields: [userId], references: [id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@id([playlistId, userId])
+  @@index([userId, status], map: "playlist_members_user")
+  @@map("playlist_members")
+}
+
+model PlaylistTrack {
+  playlistId String   @map("playlist_id") @db.Uuid
+  songId     String   @map("song_id")
+  addedBy    String?  @map("added_by") @db.Uuid
+  position   Int      @default(0)
+  createdAt  DateTime @default(now()) @map("created_at") @db.Timestamptz(6)
+  adder      User?    @relation("trackAdder", fields: [addedBy], references: [id], onUpdate: NoAction)
+  playlist   Playlist @relation(fields: [playlistId], references: [id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@id([playlistId, songId])
+  @@index([playlistId, position, createdAt], map: "playlist_tracks_pl")
+  @@map("playlist_tracks")
+}

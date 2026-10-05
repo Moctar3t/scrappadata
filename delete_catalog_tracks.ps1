@@ -1,0 +1,45 @@
+Remove-Item -Path 'C:\Users\Dimé\Desktop\DIME_STEM_PIPELINE\tracks\2 Mtres, Niaks - KHALISSI.mp3' -Force -ErrorAction SilentlyContinue
+Remove-Item -Path 'C:\Users\Dimé\Desktop\DIME_STEM_PIPELINE\tracks\Alpha 5.20, Mdine - Le mal qu''on fait.mp3' -Force -ErrorAction SilentlyContinue
+Remove-Item -Path 'C:\Users\Dimé\Desktop\DIME_STEM_PIPELINE\tracks\Anri - Remember Summer Days.mp3' -Force -ErrorAction SilentlyContinue
+Remove-Item -Path 'C:\Users\Dimé\Desktop\DIME_STEM_PIPELINE\tracks\Basement Jaxx - Where''s Your Head At.mp3' -Force -ErrorAction SilentlyContinue
+Remove-Item -Path 'C:\Users\Dimé\Desktop\DIME_STEM_PIPELINE\tracks\Billy Idol - Eyes Without A Face.mp3' -Force -ErrorAction SilentlyContinue
+Remove-Item -Path 'C:\Users\Dimé\Desktop\DIME_STEM_PIPELINE\tracks\Bronski Beat - Smalltown Boy.mp3' -Force -ErrorAction SilentlyContinue
+Remove-Item -Path 'C:\Users\Dimé\Desktop\DIME_STEM_PIPELINE\tracks\Celeste - This Is Who I Am - From "The Day of the Jackal".mp3' -Force -ErrorAction SilentlyContinue
+Remove-Item -Path 'C:\Users\Dimé\Desktop\DIME_STEM_PIPELINE\tracks\Charles Bradley, The Budos Band - Changes.mp3' -Force -ErrorAction SilentlyContinue
+Remove-Item -Path 'C:\Users\Dimé\Desktop\DIME_STEM_PIPELINE\tracks\Destroy Lonely - MKEITSTOP.mp3' -Force -ErrorAction SilentlyContinue
+Remove-Item -Path 'C:\Users\Dimé\Desktop\DIME_STEM_PIPELINE\tracks\Destroy Lonely - SYRUP SIPPIN.mp3' -Force -ErrorAction SilentlyContinue
+Remove-Item -Path 'C:\Users\Dimé\Desktop\DIME_STEM_PIPELINE\tracks\Earth, Wind & Fire - Fantasy.mp3' -Force -ErrorAction SilentlyContinue
+Remove-Item -Path 'C:\Users\Dimé\Desktop\DIME_STEM_PIPELINE\tracks\France Gall - Poupe de cire, poupe de son.mp3' -Force -ErrorAction SilentlyContinue
+Remove-Item -Path 'C:\Users\Dimé\Desktop\DIME_STEM_PIPELINE\tracks\Gary Numan - Cars.mp3' -Force -ErrorAction SilentlyContinue
+Remove-Item -Path 'C:\Users\Dimé\Desktop\DIME_STEM_PIPELINE\tracks\Junko Ohashi - ?????ú????.mp3' -Force -ErrorAction SilentlyContinue
+Remove-Item -Path 'C:\Users\Dimé\Desktop\DIME_STEM_PIPELINE\tracks\Kavinsky - Nightcall.mp3' -Force -ErrorAction SilentlyContinue
+Remove-Item -Path 'C:\Users\Dimé\Desktop\DIME_STEM_PIPELINE\tracks\La Rvfleuze, COLORS - Argent Sale - A COLORS SHOW.mp3' -Force -ErrorAction SilentlyContinue
+Remove-Item -Path 'C:\Users\Dimé\Desktop\DIME_STEM_PIPELINE\tracks\La Rvfleuze, Freeze corleone - Serrure #667.mp3' -Force -ErrorAction SilentlyContinue
+Remove-Item -Path 'C:\Users\Dimé\Desktop\DIME_STEM_PIPELINE\tracks\Lex Amarni - the kill.mp3' -Force -ErrorAction SilentlyContinue
+Remove-Item -Path 'C:\Users\Dimé\Desktop\DIME_STEM_PIPELINE\tracks\Lex Amarni, 2muchmotion - the kill 2.mp3' -Force -ErrorAction SilentlyContinue
+Remove-Item -Path 'C:\Users\Dimé\Desktop\DIME_STEM_PIPELINE\tracks\Lil Peep, rainy bear - nuts.mp3' -Force -ErrorAction SilentlyContinue
+Remove-Item -Path 'C:\Users\Dimé\Desktop\DIME_STEM_PIPELINE\tracks\Mariya Takeuchi - ????.mp3' -Force -ErrorAction SilentlyContinue
+Remove-Item -Path 'C:\Users\Dimé\Desktop\DIME_STEM_PIPELINE\tracks\Nettspend - halftime.mp3' -Force -ErrorAction SilentlyContinue
+Remove-Item -Path 'C:\Users\Dimé\Desktop\DIME_STEM_PIPELINE\tracks\Nettspend, YoungBoy Never Broke Again - masked up (feat. YoungBoy Never Broke Again).mp3' -Force -ErrorAction SilentlyContinue
+Remove-Item -Path 'C:\Users\Dimé\Desktop\DIME_STEM_PIPELINE\tracks\Niaks - Perm.mp3' -Force -ErrorAction SilentlyContinue
+Remove-Item -Path 'C:\Users\Dimé\Desktop\DIME_STEM_PIPELINE\tracks\Nicki Minaj - Starships.mp3' -Force -ErrorAction SilentlyContinue
+Remove-Item -Path 'C:\Users\Dimé\Desktop\DIME_STEM_PIPELINE\tracks\Playboi Carti - NO. 9.mp3' -Force -ErrorAction SilentlyContinue
+Remove-Item -Path 'C:\Users\Dimé\Desktop\DIME_STEM_PIPELINE\tracks\Playboi Carti - Old Money.mp3' -Force -ErrorAction SilentlyContinue
+Remove-Item -Path 'C:\Users\Dimé\Desktop\DIME_STEM_PIPELINE\tracks\Playboi Carti - OPM BABI.mp3' -Force -ErrorAction SilentlyContinue
+Remove-Item -Path 'C:\Users\Dimé\Desktop\DIME_STEM_PIPELINE\tracks\popperflop - Check Up.mp3' -Force -ErrorAction SilentlyContinue
+Remove-Item -Path 'C:\Users\Dimé\Desktop\DIME_STEM_PIPELINE\tracks\Snow Strippers - Under Your Spell.mp3' -Force -ErrorAction SilentlyContinue
+Remove-Item -Path 'C:\Users\Dimé\Desktop\DIME_STEM_PIPELINE\tracks\SOPHIE - VYZEE.mp3' -Force -ErrorAction SilentlyContinue
+Remove-Item -Path 'C:\Users\Dimé\Desktop\DIME_STEM_PIPELINE\tracks\Tom Petty - Love Is A Long Road.mp3' -Force -ErrorAction SilentlyContinue
+Remove-Item -Path 'C:\Users\Dimé\Desktop\DIME_STEM_PIPELINE\tracks\Tomoko Aran - Midnight Pretenders.mp3' -Force -ErrorAction SilentlyContinue
+Remove-Item -Path 'C:\Users\Dimé\Desktop\DIME_STEM_PIPELINE\tracks\Torre Florim - Firestarter.mp3' -Force -ErrorAction SilentlyContinue
+Remove-Item -Path 'C:\Users\Dimé\Desktop\DIME_STEM_PIPELINE\tracks\TR Gobrazy - Handbag.mp3' -Force -ErrorAction SilentlyContinue
+Remove-Item -Path 'C:\Users\Dimé\Desktop\DIME_STEM_PIPELINE\tracks\TR Gobrazy - Homeless.mp3' -Force -ErrorAction SilentlyContinue
+Remove-Item -Path 'C:\Users\Dimé\Desktop\DIME_STEM_PIPELINE\tracks\xaviersobased - Double Whammy (ss3bby yaridubz).mp3' -Force -ErrorAction SilentlyContinue
+Remove-Item -Path 'C:\Users\Dimé\Desktop\DIME_STEM_PIPELINE\tracks\xaviersobased - love hate.mp3' -Force -ErrorAction SilentlyContinue
+Remove-Item -Path 'C:\Users\Dimé\Desktop\DIME_STEM_PIPELINE\tracks\xaviersobased, Skrillex, Dylan Brady - Party At My Place.mp3' -Force -ErrorAction SilentlyContinue
+Remove-Item -Path 'C:\Users\Dimé\Desktop\DIME_STEM_PIPELINE\tracks\YBN Nahmir - Rubbin off the Paint.mp3' -Force -ErrorAction SilentlyContinue
+Remove-Item -Path 'C:\Users\Dimé\Desktop\DIME_STEM_PIPELINE\tracks\Ye, Kanye West - BEAUTY AND THE BEAST.mp3' -Force -ErrorAction SilentlyContinue
+Remove-Item -Path 'C:\Users\Dimé\Desktop\DIME_STEM_PIPELINE\tracks\Ye, Kanye West - PREACHER MAN.mp3' -Force -ErrorAction SilentlyContinue
+Remove-Item -Path 'C:\Users\Dimé\Desktop\DIME_STEM_PIPELINE\tracks\Yeat - COMÓ N GO.mp3' -Force -ErrorAction SilentlyContinue
+Remove-Item -Path 'C:\Users\Dimé\Desktop\DIME_STEM_PIPELINE\tracks\Yeat, BNYX© - IM YEAT.mp3' -Force -ErrorAction SilentlyContinue
+Remove-Item -Path 'C:\Users\Dimé\Desktop\DIME_STEM_PIPELINE\tracks\Yurie Kokubu - I wanna Be With You.mp3' -Force -ErrorAction SilentlyContinue

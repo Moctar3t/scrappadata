@@ -1,0 +1,1172 @@
+[
+ {
+  "id": "1688",
+  "artist": "Werenoi",
+  "title": "Chemin d'or",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/ac3d5c19-1e0c-498c-a18e-5d1b8f3d6d19/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/ac3d5c19-1e0c-498c-a18e-5d1b8f3d6d19/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/ac3d5c19-1e0c-498c-a18e-5d1b8f3d6d19/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/ac3d5c19-1e0c-498c-a18e-5d1b8f3d6d19/vocals.m4a"
+  },
+  "truth_bpm": 123,
+  "truth_key": "B Minor"
+ },
+ {
+  "id": "213",
+  "artist": "Travis Scott;Lil Uzi Vert;Kanye West",
+  "title": "Watch (feat. Lil Uzi Vert & Kanye West)",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/Travis%20Scott%2C%20Lil%20Uzi%20Vert%2C%20Kanye%20West%20-%20Watch%20%28feat.%20Lil%20Uzi%20Vert%20%26%20Kanye%20West%29/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/Travis%20Scott%2C%20Lil%20Uzi%20Vert%2C%20Kanye%20West%20-%20Watch%20%28feat.%20Lil%20Uzi%20Vert%20%26%20Kanye%20West%29/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/Travis%20Scott%2C%20Lil%20Uzi%20Vert%2C%20Kanye%20West%20-%20Watch%20%28feat.%20Lil%20Uzi%20Vert%20%26%20Kanye%20West%29/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/Travis%20Scott%2C%20Lil%20Uzi%20Vert%2C%20Kanye%20West%20-%20Watch%20%28feat.%20Lil%20Uzi%20Vert%20%26%20Kanye%20West%29/vocals.m4a"
+  },
+  "truth_bpm": 79,
+  "truth_key": "E Minor"
+ },
+ {
+  "id": "2674",
+  "artist": "Cheu-B; Rsko",
+  "title": "Frigo",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/50208288-21ec-4da0-a0c6-e5bf3df80485/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/50208288-21ec-4da0-a0c6-e5bf3df80485/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/50208288-21ec-4da0-a0c6-e5bf3df80485/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/50208288-21ec-4da0-a0c6-e5bf3df80485/vocals.m4a"
+  },
+  "truth_bpm": 152,
+  "truth_key": "C Minor"
+ },
+ {
+  "id": "2332",
+  "artist": "Kyle Richh",
+  "title": "Spinnin 2",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/7a394bda-a9a8-417b-8a14-85d8c75349d3/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/7a394bda-a9a8-417b-8a14-85d8c75349d3/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/7a394bda-a9a8-417b-8a14-85d8c75349d3/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/7a394bda-a9a8-417b-8a14-85d8c75349d3/vocals.m4a"
+  },
+  "truth_bpm": 144,
+  "truth_key": "A# Minor"
+ },
+ {
+  "id": "2081",
+  "artist": "Dexter HMC",
+  "title": "Intro BMF (IGTV 7)",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/4a1b120f-69c4-4adb-aed7-58800157f23c/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/4a1b120f-69c4-4adb-aed7-58800157f23c/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/4a1b120f-69c4-4adb-aed7-58800157f23c/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/4a1b120f-69c4-4adb-aed7-58800157f23c/vocals.m4a"
+  },
+  "truth_bpm": 144,
+  "truth_key": "F Minor"
+ },
+ {
+  "id": "1238",
+  "artist": "Landy",
+  "title": "Brave III - Freestyle",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/Landy%20-%20Brave%20III%20-%20Freestyle/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/Landy%20-%20Brave%20III%20-%20Freestyle/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/Landy%20-%20Brave%20III%20-%20Freestyle/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/Landy%20-%20Brave%20III%20-%20Freestyle/vocals.m4a"
+  },
+  "truth_bpm": 170,
+  "truth_key": "C Major"
+ },
+ {
+  "id": "893",
+  "artist": "21 Savage;Metro Boomin;Young Thug",
+  "title": "Rich Nigga Shit (feat. Young Thug)",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/21%20Savage%2C%20Metro%20Boomin%2C%20Young%20Thug%20-%20Rich%20Nigga%20Shit%20%28feat.%20Young%20Thug%29/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/21%20Savage%2C%20Metro%20Boomin%2C%20Young%20Thug%20-%20Rich%20Nigga%20Shit%20%28feat.%20Young%20Thug%29/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/21%20Savage%2C%20Metro%20Boomin%2C%20Young%20Thug%20-%20Rich%20Nigga%20Shit%20%28feat.%20Young%20Thug%29/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/21%20Savage%2C%20Metro%20Boomin%2C%20Young%20Thug%20-%20Rich%20Nigga%20Shit%20%28feat.%20Young%20Thug%29/vocals.m4a"
+  },
+  "truth_bpm": 98,
+  "truth_key": "C# Minor"
+ },
+ {
+  "id": "753",
+  "artist": "Niaks",
+  "title": "Manolo",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/Niaks%20-%20Manolo/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/Niaks%20-%20Manolo/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/Niaks%20-%20Manolo/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/Niaks%20-%20Manolo/vocals.m4a"
+  },
+  "truth_bpm": 94,
+  "truth_key": "B Minor"
+ },
+ {
+  "id": "3800",
+  "artist": "ayerp",
+  "title": "Lil Melo",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/6b8ba83c-a70d-49a2-afc5-3b19d28b282a/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/6b8ba83c-a70d-49a2-afc5-3b19d28b282a/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/6b8ba83c-a70d-49a2-afc5-3b19d28b282a/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/6b8ba83c-a70d-49a2-afc5-3b19d28b282a/vocals.m4a"
+  },
+  "truth_bpm": 83,
+  "truth_key": "A# Minor"
+ },
+ {
+  "id": "272",
+  "artist": "Gunna;Playboi Carti",
+  "title": "YSL (feat. Playboi Carti)",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/Gunna%2C%20Playboi%20Carti%20-%20YSL%20%28feat.%20Playboi%20Carti%29/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/Gunna%2C%20Playboi%20Carti%20-%20YSL%20%28feat.%20Playboi%20Carti%29/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/Gunna%2C%20Playboi%20Carti%20-%20YSL%20%28feat.%20Playboi%20Carti%29/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/Gunna%2C%20Playboi%20Carti%20-%20YSL%20%28feat.%20Playboi%20Carti%29/vocals.m4a"
+  },
+  "truth_bpm": 82,
+  "truth_key": "B Major"
+ },
+ {
+  "id": "255",
+  "artist": "Ken Carson",
+  "title": "Shoot",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/Ken%20Carson%20-%20Shoot/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/Ken%20Carson%20-%20Shoot/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/Ken%20Carson%20-%20Shoot/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/Ken%20Carson%20-%20Shoot/vocals.m4a"
+  },
+  "truth_bpm": 139,
+  "truth_key": "C# Major"
+ },
+ {
+  "id": "813",
+  "artist": "La Kadrilla",
+  "title": "Anti Social",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/La%20Kadrilla%20-%20Anti%20Social/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/La%20Kadrilla%20-%20Anti%20Social/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/La%20Kadrilla%20-%20Anti%20Social/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/La%20Kadrilla%20-%20Anti%20Social/vocals.m4a"
+  },
+  "truth_bpm": 100,
+  "truth_key": "A# Minor"
+ },
+ {
+  "id": "3186",
+  "artist": "LUVBFK",
+  "title": "STRASBOURG 1948",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/64d54ecc-e377-470a-9821-34179d33c212/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/64d54ecc-e377-470a-9821-34179d33c212/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/64d54ecc-e377-470a-9821-34179d33c212/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/64d54ecc-e377-470a-9821-34179d33c212/vocals.m4a"
+  },
+  "truth_bpm": 120,
+  "truth_key": "F Major"
+ },
+ {
+  "id": "2198",
+  "artist": "Maes",
+  "title": "Dragovic",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/252503e7-4f29-4b9b-a7b0-abaff208a42d/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/252503e7-4f29-4b9b-a7b0-abaff208a42d/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/252503e7-4f29-4b9b-a7b0-abaff208a42d/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/252503e7-4f29-4b9b-a7b0-abaff208a42d/vocals.m4a"
+  },
+  "truth_bpm": 99,
+  "truth_key": "G# Minor"
+ },
+ {
+  "id": "227",
+  "artist": "Death Grips",
+  "title": "Hot Head",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/Death%20Grips%20-%20Hot%20Head/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/Death%20Grips%20-%20Hot%20Head/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/Death%20Grips%20-%20Hot%20Head/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/Death%20Grips%20-%20Hot%20Head/vocals.m4a"
+  },
+  "truth_bpm": 126,
+  "truth_key": "C# Major"
+ },
+ {
+  "id": "1796",
+  "artist": "Sdn",
+  "title": "Macaren@!",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/0b42e89b-61b9-48a7-8ac8-c5fac2fef014/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/0b42e89b-61b9-48a7-8ac8-c5fac2fef014/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/0b42e89b-61b9-48a7-8ac8-c5fac2fef014/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/0b42e89b-61b9-48a7-8ac8-c5fac2fef014/vocals.m4a"
+  },
+  "truth_bpm": 144,
+  "truth_key": "C# Minor"
+ },
+ {
+  "id": "3780",
+  "artist": "Che",
+  "title": "DIOR LEOPARD",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/a4419be6-3016-4a4f-bc3c-d395b18c8c68/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/a4419be6-3016-4a4f-bc3c-d395b18c8c68/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/a4419be6-3016-4a4f-bc3c-d395b18c8c68/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/a4419be6-3016-4a4f-bc3c-d395b18c8c68/vocals.m4a"
+  },
+  "truth_bpm": 163,
+  "truth_key": "B Major"
+ },
+ {
+  "id": "2063",
+  "artist": "Mig",
+  "title": "La ligne",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/3c1c2c7e-3c49-4ab6-8568-fdd6b8d868b8/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/3c1c2c7e-3c49-4ab6-8568-fdd6b8d868b8/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/3c1c2c7e-3c49-4ab6-8568-fdd6b8d868b8/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/3c1c2c7e-3c49-4ab6-8568-fdd6b8d868b8/vocals.m4a"
+  },
+  "truth_bpm": 123,
+  "truth_key": "D# Major"
+ },
+ {
+  "id": "4023",
+  "artist": "slayr",
+  "title": "Toxic",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/fe7f0a75-57f8-4e3e-99a2-37690ee7156f/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/fe7f0a75-57f8-4e3e-99a2-37690ee7156f/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/fe7f0a75-57f8-4e3e-99a2-37690ee7156f/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/fe7f0a75-57f8-4e3e-99a2-37690ee7156f/vocals.m4a"
+  },
+  "truth_bpm": 200,
+  "truth_key": "C# Major"
+ },
+ {
+  "id": "2722",
+  "artist": "BLOODIE; DudeyLo; DD Osama; Sugarhill Ddot; Dee Play4Keeps",
+  "title": "Stop Running",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/5e98ac27-a000-4bcc-98a0-fda4e7dfefe9/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/5e98ac27-a000-4bcc-98a0-fda4e7dfefe9/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/5e98ac27-a000-4bcc-98a0-fda4e7dfefe9/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/5e98ac27-a000-4bcc-98a0-fda4e7dfefe9/vocals.m4a"
+  },
+  "truth_bpm": 144,
+  "truth_key": "E Minor"
+ },
+ {
+  "id": "56",
+  "artist": "Lex Amarni, 2muchmotion",
+  "title": "the kill",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/Lex%20Amarni%20-%20the%20kill/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/Lex%20Amarni%20-%20the%20kill/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/Lex%20Amarni%20-%20the%20kill/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/Lex%20Amarni%20-%20the%20kill/vocals.m4a"
+  },
+  "truth_bpm": 103,
+  "truth_key": "B Major"
+ },
+ {
+  "id": "1433",
+  "artist": "Lagui",
+  "title": "CAPO",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/f8d3f077-4516-41de-a5fe-0460dcdf0257/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/f8d3f077-4516-41de-a5fe-0460dcdf0257/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/f8d3f077-4516-41de-a5fe-0460dcdf0257/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/f8d3f077-4516-41de-a5fe-0460dcdf0257/vocals.m4a"
+  },
+  "truth_bpm": 117,
+  "truth_key": "F# Minor"
+ },
+ {
+  "id": "3806",
+  "artist": "Pz'",
+  "title": "Resurrection",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/983b8faa-713e-4df8-9320-d9eefcae67c0/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/983b8faa-713e-4df8-9320-d9eefcae67c0/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/983b8faa-713e-4df8-9320-d9eefcae67c0/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/983b8faa-713e-4df8-9320-d9eefcae67c0/vocals.m4a"
+  },
+  "truth_bpm": 121,
+  "truth_key": "C# Major"
+ },
+ {
+  "id": "2558",
+  "artist": "HLD",
+  "title": "CRITICAL",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/d4fb9f45-324d-43a2-b66f-e241d66fdbe6/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/d4fb9f45-324d-43a2-b66f-e241d66fdbe6/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/d4fb9f45-324d-43a2-b66f-e241d66fdbe6/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/d4fb9f45-324d-43a2-b66f-e241d66fdbe6/vocals.m4a"
+  },
+  "truth_bpm": 136,
+  "truth_key": "D# Major"
+ },
+ {
+  "id": "2704",
+  "artist": "Kenzo Balla",
+  "title": "All I Need",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/ba4bbdaa-ef41-4ee7-98bf-93a109aa1d81/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/ba4bbdaa-ef41-4ee7-98bf-93a109aa1d81/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/ba4bbdaa-ef41-4ee7-98bf-93a109aa1d81/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/ba4bbdaa-ef41-4ee7-98bf-93a109aa1d81/vocals.m4a"
+  },
+  "truth_bpm": 99,
+  "truth_key": "D Major"
+ },
+ {
+  "id": "1388",
+  "artist": "BILOUKI",
+  "title": "FULL",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/60f676dc-812c-42ff-b726-9bff265e13d5/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/60f676dc-812c-42ff-b726-9bff265e13d5/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/60f676dc-812c-42ff-b726-9bff265e13d5/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/60f676dc-812c-42ff-b726-9bff265e13d5/vocals.m4a"
+  },
+  "truth_bpm": 129,
+  "truth_key": "C# Minor"
+ },
+ {
+  "id": "2002",
+  "artist": "JStar Balla",
+  "title": "Were u wanna go",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/a825fbd7-4ba9-41ce-a52b-d3a6fc1c3dd4/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/a825fbd7-4ba9-41ce-a52b-d3a6fc1c3dd4/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/a825fbd7-4ba9-41ce-a52b-d3a6fc1c3dd4/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/a825fbd7-4ba9-41ce-a52b-d3a6fc1c3dd4/vocals.m4a"
+  },
+  "truth_bpm": 144,
+  "truth_key": "G Minor"
+ },
+ {
+  "id": "2547",
+  "artist": "Mig",
+  "title": "Intro",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/c10e8762-8186-4dce-ab05-43250cf57b01/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/c10e8762-8186-4dce-ab05-43250cf57b01/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/c10e8762-8186-4dce-ab05-43250cf57b01/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/c10e8762-8186-4dce-ab05-43250cf57b01/vocals.m4a"
+  },
+  "truth_bpm": 144,
+  "truth_key": "D# Minor"
+ },
+ {
+  "id": "891",
+  "artist": "PinkPantheress;Sam Gellaitry",
+  "title": "Picture in My Mind",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/PinkPantheress%2C%20Sam%20Gellaitry%20-%20Picture%20in%20My%20Mind/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/PinkPantheress%2C%20Sam%20Gellaitry%20-%20Picture%20in%20My%20Mind/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/PinkPantheress%2C%20Sam%20Gellaitry%20-%20Picture%20in%20My%20Mind/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/PinkPantheress%2C%20Sam%20Gellaitry%20-%20Picture%20in%20My%20Mind/vocals.m4a"
+  },
+  "truth_bpm": 129,
+  "truth_key": "D Minor"
+ },
+ {
+  "id": "804",
+  "artist": "La Plaie",
+  "title": "Dans la ville",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/La%20Plaie%20-%20Dans%20la%20ville/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/La%20Plaie%20-%20Dans%20la%20ville/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/La%20Plaie%20-%20Dans%20la%20ville/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/La%20Plaie%20-%20Dans%20la%20ville/vocals.m4a"
+  },
+  "truth_bpm": 140,
+  "truth_key": "G Minor"
+ },
+ {
+  "id": "3456",
+  "artist": "Kura; Ghostrage",
+  "title": "Do That A Lot",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/36392405-bd2d-47ab-873a-6c817b1f7bb1/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/36392405-bd2d-47ab-873a-6c817b1f7bb1/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/36392405-bd2d-47ab-873a-6c817b1f7bb1/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/36392405-bd2d-47ab-873a-6c817b1f7bb1/vocals.m4a"
+  },
+  "truth_bpm": 142,
+  "truth_key": "C# Minor"
+ },
+ {
+  "id": "1763",
+  "artist": "Werenoi",
+  "title": "Solitaire",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/4e83fec5-d153-4932-a56f-ca2c7a148099/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/4e83fec5-d153-4932-a56f-ca2c7a148099/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/4e83fec5-d153-4932-a56f-ca2c7a148099/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/4e83fec5-d153-4932-a56f-ca2c7a148099/vocals.m4a"
+  },
+  "truth_bpm": 117,
+  "truth_key": "F# Minor"
+ },
+ {
+  "id": "3286",
+  "artist": "mikeeysmind; Unjaps",
+  "title": "Limerence x Bounce out",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/fe377115-605d-4364-acc9-147fb712e1b9/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/fe377115-605d-4364-acc9-147fb712e1b9/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/fe377115-605d-4364-acc9-147fb712e1b9/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/fe377115-605d-4364-acc9-147fb712e1b9/vocals.m4a"
+  },
+  "truth_bpm": 96,
+  "truth_key": "A Major"
+ },
+ {
+  "id": "2310",
+  "artist": "Cheu-B; Ghost Killer Track; So La Lune",
+  "title": "Nuit",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/5f8d7f8e-8e90-4809-8e83-aff718219894/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/5f8d7f8e-8e90-4809-8e83-aff718219894/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/5f8d7f8e-8e90-4809-8e83-aff718219894/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/5f8d7f8e-8e90-4809-8e83-aff718219894/vocals.m4a"
+  },
+  "truth_bpm": 144,
+  "truth_key": "D# Minor"
+ },
+ {
+  "id": "2552",
+  "artist": "Timar",
+  "title": "BEC ÂNE",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/a53d77d0-77c6-48e2-ad7f-72baf0d533f3/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/a53d77d0-77c6-48e2-ad7f-72baf0d533f3/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/a53d77d0-77c6-48e2-ad7f-72baf0d533f3/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/a53d77d0-77c6-48e2-ad7f-72baf0d533f3/vocals.m4a"
+  },
+  "truth_bpm": 117,
+  "truth_key": "A# Minor"
+ },
+ {
+  "id": "369",
+  "artist": "Uzi Shooter",
+  "title": "Break the Bank",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/Uzi%20Shooter%20-%20Break%20the%20Bank/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/Uzi%20Shooter%20-%20Break%20the%20Bank/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/Uzi%20Shooter%20-%20Break%20the%20Bank/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/Uzi%20Shooter%20-%20Break%20the%20Bank/vocals.m4a"
+  },
+  "truth_bpm": 82,
+  "truth_key": "F# Minor"
+ },
+ {
+  "id": "4107",
+  "artist": "ffawty",
+  "title": "JUMP",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/07cd0aa2-f19b-4842-8e05-166e095a3eea/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/07cd0aa2-f19b-4842-8e05-166e095a3eea/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/07cd0aa2-f19b-4842-8e05-166e095a3eea/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/07cd0aa2-f19b-4842-8e05-166e095a3eea/vocals.m4a"
+  },
+  "truth_bpm": 155,
+  "truth_key": "E Minor"
+ },
+ {
+  "id": "1102",
+  "artist": "Aminé",
+  "title": "REEL IT IN",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/Amin%C3%A9%20-%20REEL%20IT%20IN/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/Amin%C3%A9%20-%20REEL%20IT%20IN/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/Amin%C3%A9%20-%20REEL%20IT%20IN/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/Amin%C3%A9%20-%20REEL%20IT%20IN/vocals.m4a"
+  },
+  "truth_bpm": 129,
+  "truth_key": "A# Minor"
+ },
+ {
+  "id": "3444",
+  "artist": "1oneam",
+  "title": "Bless Up",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/4fb2a596-b5b9-4a57-85be-ba8625ebdf30/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/4fb2a596-b5b9-4a57-85be-ba8625ebdf30/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/4fb2a596-b5b9-4a57-85be-ba8625ebdf30/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/4fb2a596-b5b9-4a57-85be-ba8625ebdf30/vocals.m4a"
+  },
+  "truth_bpm": 159,
+  "truth_key": "C# Major"
+ },
+ {
+  "id": "676",
+  "artist": "Yeat",
+  "title": "Slamm",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/Yeat%20-%20Slamm/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/Yeat%20-%20Slamm/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/Yeat%20-%20Slamm/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/Yeat%20-%20Slamm/vocals.m4a"
+  },
+  "truth_bpm": 142,
+  "truth_key": "C Major"
+ },
+ {
+  "id": "2886",
+  "artist": "HLD",
+  "title": "Solution",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/f552476d-c37c-40c2-9d7e-616f31d848d4/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/f552476d-c37c-40c2-9d7e-616f31d848d4/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/f552476d-c37c-40c2-9d7e-616f31d848d4/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/f552476d-c37c-40c2-9d7e-616f31d848d4/vocals.m4a"
+  },
+  "truth_bpm": 144,
+  "truth_key": "A# Minor"
+ },
+ {
+  "id": "2736",
+  "artist": "HLD",
+  "title": "Bastos",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/293d1389-621a-49d7-9fe2-eaab6455f6ef/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/293d1389-621a-49d7-9fe2-eaab6455f6ef/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/293d1389-621a-49d7-9fe2-eaab6455f6ef/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/293d1389-621a-49d7-9fe2-eaab6455f6ef/vocals.m4a"
+  },
+  "truth_bpm": 144,
+  "truth_key": "G# Minor"
+ },
+ {
+  "id": "1698",
+  "artist": "Dougie B; TG Crippy, TG Flockaa",
+  "title": "Mad Max (feat. TG Crippy)",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/0d65c466-d9e9-4372-afa9-cf73906c5ef5/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/0d65c466-d9e9-4372-afa9-cf73906c5ef5/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/0d65c466-d9e9-4372-afa9-cf73906c5ef5/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/0d65c466-d9e9-4372-afa9-cf73906c5ef5/vocals.m4a"
+  },
+  "truth_bpm": 144,
+  "truth_key": "D# Major"
+ },
+ {
+  "id": "3070",
+  "artist": "Don Toliver; Sheck Wes",
+  "title": "Spaceship (feat. Sheck Wes)",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/3f343250-1287-47e7-8e8a-868fa4a510e3/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/3f343250-1287-47e7-8e8a-868fa4a510e3/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/3f343250-1287-47e7-8e8a-868fa4a510e3/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/3f343250-1287-47e7-8e8a-868fa4a510e3/vocals.m4a"
+  },
+  "truth_bpm": 144,
+  "truth_key": "G Minor"
+ },
+ {
+  "id": "2436",
+  "artist": "Werenoi",
+  "title": "Pétunias",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/ad16804c-a1c5-47c7-a536-1215e9db3367/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/ad16804c-a1c5-47c7-a536-1215e9db3367/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/ad16804c-a1c5-47c7-a536-1215e9db3367/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/ad16804c-a1c5-47c7-a536-1215e9db3367/vocals.m4a"
+  },
+  "truth_bpm": 123,
+  "truth_key": "B Minor"
+ },
+ {
+  "id": "2135",
+  "artist": "Nemzzz",
+  "title": "8AM IN MANNY",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/b70aadee-4058-47d4-be47-a970e933e42c/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/b70aadee-4058-47d4-be47-a970e933e42c/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/b70aadee-4058-47d4-be47-a970e933e42c/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/b70aadee-4058-47d4-be47-a970e933e42c/vocals.m4a"
+  },
+  "truth_bpm": 74,
+  "truth_key": "F# Major"
+ },
+ {
+  "id": "2848",
+  "artist": "Rsko; Gazo",
+  "title": "100 Mi-Temps (feat. Gazo)",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/9865ea17-eb11-4dc9-8428-7c9156d0a778/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/9865ea17-eb11-4dc9-8428-7c9156d0a778/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/9865ea17-eb11-4dc9-8428-7c9156d0a778/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/9865ea17-eb11-4dc9-8428-7c9156d0a778/vocals.m4a"
+  },
+  "truth_bpm": 129,
+  "truth_key": "C Minor"
+ },
+ {
+  "id": "684",
+  "artist": "Yeat",
+  "title": "Nvr again",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/Yeat%20-%20Nvr%20again/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/Yeat%20-%20Nvr%20again/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/Yeat%20-%20Nvr%20again/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/Yeat%20-%20Nvr%20again/vocals.m4a"
+  },
+  "truth_bpm": 156,
+  "truth_key": "A# Minor"
+ },
+ {
+  "id": "2195",
+  "artist": "La Kadrilla",
+  "title": "Humain",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/3d0a2f64-21a4-4e1a-88f8-cf53df19df64/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/3d0a2f64-21a4-4e1a-88f8-cf53df19df64/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/3d0a2f64-21a4-4e1a-88f8-cf53df19df64/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/3d0a2f64-21a4-4e1a-88f8-cf53df19df64/vocals.m4a"
+  },
+  "truth_bpm": 72,
+  "truth_key": "F Minor"
+ },
+ {
+  "id": "3016",
+  "artist": "Yeat",
+  "title": "Systëm",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/f89cece6-729f-4908-8093-a5ecb03ea841/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/f89cece6-729f-4908-8093-a5ecb03ea841/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/f89cece6-729f-4908-8093-a5ecb03ea841/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/f89cece6-729f-4908-8093-a5ecb03ea841/vocals.m4a"
+  },
+  "truth_bpm": 152,
+  "truth_key": "G# Major"
+ },
+ {
+  "id": "3457",
+  "artist": "xaviersobased; OsamaSon, ‎OsamaSon",
+  "title": "uncomfy (feat. OsamaSon)",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/9eb62779-e64d-4177-b71c-e63ab232d96b/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/9eb62779-e64d-4177-b71c-e63ab232d96b/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/9eb62779-e64d-4177-b71c-e63ab232d96b/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/9eb62779-e64d-4177-b71c-e63ab232d96b/vocals.m4a"
+  },
+  "truth_bpm": 110,
+  "truth_key": "A Major"
+ },
+ {
+  "id": "2705",
+  "artist": "JStar Balla",
+  "title": "Story",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/44117358-7d11-4071-a1b9-5eb5cec0c781/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/44117358-7d11-4071-a1b9-5eb5cec0c781/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/44117358-7d11-4071-a1b9-5eb5cec0c781/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/44117358-7d11-4071-a1b9-5eb5cec0c781/vocals.m4a"
+  },
+  "truth_bpm": 144,
+  "truth_key": "C# Major"
+ },
+ {
+  "id": "4058",
+  "artist": "ian",
+  "title": "Silently",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/930b4d2a-863a-4528-9e2d-7472716d71fb/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/930b4d2a-863a-4528-9e2d-7472716d71fb/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/930b4d2a-863a-4528-9e2d-7472716d71fb/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/930b4d2a-863a-4528-9e2d-7472716d71fb/vocals.m4a"
+  },
+  "truth_bpm": 71,
+  "truth_key": "D Major"
+ },
+ {
+  "id": "3328",
+  "artist": "Cartoon, Jéja, Daniel Levi (EST)",
+  "title": "On & On",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/bbabf6ea-8ff3-47e1-b334-267d038a4ae9/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/bbabf6ea-8ff3-47e1-b334-267d038a4ae9/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/bbabf6ea-8ff3-47e1-b334-267d038a4ae9/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/bbabf6ea-8ff3-47e1-b334-267d038a4ae9/vocals.m4a"
+  },
+  "truth_bpm": 117,
+  "truth_key": "G# Minor"
+ },
+ {
+  "id": "1456",
+  "artist": "Michael Jackson",
+  "title": "Beat It",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/90d4ae71-2b97-44b6-8478-702de290e84e/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/90d4ae71-2b97-44b6-8478-702de290e84e/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/90d4ae71-2b97-44b6-8478-702de290e84e/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/90d4ae71-2b97-44b6-8478-702de290e84e/vocals.m4a"
+  },
+  "truth_bpm": 136,
+  "truth_key": "D# Minor"
+ },
+ {
+  "id": "3376",
+  "artist": "LUCKI",
+  "title": "4 - U - City Girl",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/112534aa-2b7f-4ffb-84d1-155be50ccd8f/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/112534aa-2b7f-4ffb-84d1-155be50ccd8f/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/112534aa-2b7f-4ffb-84d1-155be50ccd8f/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/112534aa-2b7f-4ffb-84d1-155be50ccd8f/vocals.m4a"
+  },
+  "truth_bpm": 130,
+  "truth_key": "F Minor"
+ },
+ {
+  "id": "1702",
+  "artist": "Mo Kartii",
+  "title": "The Real",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/eb6c8df6-d806-4e10-b104-fb3d8bae8fe3/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/eb6c8df6-d806-4e10-b104-fb3d8bae8fe3/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/eb6c8df6-d806-4e10-b104-fb3d8bae8fe3/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/eb6c8df6-d806-4e10-b104-fb3d8bae8fe3/vocals.m4a"
+  },
+  "truth_bpm": 144,
+  "truth_key": "C# Minor"
+ },
+ {
+  "id": "1935",
+  "artist": "Favé",
+  "title": "Saturday",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/8723f1e4-ce5b-4c81-95cb-1752c5c5da67/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/8723f1e4-ce5b-4c81-95cb-1752c5c5da67/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/8723f1e4-ce5b-4c81-95cb-1752c5c5da67/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/8723f1e4-ce5b-4c81-95cb-1752c5c5da67/vocals.m4a"
+  },
+  "truth_bpm": 129,
+  "truth_key": "B Major"
+ },
+ {
+  "id": "2589",
+  "artist": "DMG; R2",
+  "title": "OMG",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/4f678ef6-06d1-4202-bcbe-026ef6e539ed/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/4f678ef6-06d1-4202-bcbe-026ef6e539ed/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/4f678ef6-06d1-4202-bcbe-026ef6e539ed/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/4f678ef6-06d1-4202-bcbe-026ef6e539ed/vocals.m4a"
+  },
+  "truth_bpm": 129,
+  "truth_key": "C# Major"
+ },
+ {
+  "id": "612",
+  "artist": "Kankan;Yeat",
+  "title": "Fuk Tha Clout (feat. Yeat)",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/Kankan%2C%20Yeat%20-%20Fuk%20Tha%20Clout%20%28feat.%20Yeat%29/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/Kankan%2C%20Yeat%20-%20Fuk%20Tha%20Clout%20%28feat.%20Yeat%29/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/Kankan%2C%20Yeat%20-%20Fuk%20Tha%20Clout%20%28feat.%20Yeat%29/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/Kankan%2C%20Yeat%20-%20Fuk%20Tha%20Clout%20%28feat.%20Yeat%29/vocals.m4a"
+  },
+  "truth_bpm": 154,
+  "truth_key": "C# Major"
+ },
+ {
+  "id": "1505",
+  "artist": "Zuukou Mayzie le Bg 667, Freeze Corleone, Freeze Corleone",
+  "title": "Zuukou Mayzie 667- Feat Jolagreen23",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/eb5fee8b-d246-4e6a-a06c-f6a8290ce278/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/eb5fee8b-d246-4e6a-a06c-f6a8290ce278/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/eb5fee8b-d246-4e6a-a06c-f6a8290ce278/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/eb5fee8b-d246-4e6a-a06c-f6a8290ce278/vocals.m4a"
+  },
+  "truth_bpm": 89,
+  "truth_key": "E Minor"
+ },
+ {
+  "id": "2333",
+  "artist": "V9",
+  "title": "Guerra",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/dbf13703-50e1-4d24-a46e-af67b69a9347/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/dbf13703-50e1-4d24-a46e-af67b69a9347/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/dbf13703-50e1-4d24-a46e-af67b69a9347/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/dbf13703-50e1-4d24-a46e-af67b69a9347/vocals.m4a"
+  },
+  "truth_bpm": 144,
+  "truth_key": "E Minor"
+ },
+ {
+  "id": "1381",
+  "artist": "Joé Dwèt Filé",
+  "title": "Rihanna",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/d733b45f-7bef-4ad9-9eae-d9a5a6ad59a4/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/d733b45f-7bef-4ad9-9eae-d9a5a6ad59a4/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/d733b45f-7bef-4ad9-9eae-d9a5a6ad59a4/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/d733b45f-7bef-4ad9-9eae-d9a5a6ad59a4/vocals.m4a"
+  },
+  "truth_bpm": 172,
+  "truth_key": "G# Major"
+ },
+ {
+  "id": "4130",
+  "artist": "SahBabii",
+  "title": "Show Off",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/f6a2f742-7de8-40d1-acb2-a54c8f5b8a54/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/f6a2f742-7de8-40d1-acb2-a54c8f5b8a54/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/f6a2f742-7de8-40d1-acb2-a54c8f5b8a54/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/f6a2f742-7de8-40d1-acb2-a54c8f5b8a54/vocals.m4a"
+  },
+  "truth_bpm": 82,
+  "truth_key": "G# Major"
+ },
+ {
+  "id": "3452",
+  "artist": "facelessghost",
+  "title": "new game",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/52f04c08-3853-4b62-91e8-14e25dc8c211/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/52f04c08-3853-4b62-91e8-14e25dc8c211/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/52f04c08-3853-4b62-91e8-14e25dc8c211/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/52f04c08-3853-4b62-91e8-14e25dc8c211/vocals.m4a"
+  },
+  "truth_bpm": 83,
+  "truth_key": "G# Major"
+ },
+ {
+  "id": "2615",
+  "artist": "R2",
+  "title": "AVANT R2",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/2d942b52-f8e2-4f27-bc7e-7379f5e24bfc/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/2d942b52-f8e2-4f27-bc7e-7379f5e24bfc/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/2d942b52-f8e2-4f27-bc7e-7379f5e24bfc/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/2d942b52-f8e2-4f27-bc7e-7379f5e24bfc/vocals.m4a"
+  },
+  "truth_bpm": 129,
+  "truth_key": "D Minor"
+ },
+ {
+  "id": "2048",
+  "artist": "Zed",
+  "title": "#ZEDEUDÉ (60)",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/f2343e8a-fe77-4a29-ab58-46e249badae5/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/f2343e8a-fe77-4a29-ab58-46e249badae5/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/f2343e8a-fe77-4a29-ab58-46e249badae5/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/f2343e8a-fe77-4a29-ab58-46e249badae5/vocals.m4a"
+  },
+  "truth_bpm": 123,
+  "truth_key": "E Major"
+ },
+ {
+  "id": "2703",
+  "artist": "Dee Billz",
+  "title": "Ski On",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/f071e9b3-9fd8-4931-a102-c8c36443cd28/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/f071e9b3-9fd8-4931-a102-c8c36443cd28/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/f071e9b3-9fd8-4931-a102-c8c36443cd28/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/f071e9b3-9fd8-4931-a102-c8c36443cd28/vocals.m4a"
+  },
+  "truth_bpm": 144,
+  "truth_key": "D Minor"
+ },
+ {
+  "id": "477",
+  "artist": "Benji Blue Bills",
+  "title": "IM RIGHT HERE",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/Benji%20Blue%20Bills%20-%20IM%20RIGHT%20HERE/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/Benji%20Blue%20Bills%20-%20IM%20RIGHT%20HERE/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/Benji%20Blue%20Bills%20-%20IM%20RIGHT%20HERE/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/Benji%20Blue%20Bills%20-%20IM%20RIGHT%20HERE/vocals.m4a"
+  },
+  "truth_bpm": 74,
+  "truth_key": "D Major"
+ },
+ {
+  "id": "2142",
+  "artist": "13 Block",
+  "title": "Heps ou Plata",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/8372ce02-7891-4d07-b6b7-0b7275abffa4/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/8372ce02-7891-4d07-b6b7-0b7275abffa4/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/8372ce02-7891-4d07-b6b7-0b7275abffa4/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/8372ce02-7891-4d07-b6b7-0b7275abffa4/vocals.m4a"
+  },
+  "truth_bpm": 123,
+  "truth_key": "D Minor"
+ },
+ {
+  "id": "274",
+  "artist": "Lostboys;S5;omgronin;Len",
+  "title": "RVD",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/Lostboys%2C%20S5%2C%20omgronin%2C%20Len%20-%20RVD/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/Lostboys%2C%20S5%2C%20omgronin%2C%20Len%20-%20RVD/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/Lostboys%2C%20S5%2C%20omgronin%2C%20Len%20-%20RVD/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/Lostboys%2C%20S5%2C%20omgronin%2C%20Len%20-%20RVD/vocals.m4a"
+  },
+  "truth_bpm": 144,
+  "truth_key": "F# Minor"
+ },
+ {
+  "id": "1877",
+  "artist": "Nemzzz; Chy Cartier",
+  "title": "CHANT (feat. Chy Cartier)",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/76a257e5-8843-44b5-ab77-d4031a0616c7/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/76a257e5-8843-44b5-ab77-d4031a0616c7/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/76a257e5-8843-44b5-ab77-d4031a0616c7/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/76a257e5-8843-44b5-ab77-d4031a0616c7/vocals.m4a"
+  },
+  "truth_bpm": 99,
+  "truth_key": "G# Major"
+ },
+ {
+  "id": "3630",
+  "artist": "Summrs",
+  "title": "You Mind?",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/cf00e6e4-6ef4-4b7a-87c7-4de56439c071/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/cf00e6e4-6ef4-4b7a-87c7-4de56439c071/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/cf00e6e4-6ef4-4b7a-87c7-4de56439c071/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/cf00e6e4-6ef4-4b7a-87c7-4de56439c071/vocals.m4a"
+  },
+  "truth_bpm": 145,
+  "truth_key": "D Major"
+ },
+ {
+  "id": "2062",
+  "artist": "R2",
+  "title": "Viva",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/267e708f-dd0a-4f2a-a38a-26293ba92799/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/267e708f-dd0a-4f2a-a38a-26293ba92799/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/267e708f-dd0a-4f2a-a38a-26293ba92799/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/267e708f-dd0a-4f2a-a38a-26293ba92799/vocals.m4a"
+  },
+  "truth_bpm": 136,
+  "truth_key": "E Minor"
+ },
+ {
+  "id": "3072",
+  "artist": "HXG",
+  "title": "HI-VOLTAGE",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/355c2343-bb5a-4f83-8c88-be01b53cee89/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/355c2343-bb5a-4f83-8c88-be01b53cee89/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/355c2343-bb5a-4f83-8c88-be01b53cee89/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/355c2343-bb5a-4f83-8c88-be01b53cee89/vocals.m4a"
+  },
+  "truth_bpm": 129,
+  "truth_key": "C# Minor"
+ },
+ {
+  "id": "1957",
+  "artist": "Doulkha",
+  "title": "RENOUVEAUX",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/21321f40-2d42-4251-a6ee-6d3f47184705/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/21321f40-2d42-4251-a6ee-6d3f47184705/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/21321f40-2d42-4251-a6ee-6d3f47184705/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/21321f40-2d42-4251-a6ee-6d3f47184705/vocals.m4a"
+  },
+  "truth_bpm": 144,
+  "truth_key": "A Major"
+ },
+ {
+  "id": "2635",
+  "artist": "Dayarga",
+  "title": "Oh Lord",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/69f44a3f-1a48-4daa-a9cf-d68bb35a737f/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/69f44a3f-1a48-4daa-a9cf-d68bb35a737f/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/69f44a3f-1a48-4daa-a9cf-d68bb35a737f/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/69f44a3f-1a48-4daa-a9cf-d68bb35a737f/vocals.m4a"
+  },
+  "truth_bpm": 129,
+  "truth_key": "D# Minor"
+ },
+ {
+  "id": "1982",
+  "artist": "Kai Du M",
+  "title": "ALASKA",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/84931b12-a3d2-4959-833d-ff606edad33a/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/84931b12-a3d2-4959-833d-ff606edad33a/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/84931b12-a3d2-4959-833d-ff606edad33a/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/84931b12-a3d2-4959-833d-ff606edad33a/vocals.m4a"
+  },
+  "truth_bpm": 144,
+  "truth_key": "D# Minor"
+ },
+ {
+  "id": "4508",
+  "artist": "H-Town, Shirley Murdock",
+  "title": "A Thin Line Between Love & Hate (feat. Shirley Murdock)",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/fae0b580-f95d-4f28-894c-9fc40165c572/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/fae0b580-f95d-4f28-894c-9fc40165c572/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/fae0b580-f95d-4f28-894c-9fc40165c572/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/fae0b580-f95d-4f28-894c-9fc40165c572/vocals.m4a"
+  },
+  "truth_bpm": 122,
+  "truth_key": "C Major"
+ },
+ {
+  "id": "3585",
+  "artist": "Caal Vo",
+  "title": "Expensive Flaws (Gangnam Style)",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/135719b5-0491-4598-9f9f-6edea6b41d84/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/135719b5-0491-4598-9f9f-6edea6b41d84/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/135719b5-0491-4598-9f9f-6edea6b41d84/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/135719b5-0491-4598-9f9f-6edea6b41d84/vocals.m4a"
+  },
+  "truth_bpm": 140,
+  "truth_key": "A# Minor"
+ },
+ {
+  "id": "4102",
+  "artist": "Oodaredevil",
+  "title": "Wow",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/e10e2a42-69e3-44ba-8130-bdae03e54fed/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/e10e2a42-69e3-44ba-8130-bdae03e54fed/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/e10e2a42-69e3-44ba-8130-bdae03e54fed/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/e10e2a42-69e3-44ba-8130-bdae03e54fed/vocals.m4a"
+  },
+  "truth_bpm": 133,
+  "truth_key": "D Major"
+ },
+ {
+  "id": "1265",
+  "artist": "Travis Scott",
+  "title": "R.I.P. SCREW",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/Travis%20Scott%20-%20R.I.P.%20SCREW/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/Travis%20Scott%20-%20R.I.P.%20SCREW/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/Travis%20Scott%20-%20R.I.P.%20SCREW/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/Travis%20Scott%20-%20R.I.P.%20SCREW/vocals.m4a"
+  },
+  "truth_bpm": 150,
+  "truth_key": "C Minor"
+ },
+ {
+  "id": "2568",
+  "artist": "So La Lune; Rim'K; Soprano, Rim’K",
+  "title": "Tout le temps",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/6f9967eb-a28b-4b77-a1e7-baf9145fe415/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/6f9967eb-a28b-4b77-a1e7-baf9145fe415/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/6f9967eb-a28b-4b77-a1e7-baf9145fe415/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/6f9967eb-a28b-4b77-a1e7-baf9145fe415/vocals.m4a"
+  },
+  "truth_bpm": 136,
+  "truth_key": "G# Major"
+ },
+ {
+  "id": "2347",
+  "artist": "Sponge Productions; La Kadrilla",
+  "title": "Freestyle Sponge S1-E4",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/7e9fdf97-6892-410d-a14e-1cf87b6c0ce7/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/7e9fdf97-6892-410d-a14e-1cf87b6c0ce7/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/7e9fdf97-6892-410d-a14e-1cf87b6c0ce7/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/7e9fdf97-6892-410d-a14e-1cf87b6c0ce7/vocals.m4a"
+  },
+  "truth_bpm": 76,
+  "truth_key": "D# Major"
+ },
+ {
+  "id": "2527",
+  "artist": "Pozer",
+  "title": "Money And Power",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/77ef2ad3-1689-4457-99db-269aa93815c6/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/77ef2ad3-1689-4457-99db-269aa93815c6/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/77ef2ad3-1689-4457-99db-269aa93815c6/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/77ef2ad3-1689-4457-99db-269aa93815c6/vocals.m4a"
+  },
+  "truth_bpm": 144,
+  "truth_key": "G# Minor"
+ },
+ {
+  "id": "3853",
+  "artist": "SportVVS",
+  "title": "TOUCHDOWN",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/80325569-43b3-43ac-8282-c5314363de37/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/80325569-43b3-43ac-8282-c5314363de37/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/80325569-43b3-43ac-8282-c5314363de37/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/80325569-43b3-43ac-8282-c5314363de37/vocals.m4a"
+  },
+  "truth_bpm": 118,
+  "truth_key": "C# Minor"
+ },
+ {
+  "id": "3615",
+  "artist": "Lawsy",
+  "title": "Mixing Strains",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/38d8d10e-7d3e-44b7-b58a-38459b74416f/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/38d8d10e-7d3e-44b7-b58a-38459b74416f/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/38d8d10e-7d3e-44b7-b58a-38459b74416f/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/38d8d10e-7d3e-44b7-b58a-38459b74416f/vocals.m4a"
+  },
+  "truth_bpm": 92,
+  "truth_key": "C# Major"
+ },
+ {
+  "id": "1689",
+  "artist": "Jenn Carter; TaTa",
+  "title": "SHOCK!",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/b55f4404-aa1f-489b-a41a-b3ffa162fc56/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/b55f4404-aa1f-489b-a41a-b3ffa162fc56/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/b55f4404-aa1f-489b-a41a-b3ffa162fc56/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/b55f4404-aa1f-489b-a41a-b3ffa162fc56/vocals.m4a"
+  },
+  "truth_bpm": 144,
+  "truth_key": "A# Major"
+ },
+ {
+  "id": "1723",
+  "artist": "Ikaz Boi; Cheu-B",
+  "title": "SKY PARTY",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/catalogtracks/88da2ee7-0b35-4086-84e9-0d5a76088d94/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/catalogtracks/88da2ee7-0b35-4086-84e9-0d5a76088d94/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/catalogtracks/88da2ee7-0b35-4086-84e9-0d5a76088d94/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/catalogtracks/88da2ee7-0b35-4086-84e9-0d5a76088d94/vocals.m4a"
+  },
+  "truth_bpm": 112,
+  "truth_key": "C# Major"
+ },
+ {
+  "id": "1226",
+  "artist": "Kalash Criminel;Damso",
+  "title": "But en or",
+  "stems": {
+   "bass": "https://dimesystemsstorage.b-cdn.net/Kalash%20Criminel%2C%20Damso%20-%20But%20en%20or/bass.m4a",
+   "drums": "https://dimesystemsstorage.b-cdn.net/Kalash%20Criminel%2C%20Damso%20-%20But%20en%20or/drums.m4a",
+   "other": "https://dimesystemsstorage.b-cdn.net/Kalash%20Criminel%2C%20Damso%20-%20But%20en%20or/other.m4a",
+   "vocals": "https://dimesystemsstorage.b-cdn.net/Kalash%20Criminel%2C%20Damso%20-%20But%20en%20or/vocals.m4a"
+  },
+  "truth_bpm": 98,
+  "truth_key": "D Major"
+ }
+]

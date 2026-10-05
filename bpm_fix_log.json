@@ -1,0 +1,300 @@
+{
+ "applied": "2026-08-06 14:55:51",
+ "method": "drums-stem autocorrelation, old_bpm-anchored octave family",
+ "changes": [
+  {
+   "id": "61",
+   "artist": "Nettspend, YoungBoy Never Broke Again",
+   "title": "masked up (feat. YoungBoy Never Broke Again)",
+   "old_bpm": 72,
+   "new_bpm": 144
+  },
+  {
+   "id": "143",
+   "artist": "Trippie Redd;Playboi Carti",
+   "title": "Miss The Rage",
+   "old_bpm": 77,
+   "new_bpm": 154
+  },
+  {
+   "id": "192",
+   "artist": "EsDeeKid;Rico Ace",
+   "title": "Cali Man",
+   "old_bpm": 195,
+   "new_bpm": 98
+  },
+  {
+   "id": "265",
+   "artist": "EsDeeKid;fakemink;Rico Ace",
+   "title": "LV Sandals",
+   "old_bpm": 190,
+   "new_bpm": 95
+  },
+  {
+   "id": "250",
+   "artist": "Playboi Carti",
+   "title": "OLYMPIAN",
+   "old_bpm": 77,
+   "new_bpm": 154
+  },
+  {
+   "id": "268",
+   "artist": "YT;Fimiguerrero",
+   "title": "Diamonds",
+   "old_bpm": 197,
+   "new_bpm": 98
+  },
+  {
+   "id": "399",
+   "artist": "Lil Yachty",
+   "title": "Poland",
+   "old_bpm": 75,
+   "new_bpm": 150
+  },
+  {
+   "id": "511",
+   "artist": "Rio Da Yung Og;AK Bandamont",
+   "title": "100 Bars",
+   "old_bpm": 193,
+   "new_bpm": 96
+  },
+  {
+   "id": "542",
+   "artist": "Playboi Carti",
+   "title": "Home (KOD)",
+   "old_bpm": 77,
+   "new_bpm": 154
+  },
+  {
+   "id": "682",
+   "artist": "Yeat;Young Thug",
+   "title": "Outsidë (feat. Young Thug)",
+   "old_bpm": 75,
+   "new_bpm": 150
+  },
+  {
+   "id": "802",
+   "artist": "Ken Carson",
+   "title": "Gems",
+   "old_bpm": 76,
+   "new_bpm": 152
+  },
+  {
+   "id": "994",
+   "artist": "Yeat",
+   "title": "No morë talk",
+   "old_bpm": 77,
+   "new_bpm": 154
+  },
+  {
+   "id": "944",
+   "artist": "Kanye West",
+   "title": "I Wonder",
+   "old_bpm": 191,
+   "new_bpm": 96
+  },
+  {
+   "id": "1145",
+   "artist": "Kodak Black",
+   "title": "Super Gremlin",
+   "old_bpm": 73,
+   "new_bpm": 146
+  },
+  {
+   "id": "1265",
+   "artist": "Travis Scott",
+   "title": "R.I.P. SCREW",
+   "old_bpm": 75,
+   "new_bpm": 150
+  },
+  {
+   "id": "3179",
+   "artist": "raFleur",
+   "title": "AMERLOQUE",
+   "old_bpm": 75,
+   "new_bpm": 150
+  },
+  {
+   "id": "3363",
+   "artist": "LUCKI",
+   "title": "Incoming",
+   "old_bpm": 77,
+   "new_bpm": 154
+  },
+  {
+   "id": "3399",
+   "artist": "LUCKI",
+   "title": "Waiting On",
+   "old_bpm": 75,
+   "new_bpm": 150
+  },
+  {
+   "id": "3429",
+   "artist": "LUCKI",
+   "title": "Politics",
+   "old_bpm": 77,
+   "new_bpm": 154
+  },
+  {
+   "id": "3487",
+   "artist": "xtsy*",
+   "title": "Miley",
+   "old_bpm": 76,
+   "new_bpm": 152
+  },
+  {
+   "id": "3496",
+   "artist": "Nettspend",
+   "title": "her friends",
+   "old_bpm": 190,
+   "new_bpm": 95
+  },
+  {
+   "id": "3499",
+   "artist": "OsamaSon",
+   "title": "Made Sum Plans",
+   "old_bpm": 76,
+   "new_bpm": 152
+  },
+  {
+   "id": "3646",
+   "artist": "Stash Guapo",
+   "title": "Off Top",
+   "old_bpm": 76,
+   "new_bpm": 152
+  },
+  {
+   "id": "3666",
+   "artist": "Kankan",
+   "title": "Cop It",
+   "old_bpm": 77,
+   "new_bpm": 154
+  },
+  {
+   "id": "3911",
+   "artist": "Destroy Lonely Archive",
+   "title": "lightspeed",
+   "old_bpm": 77,
+   "new_bpm": 154
+  },
+  {
+   "id": "3919",
+   "artist": "yvngxchris; tana",
+   "title": "Walk (feat. tana)",
+   "old_bpm": 72,
+   "new_bpm": 144
+  },
+  {
+   "id": "3861",
+   "artist": "GOONIE",
+   "title": "I Don't Even Sleep",
+   "old_bpm": 65,
+   "new_bpm": 130
+  },
+  {
+   "id": "3932",
+   "artist": "rexv2",
+   "title": "Hit Yo Top",
+   "old_bpm": 76,
+   "new_bpm": 152
+  },
+  {
+   "id": "3940",
+   "artist": "K!no",
+   "title": "SO COOL",
+   "old_bpm": 64,
+   "new_bpm": 128
+  },
+  {
+   "id": "3968",
+   "artist": "Highway",
+   "title": "Dream soda",
+   "old_bpm": 197,
+   "new_bpm": 98
+  },
+  {
+   "id": "3945",
+   "artist": "Trippie Redd; LAZER DIM 700; VonOff1700",
+   "title": "Murderman (feat. LAZER DIM 700 & VonOff1700)",
+   "old_bpm": 77,
+   "new_bpm": 154
+  },
+  {
+   "id": "3976",
+   "artist": "RRoxket",
+   "title": "Getting High",
+   "old_bpm": 76,
+   "new_bpm": 152
+  },
+  {
+   "id": "3982",
+   "artist": "rexv2",
+   "title": "Blasian",
+   "old_bpm": 75,
+   "new_bpm": 150
+  },
+  {
+   "id": "3996",
+   "artist": "oopsy",
+   "title": "Goomba",
+   "old_bpm": 187,
+   "new_bpm": 94
+  },
+  {
+   "id": "3980",
+   "artist": "Glokk40Spaz; OsamaSon",
+   "title": "Blame Dem Drugz",
+   "old_bpm": 71,
+   "new_bpm": 142
+  },
+  {
+   "id": "4055",
+   "artist": "rexv2",
+   "title": "CONTROLLA",
+   "old_bpm": 77,
+   "new_bpm": 154
+  },
+  {
+   "id": "4110",
+   "artist": "fakemink",
+   "title": "London Life",
+   "old_bpm": 190,
+   "new_bpm": 95
+  },
+  {
+   "id": "4162",
+   "artist": "Izaya Tiji",
+   "title": "Shootas Jumpin' Out Tha Whip",
+   "old_bpm": 77,
+   "new_bpm": 154
+  },
+  {
+   "id": "4198",
+   "artist": "Yeat",
+   "title": "Geeker Day",
+   "old_bpm": 73,
+   "new_bpm": 146
+  },
+  {
+   "id": "4210",
+   "artist": "KanKan",
+   "title": "Might be",
+   "old_bpm": 76,
+   "new_bpm": 152
+  },
+  {
+   "id": "4267",
+   "artist": "Xhulooo; Highway",
+   "title": "Mind Ur Business",
+   "old_bpm": 75,
+   "new_bpm": 150
+  },
+  {
+   "id": "4272",
+   "artist": "Tony Shhnow",
+   "title": "Plug Motivation",
+   "old_bpm": 72,
+   "new_bpm": 144
+  }
+ ]
+}

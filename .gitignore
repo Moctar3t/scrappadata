@@ -1,0 +1,37 @@
+# Index backups: written by catalog_lib before every index save.
+backups/
+*_backup_*/
+*.zip
+
+# Stems on their way to the CDN (gigabytes, deleted after each upload).
+stems_staging/
+
+# Secrets and private state: mode 600, never committed.
+.genius_token
+.spotify.json
+.spotify_token.json
+.env
+
+# The legacy expect scripts carry the GPU box's old password. The box takes SSH
+# keys now (ingest_gpu.py); they stay on disk for reference, out of git.
+*.exp
+
+# Runtime state, caches, logs and throwaways: rebuilt by the tools.
+*cache*.json
+*.log
+*.pid
+*.lock
+*_progress.txt
+*_progress.json
+spotify_intake.json
+spotify_inbox.csv
+vibe_*_targets.json
+vibe_*_out.jsonl
+bpmkey_results.jsonl
+scratch/
+__pycache__/
+*.pyc
+.DS_Store
+
+# A throwaway that tried variations of a mistyped storage key: key fragments.
+test_bunny_key.py

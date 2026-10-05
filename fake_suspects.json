@@ -1,0 +1,2225 @@
+[
+ {
+  "app_id": "4",
+  "artist": "Travis Scott",
+  "title": "MAFIA",
+  "claimed_s": 240,
+  "official_s": 240,
+  "officials": [
+   240
+  ],
+  "audio_s": 144,
+  "delta_s": 0,
+  "stems": "legacy",
+  "reasons": [
+   "audio ≈144s vs official 240s"
+  ]
+ },
+ {
+  "app_id": "6",
+  "artist": "Calvin Harris & Disciples",
+  "title": "How Deep Is Your Love",
+  "claimed_s": 212,
+  "official_s": 364,
+  "officials": [
+   364
+  ],
+  "audio_s": 179,
+  "delta_s": 152,
+  "stems": "legacy",
+  "reasons": [
+   "metadata 212s vs official 364s (Δ152s)",
+   "audio ≈179s vs official 364s"
+  ]
+ },
+ {
+  "app_id": "9",
+  "artist": "Mariya Takeuchi",
+  "title": "Plastic Love",
+  "claimed_s": 294,
+  "official_s": 294,
+  "officials": [
+   294,
+   295,
+   296,
+   356,
+   558
+  ],
+  "audio_s": 209,
+  "delta_s": 0,
+  "stems": "legacy",
+  "reasons": [
+   "audio ≈209s vs official 294s"
+  ]
+ },
+ {
+  "app_id": "24",
+  "artist": "TR Gobrazy",
+  "title": "Homeless",
+  "claimed_s": 99,
+  "official_s": 99,
+  "officials": [
+   99
+  ],
+  "audio_s": 137,
+  "delta_s": 0,
+  "stems": "legacy",
+  "reasons": [
+   "audio ≈137s vs official 99s"
+  ]
+ },
+ {
+  "app_id": "36",
+  "artist": "Bôa",
+  "title": "Duvet",
+  "claimed_s": 240,
+  "official_s": 258,
+  "officials": [
+   182,
+   203,
+   258,
+   314,
+   385
+  ],
+  "audio_s": 216,
+  "delta_s": 18,
+  "stems": "legacy",
+  "reasons": [
+   "metadata 240s vs official 258s (Δ18s)"
+  ]
+ },
+ {
+  "app_id": "38",
+  "artist": "Nicki Minaj",
+  "title": "Starships",
+  "claimed_s": 210,
+  "official_s": 210,
+  "officials": [
+   210
+  ],
+  "audio_s": 259,
+  "delta_s": 0,
+  "stems": "legacy",
+  "reasons": [
+   "audio ≈259s vs official 210s"
+  ]
+ },
+ {
+  "app_id": "46",
+  "artist": "Charles Bradley, The Budos Band",
+  "title": "Changes",
+  "claimed_s": 342,
+  "official_s": 358,
+  "officials": [
+   358,
+   360
+  ],
+  "audio_s": 353,
+  "delta_s": 16,
+  "stems": "legacy",
+  "reasons": [
+   "metadata 342s vs official 358s (Δ16s)"
+  ]
+ },
+ {
+  "app_id": "76",
+  "artist": "Yeat, BNYX®",
+  "title": "IM YEAT",
+  "claimed_s": 168,
+  "official_s": 169,
+  "officials": [
+   169
+  ],
+  "audio_s": 205,
+  "delta_s": 1,
+  "stems": "legacy",
+  "reasons": [
+   "audio ≈205s vs official 169s"
+  ]
+ },
+ {
+  "app_id": "88",
+  "artist": "Pz'",
+  "title": "Intercontinental",
+  "claimed_s": 128,
+  "official_s": 129,
+  "officials": [
+   129
+  ],
+  "audio_s": 216,
+  "delta_s": 1,
+  "stems": "legacy",
+  "reasons": [
+   "audio ≈216s vs official 129s"
+  ]
+ },
+ {
+  "app_id": "93",
+  "artist": "Mioko Yamaguchi",
+  "title": "いつかゆられて遠い国",
+  "claimed_s": 195,
+  "official_s": 245,
+  "officials": [
+   245
+  ],
+  "audio_s": 195,
+  "delta_s": 50,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 195s vs official 245s (Δ50s)",
+   "audio ≈195s vs official 245s"
+  ]
+ },
+ {
+  "app_id": "151",
+  "artist": "A Tribe Called Quest",
+  "title": "Electric Relaxation",
+  "claimed_s": 226,
+  "official_s": 243,
+  "officials": [
+   171,
+   243,
+   306
+  ],
+  "audio_s": 229,
+  "delta_s": 17,
+  "stems": "legacy",
+  "reasons": [
+   "metadata 226s vs official 243s (Δ17s)"
+  ]
+ },
+ {
+  "app_id": "175",
+  "artist": "Ye",
+  "title": "HALLELUJAH",
+  "claimed_s": 138,
+  "official_s": 326,
+  "officials": [
+   326
+  ],
+  "audio_s": 214,
+  "delta_s": 188,
+  "stems": "legacy",
+  "reasons": [
+   "metadata 138s vs official 326s (Δ188s)",
+   "audio ≈214s vs official 326s"
+  ]
+ },
+ {
+  "app_id": "189",
+  "artist": "The Isley Brothers",
+  "title": "Shout",
+  "claimed_s": 272,
+  "official_s": 264,
+  "officials": [
+   136,
+   138,
+   155,
+   264,
+   281,
+   283
+  ],
+  "audio_s": 273,
+  "delta_s": 8,
+  "stems": "legacy",
+  "reasons": [
+   "metadata 272s vs official 264s (Δ8s)"
+  ]
+ },
+ {
+  "app_id": "212",
+  "artist": "Ye;YoungBoy Never Broke Again",
+  "title": "ALIVE",
+  "claimed_s": 118,
+  "official_s": 310,
+  "officials": [
+   310,
+   1393
+  ],
+  "audio_s": 122,
+  "delta_s": 192,
+  "stems": "legacy",
+  "reasons": [
+   "metadata 118s vs official 310s (Δ192s)",
+   "audio ≈122s vs official 310s"
+  ]
+ },
+ {
+  "app_id": "215",
+  "artist": "Youssou N'Dour;Super Etoile de Dakar",
+  "title": "Ndakarou",
+  "claimed_s": 348,
+  "official_s": 348,
+  "officials": [
+   348,
+   372,
+   431,
+   481
+  ],
+  "audio_s": 574,
+  "delta_s": 0,
+  "stems": "legacy",
+  "reasons": [
+   "audio ≈574s vs official 481s"
+  ]
+ },
+ {
+  "app_id": "216",
+  "artist": "Fatou Gueweul;Le Sope Noreynii",
+  "title": "Jung Jung",
+  "claimed_s": 423,
+  "official_s": 423,
+  "officials": [
+   423
+  ],
+  "audio_s": 375,
+  "delta_s": 0,
+  "stems": "legacy",
+  "reasons": [
+   "audio ≈375s vs official 423s"
+  ]
+ },
+ {
+  "app_id": "280",
+  "artist": "LUCKI",
+  "title": "2021 Vibes",
+  "claimed_s": 124,
+  "official_s": 124,
+  "officials": [
+   124
+  ],
+  "audio_s": 142,
+  "delta_s": 0,
+  "stems": "legacy",
+  "reasons": [
+   "audio ≈142s vs official 124s"
+  ]
+ },
+ {
+  "app_id": "294",
+  "artist": "Fimiguerrero",
+  "title": "No Papz",
+  "claimed_s": 101,
+  "official_s": 101,
+  "officials": [
+   101
+  ],
+  "audio_s": 123,
+  "delta_s": 0,
+  "stems": "legacy",
+  "reasons": [
+   "audio ≈123s vs official 101s"
+  ]
+ },
+ {
+  "app_id": "295",
+  "artist": "Migos",
+  "title": "T-Shirt",
+  "claimed_s": 242,
+  "official_s": 242,
+  "officials": [
+   55,
+   57,
+   82,
+   83,
+   84,
+   242
+  ],
+  "audio_s": 305,
+  "delta_s": 0,
+  "stems": "legacy",
+  "reasons": [
+   "audio ≈305s vs official 242s"
+  ]
+ },
+ {
+  "app_id": "301",
+  "artist": "Fimiguerrero;YT",
+  "title": "MVP",
+  "claimed_s": 107,
+  "official_s": 107,
+  "officials": [
+   107
+  ],
+  "audio_s": 604,
+  "delta_s": 0,
+  "stems": "legacy",
+  "reasons": [
+   "audio ≈604s vs official 107s"
+  ]
+ },
+ {
+  "app_id": "322",
+  "artist": "echstacy",
+  "title": "dirtbag",
+  "claimed_s": 65,
+  "official_s": 66,
+  "officials": [
+   66
+  ],
+  "audio_s": 250,
+  "delta_s": 1,
+  "stems": "legacy",
+  "reasons": [
+   "audio ≈250s vs official 66s"
+  ]
+ },
+ {
+  "app_id": "352",
+  "artist": "Édith Piaf",
+  "title": "La vie en rose",
+  "claimed_s": 186,
+  "official_s": 194,
+  "officials": [
+   194,
+   367
+  ],
+  "audio_s": 190,
+  "delta_s": 8,
+  "stems": "legacy",
+  "reasons": [
+   "metadata 186s vs official 194s (Δ8s)"
+  ]
+ },
+ {
+  "app_id": "359",
+  "artist": "HXG;Lil Yachty",
+  "title": "SIDE EFFExT (feat. Lil Yachty)",
+  "claimed_s": 222,
+  "official_s": 223,
+  "officials": [
+   223
+  ],
+  "audio_s": 156,
+  "delta_s": 1,
+  "stems": "legacy",
+  "reasons": [
+   "audio ≈156s vs official 223s"
+  ]
+ },
+ {
+  "app_id": "362",
+  "artist": "Talk Talk",
+  "title": "It's My Life",
+  "claimed_s": 233,
+  "official_s": 232,
+  "officials": [
+   217,
+   232,
+   338,
+   379,
+   389,
+   435,
+   503
+  ],
+  "audio_s": 256,
+  "delta_s": 1,
+  "stems": "legacy",
+  "reasons": [
+   "audio ≈256s vs official 232s"
+  ]
+ },
+ {
+  "app_id": "371",
+  "artist": "2hollis",
+  "title": "trauma",
+  "claimed_s": 131,
+  "official_s": 131,
+  "officials": [
+   131
+  ],
+  "audio_s": 186,
+  "delta_s": 0,
+  "stems": "legacy",
+  "reasons": [
+   "audio ≈186s vs official 131s"
+  ]
+ },
+ {
+  "app_id": "448",
+  "artist": "Fried By Fluoride;UhOhSlater",
+  "title": "Dead By 30",
+  "claimed_s": 149,
+  "official_s": 149,
+  "officials": [
+   149
+  ],
+  "audio_s": 51,
+  "delta_s": 0,
+  "stems": "legacy",
+  "reasons": [
+   "audio ≈51s vs official 149s"
+  ]
+ },
+ {
+  "app_id": "462",
+  "artist": "MALTY 2BZ;KLM",
+  "title": "Scammers",
+  "claimed_s": 156,
+  "official_s": 156,
+  "officials": [
+   156
+  ],
+  "audio_s": 138,
+  "delta_s": 0,
+  "stems": "legacy",
+  "reasons": [
+   "audio ≈138s vs official 156s"
+  ]
+ },
+ {
+  "app_id": "513",
+  "artist": "echstacy",
+  "title": "Take the risk",
+  "claimed_s": 146,
+  "official_s": 147,
+  "officials": [
+   147
+  ],
+  "audio_s": 540,
+  "delta_s": 1,
+  "stems": "legacy",
+  "reasons": [
+   "audio ≈540s vs official 147s"
+  ]
+ },
+ {
+  "app_id": "523",
+  "artist": "Voleur2Voleur",
+  "title": "Indécis #2",
+  "claimed_s": 184,
+  "official_s": 184,
+  "officials": [
+   184
+  ],
+  "audio_s": 234,
+  "delta_s": 0,
+  "stems": "legacy",
+  "reasons": [
+   "audio ≈234s vs official 184s"
+  ]
+ },
+ {
+  "app_id": "544",
+  "artist": "Nettspend",
+  "title": "nothing like uuu",
+  "claimed_s": 112,
+  "official_s": 112,
+  "officials": [
+   112
+  ],
+  "audio_s": 138,
+  "delta_s": 0,
+  "stems": "legacy",
+  "reasons": [
+   "audio ≈138s vs official 112s"
+  ]
+ },
+ {
+  "app_id": "565",
+  "artist": "OsamaSon",
+  "title": "All Star",
+  "claimed_s": 121,
+  "official_s": 121,
+  "officials": [
+   121
+  ],
+  "audio_s": 162,
+  "delta_s": 0,
+  "stems": "legacy",
+  "reasons": [
+   "audio ≈162s vs official 121s"
+  ]
+ },
+ {
+  "app_id": "567",
+  "artist": "Cochise",
+  "title": "JACKPOT",
+  "claimed_s": 140,
+  "official_s": 140,
+  "officials": [
+   140
+  ],
+  "audio_s": 165,
+  "delta_s": 0,
+  "stems": "legacy",
+  "reasons": [
+   "audio ≈165s vs official 140s"
+  ]
+ },
+ {
+  "app_id": "582",
+  "artist": "Amaarae",
+  "title": "Angels in Tibet",
+  "claimed_s": 142,
+  "official_s": 142,
+  "officials": [
+   130,
+   141,
+   142,
+   166,
+   170,
+   193,
+   218,
+   362
+  ],
+  "audio_s": 87,
+  "delta_s": 0,
+  "stems": "legacy",
+  "reasons": [
+   "audio ≈87s vs official 130s"
+  ]
+ },
+ {
+  "app_id": "3067",
+  "artist": "Godard; Ziahfyah",
+  "title": "She Know What She Wanted - Jersey Club Remix Slowed",
+  "claimed_s": 133,
+  "official_s": 134,
+  "officials": [
+   108,
+   134
+  ],
+  "audio_s": 161,
+  "delta_s": 1,
+  "stems": "catalogtracks",
+  "reasons": [
+   "audio ≈161s vs official 134s"
+  ]
+ },
+ {
+  "app_id": "896",
+  "artist": "Kali Uchis;Tyler, The Creator;Bootsy Collins",
+  "title": "After The Storm (feat. Tyler, The Creator & Bootsy Collins)",
+  "claimed_s": 207,
+  "official_s": 207,
+  "officials": [
+   207,
+   225
+  ],
+  "audio_s": 183,
+  "delta_s": 0,
+  "stems": "legacy",
+  "reasons": [
+   "audio ≈183s vs official 207s"
+  ]
+ },
+ {
+  "app_id": "922",
+  "artist": "Kendrick Lamar",
+  "title": "United In Grief",
+  "claimed_s": 255,
+  "official_s": 255,
+  "officials": [
+   255
+  ],
+  "audio_s": 396,
+  "delta_s": 0,
+  "stems": "legacy",
+  "reasons": [
+   "audio ≈396s vs official 255s"
+  ]
+ },
+ {
+  "app_id": "978",
+  "artist": "Playboi Carti",
+  "title": "Location",
+  "claimed_s": 168,
+  "official_s": 169,
+  "officials": [
+   169
+  ],
+  "audio_s": 263,
+  "delta_s": 1,
+  "stems": "legacy",
+  "reasons": [
+   "audio ≈263s vs official 169s"
+  ]
+ },
+ {
+  "app_id": "1015",
+  "artist": "La Honda 19",
+  "title": "Réel 4",
+  "claimed_s": 197,
+  "official_s": 197,
+  "officials": [
+   197
+  ],
+  "audio_s": 153,
+  "delta_s": 0,
+  "stems": "legacy",
+  "reasons": [
+   "audio ≈153s vs official 197s"
+  ]
+ },
+ {
+  "app_id": "1018",
+  "artist": "Jul",
+  "title": "J'ai tout su",
+  "claimed_s": 189,
+  "official_s": 189,
+  "officials": [
+   189
+  ],
+  "audio_s": 325,
+  "delta_s": 0,
+  "stems": "legacy",
+  "reasons": [
+   "audio ≈325s vs official 189s"
+  ]
+ },
+ {
+  "app_id": "1125",
+  "artist": "Lil Yachty;Quavo",
+  "title": "TALK TO ME NICE",
+  "claimed_s": 173,
+  "official_s": 173,
+  "officials": [
+   173
+  ],
+  "audio_s": 215,
+  "delta_s": 0,
+  "stems": "legacy",
+  "reasons": [
+   "audio ≈215s vs official 173s"
+  ]
+ },
+ {
+  "app_id": "1217",
+  "artist": "Gambino La MG;Negrito",
+  "title": "ZOUKER #12",
+  "claimed_s": 193,
+  "official_s": 193,
+  "officials": [
+   193
+  ],
+  "audio_s": 161,
+  "delta_s": 0,
+  "stems": "legacy",
+  "reasons": [
+   "audio ≈161s vs official 193s"
+  ]
+ },
+ {
+  "app_id": "2997",
+  "artist": "Aminé; Gucci Mane",
+  "title": "REEL IT IN (feat. Gucci Mane) - Remix",
+  "claimed_s": 121,
+  "official_s": 167,
+  "officials": [
+   167
+  ],
+  "audio_s": 124,
+  "delta_s": 46,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 121s vs official 167s (Δ46s)",
+   "audio ≈124s vs official 167s"
+  ]
+ },
+ {
+  "app_id": "1333",
+  "artist": "Lil Tecca",
+  "title": "Ransom",
+  "claimed_s": 131,
+  "official_s": 131,
+  "officials": [
+   131,
+   171
+  ],
+  "audio_s": 152,
+  "delta_s": 0,
+  "stems": "legacy",
+  "reasons": [
+   "audio ≈152s vs official 171s"
+  ]
+ },
+ {
+  "app_id": "1352",
+  "artist": "Travis Scott",
+  "title": "HOUSTONFORNICATION",
+  "claimed_s": 217,
+  "official_s": 218,
+  "officials": [
+   218
+  ],
+  "audio_s": 169,
+  "delta_s": 1,
+  "stems": "legacy",
+  "reasons": [
+   "audio ≈169s vs official 218s"
+  ]
+ },
+ {
+  "app_id": "1357",
+  "artist": "Kodes;Guette l'ascension",
+  "title": "GTA #16",
+  "claimed_s": 121,
+  "official_s": 121,
+  "officials": [
+   121
+  ],
+  "audio_s": 152,
+  "delta_s": 0,
+  "stems": "legacy",
+  "reasons": [
+   "audio ≈152s vs official 121s"
+  ]
+ },
+ {
+  "app_id": "1373",
+  "artist": "IShowSpeed",
+  "title": "World Cup",
+  "claimed_s": 298,
+  "official_s": 256,
+  "officials": [
+   162,
+   256
+  ],
+  "audio_s": 303,
+  "delta_s": 42,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 298s vs official 256s (Δ42s)",
+   "audio ≈303s vs official 256s"
+  ]
+ },
+ {
+  "app_id": "1375",
+  "artist": "Michael Jackson",
+  "title": "Smooth Criminal",
+  "claimed_s": 566,
+  "official_s": 358,
+  "officials": [
+   120,
+   175,
+   209,
+   211,
+   251,
+   341,
+   358
+  ],
+  "audio_s": 578,
+  "delta_s": 208,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 566s vs official 358s (Δ208s)",
+   "audio ≈578s vs official 358s"
+  ]
+ },
+ {
+  "app_id": "1388",
+  "artist": "BILOUKI",
+  "title": "FULL",
+  "claimed_s": 171,
+  "official_s": 163,
+  "officials": [
+   163
+  ],
+  "audio_s": 173,
+  "delta_s": 8,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 171s vs official 163s (Δ8s)"
+  ]
+ },
+ {
+  "app_id": "1387",
+  "artist": "Justin Bieber, Nicki Minaj",
+  "title": "Beauty And A Beat ft. Nicki Minaj",
+  "claimed_s": 293,
+  "official_s": 239,
+  "officials": [
+   144,
+   207,
+   228,
+   233,
+   239,
+   368,
+   370,
+   442
+  ],
+  "audio_s": 294,
+  "delta_s": 54,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 293s vs official 239s (Δ54s)",
+   "audio ≈294s vs official 239s"
+  ]
+ },
+ {
+  "app_id": "1392",
+  "artist": "Jennifer Lopez, Pitbull, Pitbull",
+  "title": "On The Floor",
+  "claimed_s": 266,
+  "official_s": 284,
+  "officials": [
+   219,
+   221,
+   231,
+   284,
+   294,
+   367,
+   386
+  ],
+  "audio_s": 265,
+  "delta_s": 18,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 266s vs official 284s (Δ18s)"
+  ]
+ },
+ {
+  "app_id": "1397",
+  "artist": "Shakira, Freshlyground",
+  "title": "Waka Waka",
+  "claimed_s": 211,
+  "official_s": 203,
+  "officials": [
+   187,
+   203,
+   286,
+   447
+  ],
+  "audio_s": 214,
+  "delta_s": 8,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 211s vs official 203s (Δ8s)"
+  ]
+ },
+ {
+  "app_id": "1399",
+  "artist": "Aya Nakamura & @larvfleuze",
+  "title": "Sexy Nana",
+  "claimed_s": 167,
+  "official_s": 156,
+  "officials": [
+   156
+  ],
+  "audio_s": 170,
+  "delta_s": 11,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 167s vs official 156s (Δ11s)"
+  ]
+ },
+ {
+  "app_id": "1402",
+  "artist": "The Second Voice",
+  "title": "LET ME BE",
+  "claimed_s": 256,
+  "official_s": 197,
+  "officials": [
+   150,
+   158,
+   165,
+   187,
+   189,
+   197
+  ],
+  "audio_s": 260,
+  "delta_s": 59,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 256s vs official 197s (Δ59s)",
+   "audio ≈260s vs official 197s"
+  ]
+ },
+ {
+  "app_id": "1409",
+  "artist": "Lagui",
+  "title": "MARACANÃ",
+  "claimed_s": 167,
+  "official_s": 157,
+  "officials": [
+   149,
+   157
+  ],
+  "audio_s": 169,
+  "delta_s": 10,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 167s vs official 157s (Δ10s)"
+  ]
+ },
+ {
+  "app_id": "1422",
+  "artist": "Dominic Fike",
+  "title": "Babydoll",
+  "claimed_s": 154,
+  "official_s": 98,
+  "officials": [
+   98,
+   232
+  ],
+  "audio_s": 156,
+  "delta_s": 56,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 154s vs official 98s (Δ56s)",
+   "audio ≈156s vs official 98s"
+  ]
+ },
+ {
+  "app_id": "1423",
+  "artist": "Bello&Dallas",
+  "title": "Séminaire",
+  "claimed_s": 168,
+  "official_s": 153,
+  "officials": [
+   153
+  ],
+  "audio_s": 171,
+  "delta_s": 15,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 168s vs official 153s (Δ15s)",
+   "audio ≈171s vs official 153s"
+  ]
+ },
+ {
+  "app_id": "1430",
+  "artist": "Michael Jackson",
+  "title": "Thriller",
+  "claimed_s": 201,
+  "official_s": 190,
+  "officials": [
+   190,
+   251,
+   254,
+   275,
+   300,
+   312,
+   358
+  ],
+  "audio_s": 204,
+  "delta_s": 11,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 201s vs official 190s (Δ11s)"
+  ]
+ },
+ {
+  "app_id": "1431",
+  "artist": "Bouss",
+  "title": "Biff pas d’love",
+  "claimed_s": 167,
+  "official_s": 154,
+  "officials": [
+   154
+  ],
+  "audio_s": 168,
+  "delta_s": 13,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 167s vs official 154s (Δ13s)"
+  ]
+ },
+ {
+  "app_id": "1440",
+  "artist": "Soolking",
+  "title": "Seknet Marseille",
+  "claimed_s": 177,
+  "official_s": 153,
+  "officials": [
+   153
+  ],
+  "audio_s": 180,
+  "delta_s": 24,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 177s vs official 153s (Δ24s)",
+   "audio ≈180s vs official 153s"
+  ]
+ },
+ {
+  "app_id": "1443",
+  "artist": "Michael Jackson",
+  "title": "Don't Stop 'Til You Get Enough",
+  "claimed_s": 253,
+  "official_s": 235,
+  "officials": [
+   200,
+   235,
+   352,
+   550,
+   762
+  ],
+  "audio_s": 260,
+  "delta_s": 18,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 253s vs official 235s (Δ18s)",
+   "audio ≈260s vs official 235s"
+  ]
+ },
+ {
+  "app_id": "1455",
+  "artist": "Shakira, Burna Boy",
+  "title": "Dai Dai",
+  "claimed_s": 240,
+  "official_s": 232,
+  "officials": [
+   182,
+   223,
+   232
+  ],
+  "audio_s": 244,
+  "delta_s": 8,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 240s vs official 232s (Δ8s)"
+  ]
+ },
+ {
+  "app_id": "1456",
+  "artist": "Michael Jackson",
+  "title": "Beat It",
+  "claimed_s": 299,
+  "official_s": 258,
+  "officials": [
+   123,
+   189,
+   251,
+   258,
+   384,
+   397,
+   418,
+   436
+  ],
+  "audio_s": 306,
+  "delta_s": 41,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 299s vs official 258s (Δ41s)",
+   "audio ≈306s vs official 258s"
+  ]
+ },
+ {
+  "app_id": "1457",
+  "artist": "Tiakola",
+  "title": "Mélo Décalé",
+  "claimed_s": 255,
+  "official_s": 156,
+  "officials": [
+   156
+  ],
+  "audio_s": 258,
+  "delta_s": 99,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 255s vs official 156s (Δ99s)",
+   "audio ≈258s vs official 156s"
+  ]
+ },
+ {
+  "app_id": "1458",
+  "artist": "R2",
+  "title": "Ruinart",
+  "claimed_s": 184,
+  "official_s": 174,
+  "officials": [
+   174
+  ],
+  "audio_s": 181,
+  "delta_s": 10,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 184s vs official 174s (Δ10s)"
+  ]
+ },
+ {
+  "app_id": "1371",
+  "artist": "Fally Ipupa, Guy2Bezbar",
+  "title": "Pépélé",
+  "claimed_s": 159,
+  "official_s": 151,
+  "officials": [
+   151
+  ],
+  "audio_s": 162,
+  "delta_s": 8,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 159s vs official 151s (Δ8s)"
+  ]
+ },
+ {
+  "app_id": "1396",
+  "artist": "BABYMONSTER",
+  "title": "'SUGAR HONEY ICE TEA'",
+  "claimed_s": 187,
+  "official_s": 178,
+  "officials": [
+   178
+  ],
+  "audio_s": 191,
+  "delta_s": 9,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 187s vs official 178s (Δ9s)"
+  ]
+ },
+ {
+  "app_id": "1410",
+  "artist": "GIMS, Gazo",
+  "title": "Triple S",
+  "claimed_s": 180,
+  "official_s": 166,
+  "officials": [
+   166
+  ],
+  "audio_s": 183,
+  "delta_s": 14,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 180s vs official 166s (Δ14s)"
+  ]
+ },
+ {
+  "app_id": "1416",
+  "artist": "Olivia Rodrigo",
+  "title": "stupid song",
+  "claimed_s": 217,
+  "official_s": 209,
+  "officials": [
+   209
+  ],
+  "audio_s": 220,
+  "delta_s": 8,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 217s vs official 209s (Δ8s)"
+  ]
+ },
+ {
+  "app_id": "1417",
+  "artist": "Ariana Grande",
+  "title": "hate that i made you love me",
+  "claimed_s": 300,
+  "official_s": 219,
+  "officials": [
+   187,
+   189,
+   198,
+   219
+  ],
+  "audio_s": 305,
+  "delta_s": 81,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 300s vs official 219s (Δ81s)",
+   "audio ≈305s vs official 219s"
+  ]
+ },
+ {
+  "app_id": "1460",
+  "artist": "Chappell Roan",
+  "title": "The Subway",
+  "claimed_s": 271,
+  "official_s": 252,
+  "officials": [
+   252
+  ],
+  "audio_s": 275,
+  "delta_s": 19,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 271s vs official 252s (Δ19s)"
+  ]
+ },
+ {
+  "app_id": "1461",
+  "artist": "sombr",
+  "title": "undressed",
+  "claimed_s": 197,
+  "official_s": 182,
+  "officials": [
+   182
+  ],
+  "audio_s": 201,
+  "delta_s": 15,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 197s vs official 182s (Δ15s)",
+   "audio ≈201s vs official 182s"
+  ]
+ },
+ {
+  "app_id": "1463",
+  "artist": "Hudson Westbrook",
+  "title": "House Again",
+  "claimed_s": 214,
+  "official_s": 203,
+  "officials": [
+   202,
+   203
+  ],
+  "audio_s": 208,
+  "delta_s": 11,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 214s vs official 203s (Δ11s)"
+  ]
+ },
+ {
+  "app_id": "1465",
+  "artist": "Billie Eilish",
+  "title": "BIRDS OF A FEATHER",
+  "claimed_s": 231,
+  "official_s": 210,
+  "officials": [
+   210
+  ],
+  "audio_s": 218,
+  "delta_s": 21,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 231s vs official 210s (Δ21s)"
+  ]
+ },
+ {
+  "app_id": "1468",
+  "artist": "Olivia Dean",
+  "title": "Man I Need",
+  "claimed_s": 202,
+  "official_s": 184,
+  "officials": [
+   184
+  ],
+  "audio_s": 194,
+  "delta_s": 18,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 202s vs official 184s (Δ18s)"
+  ]
+ },
+ {
+  "app_id": "1470",
+  "artist": "Taylor Swift",
+  "title": "The Fate of Ophelia",
+  "claimed_s": 238,
+  "official_s": 226,
+  "officials": [
+   41,
+   156,
+   175,
+   225,
+   226
+  ],
+  "audio_s": 240,
+  "delta_s": 12,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 238s vs official 226s (Δ12s)"
+  ]
+ },
+ {
+  "app_id": "1471",
+  "artist": "Thomas Rhett",
+  "title": "After All The Bars Are Closed",
+  "claimed_s": 202,
+  "official_s": 191,
+  "officials": [
+   190,
+   191
+  ],
+  "audio_s": 199,
+  "delta_s": 11,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 202s vs official 191s (Δ11s)"
+  ]
+ },
+ {
+  "app_id": "1475",
+  "artist": "Radiohead",
+  "title": "Let Down + Choir NEW VERSION",
+  "claimed_s": 271,
+  "official_s": 300,
+  "officials": [
+   300
+  ],
+  "audio_s": 275,
+  "delta_s": 29,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 271s vs official 300s (Δ29s)"
+  ]
+ },
+ {
+  "app_id": "1476",
+  "artist": "Post Malone, Morgan Wallen",
+  "title": "I Had Some Help",
+  "claimed_s": 201,
+  "official_s": 178,
+  "officials": [
+   178
+  ],
+  "audio_s": 204,
+  "delta_s": 23,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 201s vs official 178s (Δ23s)",
+   "audio ≈204s vs official 178s"
+  ]
+ },
+ {
+  "app_id": "1478",
+  "artist": "Sabrina Carpenter",
+  "title": "Tears",
+  "claimed_s": 303,
+  "official_s": 160,
+  "officials": [
+   160
+  ],
+  "audio_s": 308,
+  "delta_s": 143,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 303s vs official 160s (Δ143s)",
+   "audio ≈308s vs official 160s"
+  ]
+ },
+ {
+  "app_id": "1484",
+  "artist": "Tommy Richman",
+  "title": "MILLION DOLLAR BABY",
+  "claimed_s": 167,
+  "official_s": 155,
+  "officials": [
+   155
+  ],
+  "audio_s": 170,
+  "delta_s": 12,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 167s vs official 155s (Δ12s)"
+  ]
+ },
+ {
+  "app_id": "1488",
+  "artist": "Olivia Dean",
+  "title": "Nice To Each Other",
+  "claimed_s": 224,
+  "official_s": 210,
+  "officials": [
+   209,
+   210
+  ],
+  "audio_s": 218,
+  "delta_s": 14,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 224s vs official 210s (Δ14s)"
+  ]
+ },
+ {
+  "app_id": "1490",
+  "artist": "Billie Eilish",
+  "title": "LUNCH",
+  "claimed_s": 203,
+  "official_s": 180,
+  "officials": [
+   180
+  ],
+  "audio_s": 188,
+  "delta_s": 23,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 203s vs official 180s (Δ23s)"
+  ]
+ },
+ {
+  "app_id": "1492",
+  "artist": "Tyla",
+  "title": "Water",
+  "claimed_s": 219,
+  "official_s": 200,
+  "officials": [
+   191,
+   200
+  ],
+  "audio_s": 223,
+  "delta_s": 19,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 219s vs official 200s (Δ19s)",
+   "audio ≈223s vs official 200s"
+  ]
+ },
+ {
+  "app_id": "1493",
+  "artist": "Taylor Swift, Post Malone",
+  "title": "Fortnight",
+  "claimed_s": 249,
+  "official_s": 228,
+  "officials": [
+   194,
+   216,
+   228
+  ],
+  "audio_s": 254,
+  "delta_s": 21,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 249s vs official 228s (Δ21s)",
+   "audio ≈254s vs official 228s"
+  ]
+ },
+ {
+  "app_id": "1506",
+  "artist": "Hamza",
+  "title": "YESTERDAY",
+  "claimed_s": 244,
+  "official_s": 219,
+  "officials": [
+   219
+  ],
+  "audio_s": 248,
+  "delta_s": 25,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 244s vs official 219s (Δ25s)",
+   "audio ≈248s vs official 219s"
+  ]
+ },
+ {
+  "app_id": "1508",
+  "artist": "NINHO",
+  "title": "+971",
+  "claimed_s": 211,
+  "official_s": 201,
+  "officials": [
+   201
+  ],
+  "audio_s": 214,
+  "delta_s": 10,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 211s vs official 201s (Δ10s)"
+  ]
+ },
+ {
+  "app_id": "1511",
+  "artist": "SCH",
+  "title": "La pluie",
+  "claimed_s": 240,
+  "official_s": 182,
+  "officials": [
+   182
+  ],
+  "audio_s": 243,
+  "delta_s": 58,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 240s vs official 182s (Δ58s)",
+   "audio ≈243s vs official 182s"
+  ]
+ },
+ {
+  "app_id": "1512",
+  "artist": "Leto",
+  "title": "SENTIMENTS BILLETS DE 100",
+  "claimed_s": 140,
+  "official_s": 128,
+  "officials": [
+   128
+  ],
+  "audio_s": 142,
+  "delta_s": 12,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 140s vs official 128s (Δ12s)"
+  ]
+ },
+ {
+  "app_id": "1514",
+  "artist": "SDM",
+  "title": "CARTIER SANTOS",
+  "claimed_s": 211,
+  "official_s": 184,
+  "officials": [
+   184
+  ],
+  "audio_s": 214,
+  "delta_s": 27,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 211s vs official 184s (Δ27s)",
+   "audio ≈214s vs official 184s"
+  ]
+ },
+ {
+  "app_id": "1523",
+  "artist": "Favé, Timar",
+  "title": "Tsunami ft. Timar",
+  "claimed_s": 189,
+  "official_s": 181,
+  "officials": [
+   181
+  ],
+  "audio_s": 187,
+  "delta_s": 8,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 189s vs official 181s (Δ8s)"
+  ]
+ },
+ {
+  "app_id": "1530",
+  "artist": "UZI",
+  "title": "50G feat",
+  "claimed_s": 247,
+  "official_s": 238,
+  "officials": [
+   154,
+   238
+  ],
+  "audio_s": 251,
+  "delta_s": 9,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 247s vs official 238s (Δ9s)"
+  ]
+ },
+ {
+  "app_id": "1535",
+  "artist": "Ninho, Niska",
+  "title": "Coco",
+  "claimed_s": 160,
+  "official_s": 148,
+  "officials": [
+   148
+  ],
+  "audio_s": 162,
+  "delta_s": 12,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 160s vs official 148s (Δ12s)"
+  ]
+ },
+ {
+  "app_id": "1540",
+  "artist": "Jungeli ft. Imen Es, Alonzo, Abou Debeing & Lossa, Abou Debeing, Alonzo, Imen Es, Lossa (FRA)",
+  "title": "Petit Génie",
+  "claimed_s": 251,
+  "official_s": 232,
+  "officials": [
+   217,
+   232
+  ],
+  "audio_s": 254,
+  "delta_s": 19,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 251s vs official 232s (Δ19s)"
+  ]
+ },
+ {
+  "app_id": "1542",
+  "artist": "La Fouine",
+  "title": "La Fouine & L2B – Flying Blue",
+  "claimed_s": 169,
+  "official_s": 160,
+  "officials": [
+   160
+  ],
+  "audio_s": 172,
+  "delta_s": 9,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 169s vs official 160s (Δ9s)"
+  ]
+ },
+ {
+  "app_id": "1543",
+  "artist": "GENEZIO",
+  "title": "OG",
+  "claimed_s": 191,
+  "official_s": 164,
+  "officials": [
+   164
+  ],
+  "audio_s": 194,
+  "delta_s": 27,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 191s vs official 164s (Δ27s)",
+   "audio ≈194s vs official 164s"
+  ]
+ },
+ {
+  "app_id": "1548",
+  "artist": "Keblack Ft. Franglish, Franglish",
+  "title": "Boucan",
+  "claimed_s": 191,
+  "official_s": 171,
+  "officials": [
+   168,
+   171
+  ],
+  "audio_s": 194,
+  "delta_s": 20,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 191s vs official 171s (Δ20s)",
+   "audio ≈194s vs official 171s"
+  ]
+ },
+ {
+  "app_id": "1549",
+  "artist": "Dadju & Tayc",
+  "title": "I love you",
+  "claimed_s": 200,
+  "official_s": 237,
+  "officials": [
+   237
+  ],
+  "audio_s": 203,
+  "delta_s": 37,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 200s vs official 237s (Δ37s)",
+   "audio ≈203s vs official 237s"
+  ]
+ },
+ {
+  "app_id": "1551",
+  "artist": "Tam Sir, Renard Barakissa, Ste Milano, Tazeboy, Team Paiya",
+  "title": "Coup du marteau ft. Team Paiya, Ste Milano, Renard Barakissa, Tazeboy, PSK",
+  "claimed_s": 186,
+  "official_s": 174,
+  "officials": [
+   174
+  ],
+  "audio_s": 189,
+  "delta_s": 12,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 186s vs official 174s (Δ12s)"
+  ]
+ },
+ {
+  "app_id": "1552",
+  "artist": "Ninho",
+  "title": "Vinicius",
+  "claimed_s": 228,
+  "official_s": 192,
+  "officials": [
+   192
+  ],
+  "audio_s": 230,
+  "delta_s": 36,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 228s vs official 192s (Δ36s)",
+   "audio ≈230s vs official 192s"
+  ]
+ },
+ {
+  "app_id": "1553",
+  "artist": "Keblack",
+  "title": "Aucune attache",
+  "claimed_s": 172,
+  "official_s": 161,
+  "officials": [
+   161
+  ],
+  "audio_s": 175,
+  "delta_s": 11,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 172s vs official 161s (Δ11s)"
+  ]
+ },
+ {
+  "app_id": "1556",
+  "artist": "Kore, Alonzo, ElGrandeToto, Alonzo, ElGrandeToto",
+  "title": "Brrr",
+  "claimed_s": 162,
+  "official_s": 130,
+  "officials": [
+   130
+  ],
+  "audio_s": 164,
+  "delta_s": 32,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 162s vs official 130s (Δ32s)",
+   "audio ≈164s vs official 130s"
+  ]
+ },
+ {
+  "app_id": "1560",
+  "artist": "PLK",
+  "title": "Mignon tout plein",
+  "claimed_s": 153,
+  "official_s": 144,
+  "officials": [
+   144
+  ],
+  "audio_s": 155,
+  "delta_s": 9,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 153s vs official 144s (Δ9s)"
+  ]
+ },
+ {
+  "app_id": "1563",
+  "artist": "Guy2Bezbar",
+  "title": "Monaco",
+  "claimed_s": 162,
+  "official_s": 141,
+  "officials": [
+   141
+  ],
+  "audio_s": 164,
+  "delta_s": 21,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 162s vs official 141s (Δ21s)",
+   "audio ≈164s vs official 141s"
+  ]
+ },
+ {
+  "app_id": "1564",
+  "artist": "VEN1",
+  "title": "HAKAYET",
+  "claimed_s": 177,
+  "official_s": 158,
+  "officials": [
+   158
+  ],
+  "audio_s": 178,
+  "delta_s": 19,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 177s vs official 158s (Δ19s)",
+   "audio ≈178s vs official 158s"
+  ]
+ },
+ {
+  "app_id": "1565",
+  "artist": "Gradur feat. SDM & Rsko, SDM, Rsko",
+  "title": "TI TI TI",
+  "claimed_s": 233,
+  "official_s": 200,
+  "officials": [
+   200
+  ],
+  "audio_s": 219,
+  "delta_s": 33,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 233s vs official 200s (Δ33s)"
+  ]
+ },
+ {
+  "app_id": "1567",
+  "artist": "Eminem",
+  "title": "Houdini",
+  "claimed_s": 297,
+  "official_s": 228,
+  "officials": [
+   228
+  ],
+  "audio_s": 301,
+  "delta_s": 69,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 297s vs official 228s (Δ69s)",
+   "audio ≈301s vs official 228s"
+  ]
+ },
+ {
+  "app_id": "1568",
+  "artist": "Booba",
+  "title": "6G",
+  "claimed_s": 219,
+  "official_s": 172,
+  "officials": [
+   172
+  ],
+  "audio_s": 222,
+  "delta_s": 47,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 219s vs official 172s (Δ47s)",
+   "audio ≈222s vs official 172s"
+  ]
+ },
+ {
+  "app_id": "1574",
+  "artist": "Shay, Niska",
+  "title": "Sans Coeur",
+  "claimed_s": 202,
+  "official_s": 176,
+  "officials": [
+   176
+  ],
+  "audio_s": 206,
+  "delta_s": 26,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 202s vs official 176s (Δ26s)",
+   "audio ≈206s vs official 176s"
+  ]
+ },
+ {
+  "app_id": "1579",
+  "artist": "Melfiano, Marlon DuBois",
+  "title": "Melfiano : Alizé",
+  "claimed_s": 208,
+  "official_s": 183,
+  "officials": [
+   183
+  ],
+  "audio_s": 211,
+  "delta_s": 25,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 208s vs official 183s (Δ25s)",
+   "audio ≈211s vs official 183s"
+  ]
+ },
+ {
+  "app_id": "1700",
+  "artist": "DS",
+  "title": "The Truth",
+  "claimed_s": 220,
+  "official_s": 232,
+  "officials": [
+   198,
+   232,
+   356
+  ],
+  "audio_s": 218,
+  "delta_s": 12,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 220s vs official 232s (Δ12s)"
+  ]
+ },
+ {
+  "app_id": "1913",
+  "artist": "JStar Balla",
+  "title": "Make It Thru",
+  "claimed_s": 124,
+  "official_s": 135,
+  "officials": [
+   135
+  ],
+  "audio_s": 127,
+  "delta_s": 11,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 124s vs official 135s (Δ11s)"
+  ]
+ },
+ {
+  "app_id": "1941",
+  "artist": "Slayeur Slace",
+  "title": "PARADIS BUILD (DONT STOP#4)",
+  "claimed_s": 137,
+  "official_s": 137,
+  "officials": [
+   137
+  ],
+  "audio_s": 160,
+  "delta_s": 0,
+  "stems": "catalogtracks",
+  "reasons": [
+   "audio ≈160s vs official 137s"
+  ]
+ },
+ {
+  "app_id": "1934",
+  "artist": "4zz; S9ine",
+  "title": "Heather 2",
+  "claimed_s": 136,
+  "official_s": 113,
+  "officials": [
+   113
+  ],
+  "audio_s": 138,
+  "delta_s": 23,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 136s vs official 113s (Δ23s)",
+   "audio ≈138s vs official 113s"
+  ]
+ },
+ {
+  "app_id": "2102",
+  "artist": "Trapstar World; J Hound; Jay5ive",
+  "title": "No Label",
+  "claimed_s": 148,
+  "official_s": 128,
+  "officials": [
+   128
+  ],
+  "audio_s": 147,
+  "delta_s": 20,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 148s vs official 128s (Δ20s)",
+   "audio ≈147s vs official 128s"
+  ]
+ },
+ {
+  "app_id": "2282",
+  "artist": "Sus",
+  "title": "Bags And Bodies",
+  "claimed_s": 158,
+  "official_s": 157,
+  "officials": [
+   157
+  ],
+  "audio_s": 183,
+  "delta_s": 1,
+  "stems": "catalogtracks",
+  "reasons": [
+   "audio ≈183s vs official 157s"
+  ]
+ },
+ {
+  "app_id": "2376",
+  "artist": "Sus",
+  "title": "Astyle",
+  "claimed_s": 100,
+  "official_s": 99,
+  "officials": [
+   99
+  ],
+  "audio_s": 115,
+  "delta_s": 1,
+  "stems": "catalogtracks",
+  "reasons": [
+   "audio ≈115s vs official 99s"
+  ]
+ },
+ {
+  "app_id": "2528",
+  "artist": "$outhMafia; HLD; marreley",
+  "title": "R8",
+  "claimed_s": 122,
+  "official_s": 122,
+  "officials": [
+   122
+  ],
+  "audio_s": 139,
+  "delta_s": 0,
+  "stems": "catalogtracks",
+  "reasons": [
+   "audio ≈139s vs official 122s"
+  ]
+ },
+ {
+  "app_id": "2697",
+  "artist": "Mola",
+  "title": "Toute l'année",
+  "claimed_s": 233,
+  "official_s": 232,
+  "officials": [
+   232
+  ],
+  "audio_s": 208,
+  "delta_s": 1,
+  "stems": "catalogtracks",
+  "reasons": [
+   "audio ≈208s vs official 232s"
+  ]
+ },
+ {
+  "app_id": "2768",
+  "artist": "EthoSuave",
+  "title": "Keep It P",
+  "claimed_s": 125,
+  "official_s": 108,
+  "officials": [
+   108
+  ],
+  "audio_s": 128,
+  "delta_s": 17,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 125s vs official 108s (Δ17s)",
+   "audio ≈128s vs official 108s"
+  ]
+ },
+ {
+  "app_id": "2930",
+  "artist": "Kyle Richh; Dee Billz",
+  "title": "4100",
+  "claimed_s": 135,
+  "official_s": 101,
+  "officials": [
+   76,
+   101
+  ],
+  "audio_s": 131,
+  "delta_s": 34,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 135s vs official 101s (Δ34s)",
+   "audio ≈131s vs official 101s"
+  ]
+ },
+ {
+  "app_id": "3126",
+  "artist": "Yoshitaka Minami; Taeko Onuki",
+  "title": "日付変更線",
+  "claimed_s": 232,
+  "official_s": 279,
+  "officials": [
+   279
+  ],
+  "audio_s": 237,
+  "delta_s": 47,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 232s vs official 279s (Δ47s)",
+   "audio ≈237s vs official 279s"
+  ]
+ },
+ {
+  "app_id": "3124",
+  "artist": "Ginji Ito",
+  "title": "こぬか雨",
+  "claimed_s": 355,
+  "official_s": 224,
+  "officials": [
+   224
+  ],
+  "audio_s": 362,
+  "delta_s": 131,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 355s vs official 224s (Δ131s)",
+   "audio ≈362s vs official 224s"
+  ]
+ },
+ {
+  "app_id": "3200",
+  "artist": "Yoshitaka Minami",
+  "title": "スローなブギにしてくれ (I want you)",
+  "claimed_s": 195,
+  "official_s": 285,
+  "officials": [
+   285
+  ],
+  "audio_s": 196,
+  "delta_s": 90,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 195s vs official 285s (Δ90s)",
+   "audio ≈196s vs official 285s"
+  ]
+ },
+ {
+  "app_id": "3140",
+  "artist": "Junko Yagami",
+  "title": "黄昏のBAY CITY",
+  "claimed_s": 250,
+  "official_s": 213,
+  "officials": [
+   213
+  ],
+  "audio_s": 256,
+  "delta_s": 37,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 250s vs official 213s (Δ37s)",
+   "audio ≈256s vs official 213s"
+  ]
+ },
+ {
+  "app_id": "3154",
+  "artist": "Shogun",
+  "title": "LONELY MAN",
+  "claimed_s": 272,
+  "official_s": 251,
+  "officials": [
+   250,
+   251
+  ],
+  "audio_s": 278,
+  "delta_s": 21,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 272s vs official 251s (Δ21s)",
+   "audio ≈278s vs official 251s"
+  ]
+ },
+ {
+  "app_id": "3166",
+  "artist": "Mariya Takeuchi",
+  "title": "September",
+  "claimed_s": 272,
+  "official_s": 280,
+  "officials": [
+   194,
+   280
+  ],
+  "audio_s": 277,
+  "delta_s": 8,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 272s vs official 280s (Δ8s)"
+  ]
+ },
+ {
+  "app_id": "3173",
+  "artist": "Shigeru Suzuki",
+  "title": "On the Coast",
+  "claimed_s": 214,
+  "official_s": 259,
+  "officials": [
+   259
+  ],
+  "audio_s": 225,
+  "delta_s": 45,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 214s vs official 259s (Δ45s)",
+   "audio ≈225s vs official 259s"
+  ]
+ },
+ {
+  "app_id": "3305",
+  "artist": "Lelo",
+  "title": "Chasing",
+  "claimed_s": 169,
+  "official_s": 227,
+  "officials": [
+   227
+  ],
+  "audio_s": 172,
+  "delta_s": 58,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 169s vs official 227s (Δ58s)",
+   "audio ≈172s vs official 227s"
+  ]
+ },
+ {
+  "app_id": "2914",
+  "artist": "TaTa; Jenn Carter; Dee Billz; Jerry West; Jay Gelato; FMB Savo; Kyle Richh",
+  "title": "41 CYPHER",
+  "claimed_s": 288,
+  "official_s": 243,
+  "officials": [
+   243
+  ],
+  "audio_s": 301,
+  "delta_s": 45,
+  "stems": "catalogtracks",
+  "reasons": [
+   "metadata 288s vs official 243s (Δ45s)",
+   "audio ≈301s vs official 243s"
+  ]
+ }
+]

@@ -1,0 +1,788 @@
+{
+  "dup_of_stemmed": [
+    {
+      "id": "224",
+      "title": "Devil In A New Dress",
+      "artist": "Kanye West;Rick Ross",
+      "dup_of": "20"
+    },
+    {
+      "id": "90",
+      "title": "PREACHER MAN",
+      "artist": "Ye;Kanye West",
+      "dup_of": "74"
+    },
+    {
+      "id": "706",
+      "title": "Viser la lune",
+      "artist": "Mig;Maes",
+      "dup_of": "37"
+    },
+    {
+      "id": "537",
+      "title": "iknowuknow",
+      "artist": "Ethereal;Playboi Carti",
+      "dup_of": "28"
+    },
+    {
+      "id": "1047",
+      "title": "Flashing Lights",
+      "artist": "Kanye West;Dwele",
+      "dup_of": "34"
+    },
+    {
+      "id": "210",
+      "title": "American Boy",
+      "artist": "Estelle;Kanye West",
+      "dup_of": "5"
+    },
+    {
+      "id": "564",
+      "title": "DOPÉ",
+      "artist": "BatBat;La Honda 19",
+      "dup_of": "30"
+    }
+  ],
+  "needs_resplit": [
+    {
+      "id": "623",
+      "title": "QuikkSkope (feat. DC The Don)",
+      "artist": "yvngxchris;DC THE DON"
+    },
+    {
+      "id": "320",
+      "title": "PARASAIL (feat. Yung Lean & Dave Chappelle)",
+      "artist": "Travis Scott;Yung Lean;Dave Chappelle"
+    },
+    {
+      "id": "398",
+      "title": "1017 ALYX",
+      "artist": "Mo Bangaz"
+    },
+    {
+      "id": "662",
+      "title": "snarky",
+      "artist": "quannnic"
+    },
+    {
+      "id": "530",
+      "title": "Grand Slam",
+      "artist": "ian"
+    },
+    {
+      "id": "863",
+      "title": "ball w/o you",
+      "artist": "21 Savage"
+    },
+    {
+      "id": "434",
+      "title": "KEEP IT COOL",
+      "artist": "Internet Money;Rich Amiri"
+    },
+    {
+      "id": "1360",
+      "title": "Look Alive (feat. Drake)",
+      "artist": "BlocBoy JB;Drake"
+    },
+    {
+      "id": "930",
+      "title": "Day 'N' Nite (Nightmare)",
+      "artist": "Kid Cudi"
+    },
+    {
+      "id": "286",
+      "title": "Bohemian Rhapsody - Live Aid",
+      "artist": "Queen"
+    },
+    {
+      "id": "814",
+      "title": "Need It",
+      "artist": "Migos;YoungBoy Never Broke Again"
+    },
+    {
+      "id": "615",
+      "title": "Sing About Me, I'm Dying Of Thirst",
+      "artist": "Kendrick Lamar"
+    },
+    {
+      "id": "300",
+      "title": "Prada or Celine",
+      "artist": "YT"
+    },
+    {
+      "id": "838",
+      "title": "Teen Bean",
+      "artist": "Ken Carson"
+    },
+    {
+      "id": "1157",
+      "title": "Vamp Anthem",
+      "artist": "Playboi Carti"
+    },
+    {
+      "id": "747",
+      "title": "HOODBYAIR (CARTI)",
+      "artist": "Launchr"
+    },
+    {
+      "id": "205",
+      "title": "MY WAY / CODEINE COWBOY",
+      "artist": "LUCKI"
+    },
+    {
+      "id": "643",
+      "title": "Gunninhimdown",
+      "artist": "yvngxchris"
+    },
+    {
+      "id": "881",
+      "title": "Systëm",
+      "artist": "Yeat"
+    },
+    {
+      "id": "751",
+      "title": "A10/E19",
+      "artist": "Niaks"
+    },
+    {
+      "id": "815",
+      "title": "PDBMH",
+      "artist": "Ken Carson"
+    },
+    {
+      "id": "546",
+      "title": "Freaking Out The Neighborhood",
+      "artist": "Mac DeMarco"
+    },
+    {
+      "id": "1300",
+      "title": "Boston George (feat. Black D & Leto)",
+      "artist": "Cheu-B;Black D;Leto"
+    },
+    {
+      "id": "454",
+      "title": "La Caravana",
+      "artist": "Bandi2;Yahir Saldivar"
+    },
+    {
+      "id": "638",
+      "title": "5unna",
+      "artist": "Homixide Gang;R5 Homixide"
+    },
+    {
+      "id": "679",
+      "title": "Forëally / 4Ly",
+      "artist": "Yeat"
+    },
+    {
+      "id": "823",
+      "title": "Never Changed",
+      "artist": "kidthvldd"
+    },
+    {
+      "id": "835",
+      "title": "In The Air",
+      "artist": "Destroy Lonely"
+    },
+    {
+      "id": "474",
+      "title": "U Should Know",
+      "artist": "Yeat"
+    },
+    {
+      "id": "321",
+      "title": "Pour ceux",
+      "artist": "Mafia K'1 Fry"
+    },
+    {
+      "id": "622",
+      "title": "Giig",
+      "artist": "yvngxchris"
+    },
+    {
+      "id": "730",
+      "title": "Sorry Bout That",
+      "artist": "Yeat"
+    },
+    {
+      "id": "675",
+      "title": "Vvv",
+      "artist": "333etman"
+    },
+    {
+      "id": "1080",
+      "title": "Forrest Gump",
+      "artist": "yvngxchris"
+    },
+    {
+      "id": "629",
+      "title": "7 Weeks & 3 Days",
+      "artist": "yungatita"
+    },
+    {
+      "id": "1311",
+      "title": "Two Cups (feat. Offset & Big Sean)",
+      "artist": "Rich The Kid;Offset;Big Sean"
+    },
+    {
+      "id": "1254",
+      "title": "Off White - Remix",
+      "artist": "Global Dan;Rich The Kid;MadeinTYO"
+    },
+    {
+      "id": "812",
+      "title": "Fighting My Demons",
+      "artist": "Ken Carson"
+    },
+    {
+      "id": "306",
+      "title": "5",
+      "artist": "L0uden"
+    },
+    {
+      "id": "490",
+      "title": "icantbelieveiletyougetaway",
+      "artist": "aldn"
+    },
+    {
+      "id": "869",
+      "title": "NOSTYLIST",
+      "artist": "Destroy Lonely"
+    },
+    {
+      "id": "652",
+      "title": "Slay3r",
+      "artist": "Playboi Carti"
+    },
+    {
+      "id": "717",
+      "title": "Wolves",
+      "artist": "Kanye West"
+    },
+    {
+      "id": "828",
+      "title": "IDGAF",
+      "artist": "Lil Shmadonka"
+    },
+    {
+      "id": "1014",
+      "title": "Passionfruit",
+      "artist": "Drake"
+    },
+    {
+      "id": "310",
+      "title": "DIFFERENT DAY",
+      "artist": "Playboi Carti"
+    },
+    {
+      "id": "1258",
+      "title": "Fazer",
+      "artist": "ISK;YL"
+    },
+    {
+      "id": "760",
+      "title": "FYP",
+      "artist": "Nemzzz"
+    },
+    {
+      "id": "849",
+      "title": "Nightcrawler (feat. Swae Lee & Chief Keef)",
+      "artist": "Travis Scott;Swae Lee;Chief Keef"
+    },
+    {
+      "id": "1167",
+      "title": "L'apprentie sorcière !",
+      "artist": "menace Santana"
+    },
+    {
+      "id": "633",
+      "title": "Time To Live",
+      "artist": "UnoTheActivist"
+    },
+    {
+      "id": "1188",
+      "title": "Raspoutine",
+      "artist": "Ziak"
+    },
+    {
+      "id": "473",
+      "title": "SHIRT",
+      "artist": "THOTTWAT"
+    },
+    {
+      "id": "648",
+      "title": "Crawl",
+      "artist": "Superheaven"
+    },
+    {
+      "id": "432",
+      "title": "EL AFERRAFTER",
+      "artist": "Los Parna;Yahir Saldivar;Mc Window;El Ca$h"
+    },
+    {
+      "id": "824",
+      "title": "Dead or Alive",
+      "artist": "Lil Tecca"
+    },
+    {
+      "id": "464",
+      "title": "overseas",
+      "artist": "Ken Carson"
+    },
+    {
+      "id": "825",
+      "title": "HVN ON EARTH (with Kodak Black)",
+      "artist": "Lil Tecca;Kodak Black"
+    },
+    {
+      "id": "833",
+      "title": "Phénomène",
+      "artist": "La Plaie"
+    },
+    {
+      "id": "1263",
+      "title": "4 Phones",
+      "artist": "Rich The Kid"
+    },
+    {
+      "id": "1166",
+      "title": "Dans le noir !",
+      "artist": "menace Santana"
+    },
+    {
+      "id": "624",
+      "title": "Do Not Disturb (feat. Lil Yachty & Offset)",
+      "artist": "Smokepurpp;Murda Beatz;Lil Yachty;Offset"
+    },
+    {
+      "id": "389",
+      "title": "Blackbirds",
+      "artist": "Lancey Foux;Fimiguerrero;Len"
+    },
+    {
+      "id": "311",
+      "title": "24 SONGS",
+      "artist": "Ego;khxznq;goatedx"
+    },
+    {
+      "id": "829",
+      "title": "Racks",
+      "artist": "La Kadrilla"
+    },
+    {
+      "id": "645",
+      "title": "Nobody",
+      "artist": "Ken Carson"
+    },
+    {
+      "id": "868",
+      "title": "Aye (feat. Travis Scott)",
+      "artist": "Lil Uzi Vert;Travis Scott"
+    },
+    {
+      "id": "307",
+      "title": "2024",
+      "artist": "Playboi Carti"
+    },
+    {
+      "id": "956",
+      "title": "Broke Boi",
+      "artist": "Playboi Carti"
+    },
+    {
+      "id": "1306",
+      "title": "Myron",
+      "artist": "Lil Uzi Vert"
+    },
+    {
+      "id": "1243",
+      "title": "FRANCHISE (feat. Young Thug & M.I.A.)",
+      "artist": "Travis Scott;Young Thug;M.I.A."
+    },
+    {
+      "id": "1310",
+      "title": "Fuckboi",
+      "artist": "Zola"
+    },
+    {
+      "id": "628",
+      "title": "Fantasy",
+      "artist": "Happy Diving"
+    },
+    {
+      "id": "1016",
+      "title": "Juste en crime",
+      "artist": "La Honda 19"
+    },
+    {
+      "id": "650",
+      "title": "In On It",
+      "artist": "Superheaven"
+    },
+    {
+      "id": "979",
+      "title": "Too Many Nights (feat. Don Toliver & with Future)",
+      "artist": "Metro Boomin;Future;Don Toliver"
+    },
+    {
+      "id": "580",
+      "title": "24 Songs - Made It This Far",
+      "artist": "fataliitty"
+    },
+    {
+      "id": "304",
+      "title": "Je suis inadaptée",
+      "artist": "Brigitte Fontaine"
+    },
+    {
+      "id": "851",
+      "title": "Freestyle RIT",
+      "artist": "Voleur2Voleur"
+    },
+    {
+      "id": "1313",
+      "title": "Plug Walk",
+      "artist": "Rich The Kid"
+    },
+    {
+      "id": "386",
+      "title": "Kennington Where It Started",
+      "artist": "Bis;Blanco;ACTIVE;MizOrMac"
+    },
+    {
+      "id": "739",
+      "title": "Upper Echelon (feat. T.I. & 2 Chainz)",
+      "artist": "Travis Scott;T.I.;2 Chainz"
+    },
+    {
+      "id": "871",
+      "title": "Take Me Home",
+      "artist": "PinkPantheress"
+    },
+    {
+      "id": "522",
+      "title": "R50",
+      "artist": "HXG"
+    },
+    {
+      "id": "349",
+      "title": "Don’t Blink Or Stare (feat. Bloodhound Lil Jeff & CEO Trayle)",
+      "artist": "BloodHound Q50;Bloodhound Lil Jeff;CEO Trayle"
+    },
+    {
+      "id": "1364",
+      "title": "Walk It Talk It",
+      "artist": "Migos;Drake"
+    },
+    {
+      "id": "826",
+      "title": "bitch im joe biden",
+      "artist": "yvngxchris"
+    },
+    {
+      "id": "563",
+      "title": "Voyou",
+      "artist": "BatBat;La Honda 19"
+    },
+    {
+      "id": "867",
+      "title": "Divine Failure",
+      "artist": "Lemuel Tay"
+    },
+    {
+      "id": "888",
+      "title": "Fetty Wap",
+      "artist": "Maes"
+    },
+    {
+      "id": "1260",
+      "title": "Bande organisée",
+      "artist": "Kofs;Soso Maness;Elams;Jul;SCH;Naps;Solda;Houari;13 Organisé"
+    },
+    {
+      "id": "723",
+      "title": "My Kind Of Woman",
+      "artist": "Mac DeMarco"
+    },
+    {
+      "id": "220",
+      "title": "Geeking",
+      "artist": "margiela;bruhwhosjack"
+    },
+    {
+      "id": "109",
+      "title": "I Don't Know - Radio Mix",
+      "artist": "Erika"
+    },
+    {
+      "id": "671",
+      "title": "What i need/Balenciaga shoes",
+      "artist": "prodnnolan"
+    },
+    {
+      "id": "734",
+      "title": "Hardcore",
+      "artist": "Ken Carson"
+    },
+    {
+      "id": "630",
+      "title": "My Way",
+      "artist": "Comethazine"
+    },
+    {
+      "id": "827",
+      "title": "Meat Grinder",
+      "artist": "Madvillain;Madlib;MF DOOM"
+    },
+    {
+      "id": "431",
+      "title": "A LA ORDEN",
+      "artist": "Santa Fe Klan;Yahir Saldivar"
+    },
+    {
+      "id": "446",
+      "title": "The Hammer",
+      "artist": "Kublai Khan TX"
+    },
+    {
+      "id": "329",
+      "title": "Bohemian Rhapsody - Remastered 2011",
+      "artist": "Queen"
+    },
+    {
+      "id": "811",
+      "title": "Jennifer’s Body",
+      "artist": "Ken Carson"
+    },
+    {
+      "id": "539",
+      "title": "Lil Krazy / Lurking",
+      "artist": "BlackXer;deanw24"
+    },
+    {
+      "id": "597",
+      "title": "Spaceship (feat. Sheck Wes)",
+      "artist": "Don Toliver;Sheck Wes"
+    },
+    {
+      "id": "313",
+      "title": "Life Is A Highway",
+      "artist": "Tom Cochrane"
+    },
+    {
+      "id": "743",
+      "title": "Everlong",
+      "artist": "Foo Fighters"
+    },
+    {
+      "id": "1159",
+      "title": "Lucid Dreams",
+      "artist": "Juice WRLD"
+    },
+    {
+      "id": "318",
+      "title": "EVIL J0RDAN",
+      "artist": "Playboi Carti"
+    },
+    {
+      "id": "1289",
+      "title": "R44",
+      "artist": "Koba LaD"
+    },
+    {
+      "id": "1358",
+      "title": "CAN'T SAY",
+      "artist": "Travis Scott"
+    },
+    {
+      "id": "637",
+      "title": "B5",
+      "artist": "HXG"
+    },
+    {
+      "id": "1026",
+      "title": "Wok / Oh My God, Boy He Got A Glock",
+      "artist": "YounLAHeat Codey"
+    },
+    {
+      "id": "288",
+      "title": "Where Is The Love - Cellarful Of Motown Version",
+      "artist": "Rita Wright"
+    },
+    {
+      "id": "621",
+      "title": "Skummy B!Tcht",
+      "artist": "@K$h0P!"
+    },
+    {
+      "id": "1067",
+      "title": "Two Pieces",
+      "artist": "Floaty"
+    },
+    {
+      "id": "363",
+      "title": "Solo",
+      "artist": "Saamou"
+    },
+    {
+      "id": "1293",
+      "title": "Pop Out Again (feat. Lil Baby & Gunna)",
+      "artist": "Polo G;Lil Baby;Gunna"
+    },
+    {
+      "id": "528",
+      "title": "Freestyle",
+      "artist": "OsamaSon"
+    },
+    {
+      "id": "178",
+      "title": "SUZUKI",
+      "artist": "Amine Farsi;LE RISQUE"
+    },
+    {
+      "id": "355",
+      "title": "4X4",
+      "artist": "Travis Scott"
+    },
+    {
+      "id": "1051",
+      "title": "Freestyle 3",
+      "artist": "Ken Carson"
+    },
+    {
+      "id": "640",
+      "title": "New Drank",
+      "artist": "LUCKI"
+    },
+    {
+      "id": "1143",
+      "title": "GANG GANG",
+      "artist": "JACKBOYS;Sheck Wes"
+    },
+    {
+      "id": "617",
+      "title": "She Know What She Wanted - Jersey Club Remix Slowed",
+      "artist": "Godard;Ziahfyah"
+    },
+    {
+      "id": "1211",
+      "title": "After Party",
+      "artist": "Don Toliver"
+    },
+    {
+      "id": "396",
+      "title": "verratti 24",
+      "artist": "TKKF;Jima"
+    },
+    {
+      "id": "504",
+      "title": "Undercover",
+      "artist": "beamnolazers"
+    },
+    {
+      "id": "1179",
+      "title": "Double Bang 5",
+      "artist": "Leto"
+    },
+    {
+      "id": "292",
+      "title": "Let It Go",
+      "artist": "Playboi Carti"
+    },
+    {
+      "id": "695",
+      "title": "Freestyle Frères Diaz",
+      "artist": "Voleur2Voleur"
+    },
+    {
+      "id": "381",
+      "title": "Chromer",
+      "artist": "BatBat;Saamou Skuu"
+    },
+    {
+      "id": "728",
+      "title": "Space Song",
+      "artist": "Beach House"
+    },
+    {
+      "id": "378",
+      "title": "T'es un marrant (feat. Sofiane)",
+      "artist": "Hornet La Frappe;Sofiane"
+    },
+    {
+      "id": "246",
+      "title": "Do You Want",
+      "artist": "gamesense;xanax;prodbyGarlic"
+    },
+    {
+      "id": "641",
+      "title": "Wok",
+      "artist": "Kyate"
+    },
+    {
+      "id": "568",
+      "title": "HI-VOLTAGE",
+      "artist": "HXG"
+    },
+    {
+      "id": "529",
+      "title": "Wimbledon",
+      "artist": "ian"
+    },
+    {
+      "id": "179",
+      "title": "Thank You",
+      "artist": "Dido"
+    },
+    {
+      "id": "948",
+      "title": "SAD!",
+      "artist": "XXXTENTACION"
+    },
+    {
+      "id": "1031",
+      "title": "Maytag (Tax Free)",
+      "artist": "Ben Reilly"
+    },
+    {
+      "id": "1174",
+      "title": "No Idea",
+      "artist": "Don Toliver"
+    },
+    {
+      "id": "724",
+      "title": "Oversized",
+      "artist": "Basement"
+    },
+    {
+      "id": "1135",
+      "title": "Doja",
+      "artist": "$NOT;A$AP Rocky"
+    },
+    {
+      "id": "1230",
+      "title": "FRANCHISE (feat. Future, Young Thug & M.I.A.) - REMIX",
+      "artist": "Travis Scott;Future;Young Thug;M.I.A."
+    },
+    {
+      "id": "421",
+      "title": "K2B Vendredi 13",
+      "artist": "dolc3vitaa"
+    },
+    {
+      "id": "821",
+      "title": "Bad bënd / DëMON",
+      "artist": "Yeat"
+    },
+    {
+      "id": "749",
+      "title": "Track After Track (snippet)",
+      "artist": "ch4rlyy"
+    },
+    {
+      "id": "319",
+      "title": "HBA",
+      "artist": "Playboi Carti"
+    }
+  ]
+}

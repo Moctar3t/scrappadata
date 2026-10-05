@@ -1,0 +1,199 @@
+{
+  "alt_versions": [
+    {
+      "id": "424",
+      "artist": "Wizz Havinn;DJ Ess",
+      "title": "New Wave - DJ Ess Remix",
+      "markers": [
+        "remix"
+      ],
+      "where": "title",
+      "source": "Wizz Havinn, DJ Ess - New Wave - DJ Ess Remix"
+    },
+    {
+      "id": "617",
+      "artist": "Godard;Ziahfyah",
+      "title": "She Know What She Wanted - Jersey Club Remix Slowed",
+      "markers": [
+        "remix",
+        "slowed"
+      ],
+      "where": "title",
+      "source": ""
+    },
+    {
+      "id": "658",
+      "artist": "Ken Carson",
+      "title": "Nightcore 2",
+      "markers": [
+        "nightcore"
+      ],
+      "where": "title",
+      "source": "Ken Carson - Nightcore 2"
+    },
+    {
+      "id": "666",
+      "artist": "A$AP Rocky;Imogen Heap;Clams Casino",
+      "title": "I Smoked Away My Brain (I'm God x Demons Mashup) (feat. Imogen Heap & Clams Casino)",
+      "markers": [
+        "mashup"
+      ],
+      "where": "title",
+      "source": "A$AP Rocky, Imogen Heap, Clams Casino - I Smoked Away My Brain (I'm God x Demons Mashup) (feat. Imogen Heap & Clams Casino)"
+    },
+    {
+      "id": "795",
+      "artist": "Contingency",
+      "title": "molly - sped up",
+      "markers": [
+        "sped up"
+      ],
+      "where": "title",
+      "source": "Contingency - molly - sped up"
+    },
+    {
+      "id": "933",
+      "artist": "Corey St.Rose;Flipp Dinero",
+      "title": "MMM - Remix",
+      "markers": [
+        "remix"
+      ],
+      "where": "title",
+      "source": "Corey St.Rose, Flipp Dinero - MMM - Remix"
+    },
+    {
+      "id": "995",
+      "artist": "Lil Uzi Vert;sped up nightcore;ARIZONATEARS",
+      "title": "Watch This - ARIZONATEARS Pluggnb Remix",
+      "markers": [
+        "nightcore",
+        "remix",
+        "sped up"
+      ],
+      "where": "title",
+      "source": "Lil Uzi Vert, sped up nightcore, ARIZONATEARS - Watch This - ARIZONATEARS Pluggnb Remix"
+    },
+    {
+      "id": "1134",
+      "artist": "Russ Millions;YV;SwitchOTR;Buni;CH (GMD);Gazo;RoseReal",
+      "title": "Reggae & Calypso (Russ Millions x Buni x YV x CH (GMD) x SwitchOTR x Gazo x RoseReal) - Remix",
+      "markers": [
+        "remix"
+      ],
+      "where": "title",
+      "source": "Russ Millions, YV, SwitchOTR, Buni, CH (GMD), Gazo, RoseReal - Reggae & Calypso (Russ Millions x Buni x YV x CH (GMD) x SwitchOTR x Gazo x RoseReal) - Remix"
+    },
+    {
+      "id": "1230",
+      "artist": "Travis Scott;Future;Young Thug;M.I.A.",
+      "title": "FRANCHISE (feat. Future, Young Thug & M.I.A.) - REMIX",
+      "markers": [
+        "remix"
+      ],
+      "where": "title",
+      "source": ""
+    },
+    {
+      "id": "1254",
+      "artist": "Global Dan;Rich The Kid;MadeinTYO",
+      "title": "Off White - Remix",
+      "markers": [
+        "remix"
+      ],
+      "where": "title",
+      "source": ""
+    },
+    {
+      "id": "1291",
+      "artist": "Comethazine;Rich The Kid",
+      "title": "Bands (Remix) (feat. Rich The Kid)",
+      "markers": [
+        "remix"
+      ],
+      "where": "title",
+      "source": "Comethazine, Rich The Kid - Bands (Remix) (feat. Rich The Kid)"
+    },
+    {
+      "id": "1346",
+      "artist": "Tay-K;21 Savage;Young Nudy",
+      "title": "The Race - Remix",
+      "markers": [
+        "remix"
+      ],
+      "where": "title",
+      "source": "Tay-K, 21 Savage, Young Nudy - The Race - Remix"
+    },
+    {
+      "id": "1634",
+      "artist": "ONEFOUR; Nemzzz; Segway",
+      "title": "Spinnin (feat. Nemzzz) - Segway Remix",
+      "markers": [
+        "remix"
+      ],
+      "where": "title",
+      "source": ""
+    }
+  ],
+  "duration_suspects": [
+    {
+      "id": "27",
+      "artist": "Queen",
+      "title": "Bohemian Rhapsody",
+      "cat_dur": 147,
+      "canon_dur": 354,
+      "delta": 207,
+      "dz": "Queen - Bohemian Rhapsody (Remastered 2011)",
+      "source": "Bohemian Rhapsody (Remastered 2011)"
+    },
+    {
+      "id": "44",
+      "artist": "Basement Jaxx",
+      "title": "Where's Your Head At",
+      "cat_dur": 285,
+      "canon_dur": 180,
+      "delta": 105,
+      "dz": "Basement Jaxx - Where's Your Head At (Steve Angello Remix)",
+      "source": "Basement Jaxx - Where's Your Head At"
+    },
+    {
+      "id": "1299",
+      "artist": "Travis Scott",
+      "title": "goosebumps",
+      "cat_dur": 243,
+      "canon_dur": 162,
+      "delta": 81,
+      "dz": "Travis Scott - Goosebumps (Remix)",
+      "source": "Travis Scott - goosebumps"
+    },
+    {
+      "id": "1567",
+      "artist": "Eminem",
+      "title": "Houdini",
+      "cat_dur": 297,
+      "canon_dur": 228,
+      "delta": 69,
+      "dz": "Eminem - Houdini",
+      "source": ""
+    },
+    {
+      "id": "56",
+      "artist": "Lex Amarni",
+      "title": "the kill",
+      "cat_dur": 80,
+      "canon_dur": 121,
+      "delta": 41,
+      "dz": "Lex Amarni - the kill 2",
+      "source": "Lex Amarni - the kill"
+    },
+    {
+      "id": "1322",
+      "artist": "Leto",
+      "title": "Double Bang 1",
+      "cat_dur": 132,
+      "canon_dur": 171,
+      "delta": 39,
+      "dz": "Leto - Double Bang 10",
+      "source": "Leto - Double Bang 1"
+    }
+  ]
+}

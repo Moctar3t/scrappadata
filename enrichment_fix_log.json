@@ -1,0 +1,1032 @@
+{
+ "applied": "2026-08-05 21:31:26",
+ "changes": {
+  "junk_cleared": [
+   {
+    "id": "260",
+    "field": "producers",
+    "old": "ok"
+   },
+   {
+    "id": "444",
+    "field": "producers",
+    "old": "ok"
+   },
+   {
+    "id": "499",
+    "field": "producers",
+    "old": "ok"
+   },
+   {
+    "id": "544",
+    "field": "producers",
+    "old": "ok"
+   },
+   {
+    "id": "3443",
+    "field": "producers",
+    "old": "ok"
+   },
+   {
+    "id": "3469",
+    "field": "producers",
+    "old": "ok"
+   },
+   {
+    "id": "3473",
+    "field": "producers",
+    "old": "ok"
+   },
+   {
+    "id": "3491",
+    "field": "producers",
+    "old": "ok"
+   },
+   {
+    "id": "3495",
+    "field": "producers",
+    "old": "ok"
+   },
+   {
+    "id": "3499",
+    "field": "producers",
+    "old": "ok"
+   },
+   {
+    "id": "3570",
+    "field": "producers",
+    "old": "ok"
+   },
+   {
+    "id": "3594",
+    "field": "producers",
+    "old": "ok"
+   },
+   {
+    "id": "3623",
+    "field": "producers",
+    "old": "ok"
+   },
+   {
+    "id": "3754",
+    "field": "producers",
+    "old": "ok"
+   },
+   {
+    "id": "3973",
+    "field": "producers",
+    "old": "ok"
+   },
+   {
+    "id": "3990",
+    "field": "producers",
+    "old": "ok"
+   },
+   {
+    "id": "4005",
+    "field": "producers",
+    "old": "ok"
+   },
+   {
+    "id": "4062",
+    "field": "producers",
+    "old": "ok"
+   },
+   {
+    "id": "4098",
+    "field": "producers",
+    "old": "ok"
+   },
+   {
+    "id": "4131",
+    "field": "producers",
+    "old": "ok"
+   },
+   {
+    "id": "111",
+    "field": "recordLabel",
+    "old": "-"
+   },
+   {
+    "id": "3742",
+    "field": "recordLabel",
+    "old": "-"
+   },
+   {
+    "id": "4104",
+    "field": "recordLabel",
+    "old": "-"
+   }
+  ],
+  "year": [
+   {
+    "id": "3431",
+    "title": "Back homë",
+    "artist": "Yeat",
+    "old": "2026",
+    "new": 2023,
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "2237",
+    "title": "Mauvais",
+    "artist": "Geeeko",
+    "old": "2024",
+    "new": 2020,
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "3359",
+    "title": "Over",
+    "artist": "LUCKI",
+    "old": "2019",
+    "new": 2017,
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "2884",
+    "title": "BELEK",
+    "artist": "1PLIKÉ140",
+    "old": "2026",
+    "new": 2021,
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "3171",
+    "title": "Sweet Love",
+    "artist": "Junko Ohashi",
+    "old": "2020",
+    "new": 1995,
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "1686",
+    "title": "Hyène",
+    "artist": "Geeeko",
+    "old": "2026",
+    "new": 2023,
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "3573",
+    "title": "Roses",
+    "artist": "Skyte",
+    "old": "2025",
+    "new": 2023,
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "1671",
+    "title": "Diamant",
+    "artist": "Geeeko",
+    "old": "2026",
+    "new": 2023,
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "27",
+    "title": "Bohemian Rhapsody",
+    "artist": "Queen",
+    "old": "2018",
+    "new": 1979,
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "3196",
+    "title": "YOUNG BLOODS",
+    "artist": "Motoharu Sano",
+    "old": "2014",
+    "new": 1990,
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "3111",
+    "title": "Thank You",
+    "artist": "Dido",
+    "old": "2025",
+    "new": 1999,
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "4287",
+    "title": "TAN",
+    "artist": "BKTHERULA",
+    "old": "2026",
+    "new": 2023,
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "2238",
+    "title": "Mommy",
+    "artist": "Geeeko; Chuki Beats",
+    "old": "2025",
+    "new": 2020,
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "2544",
+    "title": "Interlude",
+    "artist": "Roshi",
+    "old": "2026",
+    "new": 2020,
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "4194",
+    "title": "Taker",
+    "artist": "1030 Tuwop",
+    "old": "2022",
+    "new": 2019,
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "4002",
+    "title": "Tony Tony",
+    "artist": "Che",
+    "old": "2025",
+    "new": 2023,
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "3173",
+    "title": "On the Coast",
+    "artist": "Shigeru Suzuki",
+    "old": "2018",
+    "new": 1979,
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   }
+  ],
+  "label": [
+   {
+    "id": "898",
+    "title": "Luv monëy (with Lancey Foux)",
+    "artist": "Yeat;Lancey Foux",
+    "old": "TwizzyRich",
+    "new": "Field Trip Recordings/Geffen Records",
+    "sources": [
+     "deezer",
+     "itunes"
+    ]
+   }
+  ],
+  "album_renamed": [
+   {
+    "id": "3164",
+    "title": "Shinin’ You, Shinin’ Day",
+    "artist": "Char",
+    "old": "Album: Rare Soul & Disco 17",
+    "new": "Album: Char",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "3431",
+    "title": "Back homë",
+    "artist": "Yeat",
+    "old": "Album: ADL",
+    "new": "Album: AftërLyfe",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "2252",
+    "title": "NO HOOK",
+    "artist": "1PLIKÉ140",
+    "old": "Album: ARRÊTEZ-LE !",
+    "new": "Album: 1PLIKTOI (Vol. 2)",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "2692",
+    "title": "OCEAN",
+    "artist": "Future",
+    "old": "Album: The OF Tape Vol. 2",
+    "new": "Album: MIXTAPE PLUTO",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "3359",
+    "title": "Over",
+    "artist": "LUCKI",
+    "old": "Ep: Extra Lucky 2",
+    "new": "Ep: Watch My Back",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "2884",
+    "title": "BELEK",
+    "artist": "1PLIKÉ140",
+    "old": "Album: RAP FR HARDCORE",
+    "new": "Album: ARRÊTEZ-LE !",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "3",
+    "title": "Good Life",
+    "artist": "Inner City",
+    "old": "Album: Paradise",
+    "new": "Album: Good Life (Remastered)",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "1876",
+    "title": "OK",
+    "artist": "Geeeko",
+    "old": "Album: Temps d'aime",
+    "new": "Album: Level",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "3573",
+    "title": "Roses",
+    "artist": "Skyte",
+    "old": "Album: #wings",
+    "new": "Album: #SKYTESZN2",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "1671",
+    "title": "Diamant",
+    "artist": "Geeeko",
+    "old": "Album: DIAMANTE",
+    "new": "Album: Peine 333",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "2802",
+    "title": "DND",
+    "artist": "Nemzzz",
+    "old": "Ep: From Me 2 U",
+    "new": "Ep: DO NOT DISTURB (DELUXE)",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "4287",
+    "title": "TAN",
+    "artist": "BKTHERULA",
+    "old": "Album: Strictly 4 The Scythe",
+    "new": "Album: LVL5 P1",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "3663",
+    "title": "hugo",
+    "artist": "Che",
+    "old": "Album: Musical Instruments 1. Strings",
+    "new": "Album: 3",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "2238",
+    "title": "Mommy",
+    "artist": "Geeeko; Chuki Beats",
+    "old": "Album: ON A QU'UNE MORT",
+    "new": "Album: Réel",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "2272",
+    "title": "Feel The Rage",
+    "artist": "Kenzo Balla",
+    "old": "Album: The Year Of The Balla",
+    "new": "Album: Mr. Ready To Blitz",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "4194",
+    "title": "Taker",
+    "artist": "1030 Tuwop",
+    "old": "Ep: Minerals",
+    "new": "Ep: Wopday",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "2315",
+    "title": "Juliet",
+    "artist": "Kyle Richh; Jenn Carter",
+    "old": "Album: 41 Ways",
+    "new": "Album: Juliet (feat. Jenn Carter)",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "1744",
+    "title": "Teille",
+    "artist": "Geeeko; Chuki Beats",
+    "old": "Album: Raizes Sertanejas",
+    "new": "Album: Réel",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "3173",
+    "title": "On the Coast",
+    "artist": "Shigeru Suzuki",
+    "old": "Album: DIGGIN' VICTOR (The Compilation) Deep Into The Vaults Of Japanese Fusion & AOR selected by MURO",
+    "new": "Album: WHITE HEAT",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   }
+  ],
+  "single_reclassified": [
+   {
+    "id": "2836",
+    "title": "Babi",
+    "artist": "13 Block",
+    "old": "Single",
+    "new": "Album: BLO II",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "3534",
+    "title": "CODEINE CRAZY",
+    "artist": "Rich Amiri",
+    "old": "Single",
+    "new": "Album: ONE CALL",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "1810",
+    "title": "Heads or Tails - Freestyle",
+    "artist": "163Margs",
+    "old": "Single",
+    "new": "Ep: Health Is Wealth",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "3845",
+    "title": "Tell U Sum",
+    "artist": "Che",
+    "old": "Single",
+    "new": "Album: Para'dies",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "3548",
+    "title": "fetish",
+    "artist": "ezcodylee",
+    "old": "Single",
+    "new": "Album: E A R S",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "4158",
+    "title": "Talking To The Sun",
+    "artist": "Dave Blunts",
+    "old": "Single",
+    "new": "Album: Well Dude Here's My Thing",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "3849",
+    "title": "The Whole World Is Free",
+    "artist": "OsamaSon",
+    "old": "Single",
+    "new": "Album: Jump Out",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "1749",
+    "title": "Voix",
+    "artist": "BatBat",
+    "old": "Single",
+    "new": "Album: Crime dans le sang",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "1800",
+    "title": "INDECIS",
+    "artist": "Skuna; Keeqaid",
+    "old": "Single",
+    "new": "Album: FIN D’UNE ÈRE",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "3798",
+    "title": "Greenwich",
+    "artist": "xtsy*",
+    "old": "Single",
+    "new": "Album: Teen Angst",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "3770",
+    "title": "Good Morning",
+    "artist": "Pradabagshawty",
+    "old": "Single",
+    "new": "Album: Home Invasions",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "3599",
+    "title": "OMO",
+    "artist": "Dom Corleo",
+    "old": "Single",
+    "new": "Album: On My Own (Deluxe)",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "2580",
+    "title": "Gulfstream",
+    "artist": "Werenoi; Gunna",
+    "old": "Single",
+    "new": "Album: Diamant Noir",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "2237",
+    "title": "Mauvais",
+    "artist": "Geeeko",
+    "old": "Single",
+    "new": "Album: Irréel",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "3506",
+    "title": "Denim",
+    "artist": "Percaso",
+    "old": "Single",
+    "new": "Album: FAST CAR MUSIC",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "2213",
+    "title": "Today",
+    "artist": "Sheff G",
+    "old": "Single",
+    "new": "Album: Proud Of Myself",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "3578",
+    "title": "No Marni",
+    "artist": "Fourfive",
+    "old": "Single",
+    "new": "Album: Mack 2",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "3348",
+    "title": "PAIDNFULL",
+    "artist": "LUCKI",
+    "old": "Single",
+    "new": "Album: 2 Faced",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "3747",
+    "title": "Karly Wit A K",
+    "artist": "Jace!",
+    "old": "Single",
+    "new": "Album: Greenway",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "1912",
+    "title": "Vise et tire",
+    "artist": "La F",
+    "old": "Single",
+    "new": "Album: King Of Drill",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "1674",
+    "title": "Petit",
+    "artist": "Geeeko",
+    "old": "Single",
+    "new": "Album: Peine 333",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "885",
+    "title": "SOLO STEPPIN CRETE BOY",
+    "artist": "Lil Yachty",
+    "old": "Single",
+    "new": "Album: Slide",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "2963",
+    "title": "Pigalle",
+    "artist": "Roshi",
+    "old": "Single",
+    "new": "Album: Attaque II",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "3384",
+    "title": "COINCIDENCE",
+    "artist": "LUCKI",
+    "old": "Single",
+    "new": "Album: FLAWLESS LIKE ME",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "1686",
+    "title": "Hyène",
+    "artist": "Geeeko",
+    "old": "Single",
+    "new": "Album: Peine 333",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "2940",
+    "title": "S.P.S",
+    "artist": "Ziak",
+    "old": "Single",
+    "new": "Album: Akimbo",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "2234",
+    "title": "GROSLOT (feat. 13 Block & Koba LaD)",
+    "artist": "twinsmatic; 13 Block; Koba LaD",
+    "old": "Single",
+    "new": "Album: ATLAS",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "1799",
+    "title": "PUNCH",
+    "artist": "Skuna; Chakal",
+    "old": "Single",
+    "new": "Album: FIN D’UNE ÈRE",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "2174",
+    "title": "92i MAYBACH",
+    "artist": "Green Montana",
+    "old": "Single",
+    "new": "Album: ROUGE NÉON",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "4285",
+    "title": "Klosure",
+    "artist": "D. Savage",
+    "old": "Single",
+    "new": "Album: Mafia Musik",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "1625",
+    "title": "WWE 2K26",
+    "artist": "Jolagreen23",
+    "old": "Single",
+    "new": "Album: 23 JPT EXTENDO +",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "4098",
+    "title": "101",
+    "artist": "DJ PHAT; fakemink",
+    "old": "Single",
+    "new": "Album: Galaxy Pavillion Club",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "1976",
+    "title": "Chassé-croisé",
+    "artist": "Ziak",
+    "old": "Single",
+    "new": "Album: Essonne History X",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "2694",
+    "title": "En pétard",
+    "artist": "Werenoi; PLK",
+    "old": "Single",
+    "new": "Album: Pyramide 2",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "2839",
+    "title": "Tonight",
+    "artist": "Sdot Go; SweepersENT",
+    "old": "Single",
+    "new": "Album: Free Sdot: Till It's Backwards",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "1406",
+    "title": "Marsellus Wallace",
+    "artist": "Heuss L'enfoiré",
+    "old": "Single",
+    "new": "Album: AVANT LA SAISIE",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "4095",
+    "title": "FREE AGENTS",
+    "artist": "HXG",
+    "old": "Single",
+    "new": "Album: Homixide Lifestyle 2",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "3356",
+    "title": "Red Key",
+    "artist": "LUCKI",
+    "old": "Single",
+    "new": "Album: The World is Lucki's",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "2806",
+    "title": "L's",
+    "artist": "Nemzzz",
+    "old": "Single",
+    "new": "Album: DO NOT DISTURB (DELUXE)",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "3590",
+    "title": "Salty",
+    "artist": "Rich Amiri",
+    "old": "Single",
+    "new": "Album: Evolution",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "4002",
+    "title": "Tony Tony",
+    "artist": "Che",
+    "old": "Single",
+    "new": "Album: Before Crueger",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "1737",
+    "title": "GINGER MC KENNA",
+    "artist": "Green Montana",
+    "old": "Single",
+    "new": "Album: ROUGE NÉON",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "3967",
+    "title": "FashionTrappin",
+    "artist": "Brennan Jones",
+    "old": "Single",
+    "new": "Album: Brennan Jones 1",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "4007",
+    "title": "ADULT SWIM",
+    "artist": "BKTHERULA",
+    "old": "Single",
+    "new": "Album: LUCY",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   },
+   {
+    "id": "1984",
+    "title": "Block 67",
+    "artist": "Cheu-B",
+    "old": "Single",
+    "new": "Ep: BIGSKY ENERGY",
+    "sources": [
+     "deezer",
+     "musicbrainz"
+    ]
+   }
+  ]
+ }
+}

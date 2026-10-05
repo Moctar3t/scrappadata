@@ -1,0 +1,1043 @@
+{
+  "generated": "2026-06-27T16:03:50",
+  "note": "App catalog songs with NO stems and NO stemmed duplicate. Re-queue through the stem-split pipeline (ingest_playlist.py / demucs). Metadata still enriched. The 7 stemless duplicate twins were already removed; the 5 same-title dup pairs in duplicate_groups.json both have stems.",
+  "count": 148,
+  "songs": [
+    {
+      "id": "109",
+      "title": "I Don't Know - Radio Mix",
+      "artist": "Erika",
+      "year": "2003",
+      "search": "Erika I Don't Know - Radio Mix"
+    },
+    {
+      "id": "178",
+      "title": "SUZUKI",
+      "artist": "Amine Farsi;LE RISQUE",
+      "year": "2022",
+      "search": "Amine Farsi SUZUKI"
+    },
+    {
+      "id": "179",
+      "title": "Thank You",
+      "artist": "Dido",
+      "year": "1999",
+      "search": "Dido Thank You"
+    },
+    {
+      "id": "205",
+      "title": "MY WAY / CODEINE COWBOY",
+      "artist": "LUCKI",
+      "year": "2022",
+      "search": "LUCKI MY WAY / CODEINE COWBOY"
+    },
+    {
+      "id": "220",
+      "title": "Geeking",
+      "artist": "margiela;bruhwhosjack",
+      "year": "2025",
+      "search": "margiela Geeking"
+    },
+    {
+      "id": "246",
+      "title": "Do You Want",
+      "artist": "gamesense;xanax;prodbyGarlic",
+      "year": "2023",
+      "search": "gamesense Do You Want"
+    },
+    {
+      "id": "286",
+      "title": "Bohemian Rhapsody - Live Aid",
+      "artist": "Queen",
+      "year": "2018",
+      "search": "Queen Bohemian Rhapsody - Live Aid"
+    },
+    {
+      "id": "288",
+      "title": "Where Is The Love - Cellarful Of Motown Version",
+      "artist": "Rita Wright",
+      "year": "2015",
+      "search": "Rita Wright Where Is The Love - Cellarful Of Motown Version"
+    },
+    {
+      "id": "292",
+      "title": "Let It Go",
+      "artist": "Playboi Carti",
+      "year": "2017",
+      "search": "Playboi Carti Let It Go"
+    },
+    {
+      "id": "300",
+      "title": "Prada or Celine",
+      "artist": "YT",
+      "year": "2024",
+      "search": "YT Prada or Celine"
+    },
+    {
+      "id": "304",
+      "title": "Je suis inadaptée",
+      "artist": "Brigitte Fontaine",
+      "year": "1973",
+      "search": "Brigitte Fontaine Je suis inadaptée"
+    },
+    {
+      "id": "306",
+      "title": "5",
+      "artist": "L0uden",
+      "year": "2025",
+      "search": "L0uden 5"
+    },
+    {
+      "id": "307",
+      "title": "2024",
+      "artist": "Playboi Carti",
+      "year": "2025",
+      "search": "Playboi Carti 2024"
+    },
+    {
+      "id": "310",
+      "title": "DIFFERENT DAY",
+      "artist": "Playboi Carti",
+      "year": "2025",
+      "search": "Playboi Carti DIFFERENT DAY"
+    },
+    {
+      "id": "311",
+      "title": "24 SONGS",
+      "artist": "Ego;khxznq;goatedx",
+      "year": "2024",
+      "search": "Ego 24 SONGS"
+    },
+    {
+      "id": "313",
+      "title": "Life Is A Highway",
+      "artist": "Tom Cochrane",
+      "year": "1992",
+      "search": "Tom Cochrane Life Is A Highway"
+    },
+    {
+      "id": "318",
+      "title": "EVIL J0RDAN",
+      "artist": "Playboi Carti",
+      "year": "2025",
+      "search": "Playboi Carti EVIL J0RDAN"
+    },
+    {
+      "id": "319",
+      "title": "HBA",
+      "artist": "Playboi Carti",
+      "year": "2025",
+      "search": "Playboi Carti HBA"
+    },
+    {
+      "id": "320",
+      "title": "PARASAIL (feat. Yung Lean & Dave Chappelle)",
+      "artist": "Travis Scott;Yung Lean;Dave Chappelle",
+      "year": "2023",
+      "search": "Travis Scott PARASAIL (feat. Yung Lean & Dave Chappelle)"
+    },
+    {
+      "id": "321",
+      "title": "Pour ceux",
+      "artist": "Mafia K'1 Fry",
+      "year": "2003",
+      "search": "Mafia K'1 Fry Pour ceux"
+    },
+    {
+      "id": "329",
+      "title": "Bohemian Rhapsody - Remastered 2011",
+      "artist": "Queen",
+      "year": "2018",
+      "search": "Queen Bohemian Rhapsody - Remastered 2011"
+    },
+    {
+      "id": "349",
+      "title": "Don’t Blink Or Stare (feat. Bloodhound Lil Jeff & CEO Trayle)",
+      "artist": "BloodHound Q50;Bloodhound Lil Jeff;CEO Trayle",
+      "year": "2024",
+      "search": "BloodHound Q50 Don’t Blink Or Stare (feat. Bloodhound Lil Jeff & CEO Trayle)"
+    },
+    {
+      "id": "355",
+      "title": "4X4",
+      "artist": "Travis Scott",
+      "year": "2025",
+      "search": "Travis Scott 4X4"
+    },
+    {
+      "id": "363",
+      "title": "Solo",
+      "artist": "Saamou",
+      "year": "2023",
+      "search": "Saamou Solo"
+    },
+    {
+      "id": "378",
+      "title": "T'es un marrant (feat. Sofiane)",
+      "artist": "Hornet La Frappe;Sofiane",
+      "year": "2017",
+      "search": "Hornet La Frappe T'es un marrant (feat. Sofiane)"
+    },
+    {
+      "id": "381",
+      "title": "Chromer",
+      "artist": "BatBat;Saamou Skuu",
+      "year": "2024",
+      "search": "BatBat Chromer"
+    },
+    {
+      "id": "386",
+      "title": "Kennington Where It Started",
+      "artist": "Bis;Blanco;ACTIVE;MizOrMac",
+      "year": "2018",
+      "search": "Bis Kennington Where It Started"
+    },
+    {
+      "id": "389",
+      "title": "Blackbirds",
+      "artist": "Lancey Foux;Fimiguerrero;Len",
+      "year": "2024",
+      "search": "Lancey Foux Blackbirds"
+    },
+    {
+      "id": "396",
+      "title": "verratti 24",
+      "artist": "TKKF;Jima",
+      "year": "2024",
+      "search": "TKKF verratti 24"
+    },
+    {
+      "id": "398",
+      "title": "1017 ALYX",
+      "artist": "Mo Bangaz",
+      "year": "2022",
+      "search": "Mo Bangaz 1017 ALYX"
+    },
+    {
+      "id": "421",
+      "title": "K2B Vendredi 13",
+      "artist": "dolc3vitaa",
+      "year": "2024",
+      "search": "dolc3vitaa K2B Vendredi 13"
+    },
+    {
+      "id": "431",
+      "title": "A LA ORDEN",
+      "artist": "Santa Fe Klan;Yahir Saldivar",
+      "year": "2024",
+      "search": "Santa Fe Klan A LA ORDEN"
+    },
+    {
+      "id": "432",
+      "title": "EL AFERRAFTER",
+      "artist": "Los Parna;Yahir Saldivar;Mc Window;El Ca$h",
+      "year": "2024",
+      "search": "Los Parna EL AFERRAFTER"
+    },
+    {
+      "id": "434",
+      "title": "KEEP IT COOL",
+      "artist": "Internet Money;Rich Amiri",
+      "year": "2024",
+      "search": "Internet Money KEEP IT COOL"
+    },
+    {
+      "id": "446",
+      "title": "The Hammer",
+      "artist": "Kublai Khan TX",
+      "year": "2017",
+      "search": "Kublai Khan TX The Hammer"
+    },
+    {
+      "id": "454",
+      "title": "La Caravana",
+      "artist": "Bandi2;Yahir Saldivar",
+      "year": "2024",
+      "search": "Bandi2 La Caravana"
+    },
+    {
+      "id": "464",
+      "title": "overseas",
+      "artist": "Ken Carson",
+      "year": "2024",
+      "search": "Ken Carson overseas"
+    },
+    {
+      "id": "473",
+      "title": "SHIRT",
+      "artist": "THOTTWAT",
+      "year": "2022",
+      "search": "THOTTWAT SHIRT"
+    },
+    {
+      "id": "474",
+      "title": "U Should Know",
+      "artist": "Yeat",
+      "year": "2024",
+      "search": "Yeat U Should Know"
+    },
+    {
+      "id": "490",
+      "title": "icantbelieveiletyougetaway",
+      "artist": "aldn",
+      "year": "2024",
+      "search": "aldn icantbelieveiletyougetaway"
+    },
+    {
+      "id": "504",
+      "title": "Undercover",
+      "artist": "beamnolazers",
+      "year": "2021",
+      "search": "beamnolazers Undercover"
+    },
+    {
+      "id": "522",
+      "title": "R50",
+      "artist": "HXG",
+      "year": "2024",
+      "search": "HXG R50"
+    },
+    {
+      "id": "528",
+      "title": "Freestyle",
+      "artist": "OsamaSon",
+      "year": "2024",
+      "search": "OsamaSon Freestyle"
+    },
+    {
+      "id": "529",
+      "title": "Wimbledon",
+      "artist": "ian",
+      "year": "2024",
+      "search": "ian Wimbledon"
+    },
+    {
+      "id": "530",
+      "title": "Grand Slam",
+      "artist": "ian",
+      "year": "2024",
+      "search": "ian Grand Slam"
+    },
+    {
+      "id": "539",
+      "title": "Lil Krazy / Lurking",
+      "artist": "BlackXer;deanw24",
+      "year": "2024",
+      "search": "BlackXer Lil Krazy / Lurking"
+    },
+    {
+      "id": "546",
+      "title": "Freaking Out The Neighborhood",
+      "artist": "Mac DeMarco",
+      "year": "2013",
+      "search": "Mac DeMarco Freaking Out The Neighborhood"
+    },
+    {
+      "id": "563",
+      "title": "Voyou",
+      "artist": "BatBat;La Honda 19",
+      "year": "2024",
+      "search": "BatBat Voyou"
+    },
+    {
+      "id": "568",
+      "title": "HI-VOLTAGE",
+      "artist": "HXG",
+      "year": "2024",
+      "search": "HXG HI-VOLTAGE"
+    },
+    {
+      "id": "580",
+      "title": "24 Songs - Made It This Far",
+      "artist": "fataliitty",
+      "year": "2024",
+      "search": "fataliitty 24 Songs - Made It This Far"
+    },
+    {
+      "id": "597",
+      "title": "Spaceship (feat. Sheck Wes)",
+      "artist": "Don Toliver;Sheck Wes",
+      "year": "2020",
+      "search": "Don Toliver Spaceship (feat. Sheck Wes)"
+    },
+    {
+      "id": "615",
+      "title": "Sing About Me, I'm Dying Of Thirst",
+      "artist": "Kendrick Lamar",
+      "year": "2012",
+      "search": "Kendrick Lamar Sing About Me, I'm Dying Of Thirst"
+    },
+    {
+      "id": "617",
+      "title": "She Know What She Wanted - Jersey Club Remix Slowed",
+      "artist": "Godard;Ziahfyah",
+      "year": "2024",
+      "search": "Godard She Know What She Wanted - Jersey Club Remix Slowed"
+    },
+    {
+      "id": "621",
+      "title": "Skummy B!Tcht",
+      "artist": "@K$h0P!",
+      "year": "2023",
+      "search": "@K$h0P! Skummy B!Tcht"
+    },
+    {
+      "id": "622",
+      "title": "Giig",
+      "artist": "yvngxchris",
+      "year": "2022",
+      "search": "yvngxchris Giig"
+    },
+    {
+      "id": "623",
+      "title": "QuikkSkope (feat. DC The Don)",
+      "artist": "yvngxchris;DC THE DON",
+      "year": "2022",
+      "search": "yvngxchris QuikkSkope (feat. DC The Don)"
+    },
+    {
+      "id": "624",
+      "title": "Do Not Disturb (feat. Lil Yachty & Offset)",
+      "artist": "Smokepurpp;Murda Beatz;Lil Yachty;Offset",
+      "year": "2018",
+      "search": "Smokepurpp Do Not Disturb (feat. Lil Yachty & Offset)"
+    },
+    {
+      "id": "628",
+      "title": "Fantasy",
+      "artist": "Happy Diving",
+      "year": "2016",
+      "search": "Happy Diving Fantasy"
+    },
+    {
+      "id": "629",
+      "title": "7 Weeks & 3 Days",
+      "artist": "yungatita",
+      "year": "2020",
+      "search": "yungatita 7 Weeks & 3 Days"
+    },
+    {
+      "id": "630",
+      "title": "My Way",
+      "artist": "Comethazine",
+      "year": "2018",
+      "search": "Comethazine My Way"
+    },
+    {
+      "id": "633",
+      "title": "Time To Live",
+      "artist": "UnoTheActivist",
+      "year": "2021",
+      "search": "UnoTheActivist Time To Live"
+    },
+    {
+      "id": "637",
+      "title": "B5",
+      "artist": "HXG",
+      "year": "2023",
+      "search": "HXG B5"
+    },
+    {
+      "id": "638",
+      "title": "5unna",
+      "artist": "Homixide Gang;R5 Homixide",
+      "year": "2021",
+      "search": "Homixide Gang 5unna"
+    },
+    {
+      "id": "640",
+      "title": "New Drank",
+      "artist": "LUCKI",
+      "year": "2022",
+      "search": "LUCKI New Drank"
+    },
+    {
+      "id": "641",
+      "title": "Wok",
+      "artist": "Kyate",
+      "year": "2024",
+      "search": "Kyate Wok"
+    },
+    {
+      "id": "643",
+      "title": "Gunninhimdown",
+      "artist": "yvngxchris",
+      "year": "2022",
+      "search": "yvngxchris Gunninhimdown"
+    },
+    {
+      "id": "645",
+      "title": "Nobody",
+      "artist": "Ken Carson",
+      "year": "2022",
+      "search": "Ken Carson Nobody"
+    },
+    {
+      "id": "648",
+      "title": "Crawl",
+      "artist": "Superheaven",
+      "year": "2013",
+      "search": "Superheaven Crawl"
+    },
+    {
+      "id": "650",
+      "title": "In On It",
+      "artist": "Superheaven",
+      "year": "2013",
+      "search": "Superheaven In On It"
+    },
+    {
+      "id": "652",
+      "title": "Slay3r",
+      "artist": "Playboi Carti",
+      "year": "2020",
+      "search": "Playboi Carti Slay3r"
+    },
+    {
+      "id": "662",
+      "title": "snarky",
+      "artist": "quannnic",
+      "year": "2022",
+      "search": "quannnic snarky"
+    },
+    {
+      "id": "671",
+      "title": "What i need/Balenciaga shoes",
+      "artist": "prodnnolan",
+      "year": "2023",
+      "search": "prodnnolan What i need/Balenciaga shoes"
+    },
+    {
+      "id": "675",
+      "title": "Vvv",
+      "artist": "333etman",
+      "year": "2023",
+      "search": "333etman Vvv"
+    },
+    {
+      "id": "679",
+      "title": "Forëally / 4Ly",
+      "artist": "Yeat",
+      "year": "2021",
+      "search": "Yeat Forëally / 4Ly"
+    },
+    {
+      "id": "695",
+      "title": "Freestyle Frères Diaz",
+      "artist": "Voleur2Voleur",
+      "year": "2024",
+      "search": "Voleur2Voleur Freestyle Frères Diaz"
+    },
+    {
+      "id": "717",
+      "title": "Wolves",
+      "artist": "Kanye West",
+      "year": "2016",
+      "search": "Kanye West Wolves"
+    },
+    {
+      "id": "723",
+      "title": "My Kind Of Woman",
+      "artist": "Mac DeMarco",
+      "year": "2013",
+      "search": "Mac DeMarco My Kind Of Woman"
+    },
+    {
+      "id": "724",
+      "title": "Oversized",
+      "artist": "Basement",
+      "year": "2017",
+      "search": "Basement Oversized"
+    },
+    {
+      "id": "728",
+      "title": "Space Song",
+      "artist": "Beach House",
+      "year": "2015",
+      "search": "Beach House Space Song"
+    },
+    {
+      "id": "730",
+      "title": "Sorry Bout That",
+      "artist": "Yeat",
+      "year": "2021",
+      "search": "Yeat Sorry Bout That"
+    },
+    {
+      "id": "734",
+      "title": "Hardcore",
+      "artist": "Ken Carson",
+      "year": "2023",
+      "search": "Ken Carson Hardcore"
+    },
+    {
+      "id": "739",
+      "title": "Upper Echelon (feat. T.I. & 2 Chainz)",
+      "artist": "Travis Scott;T.I.;2 Chainz",
+      "year": "2013",
+      "search": "Travis Scott Upper Echelon (feat. T.I. & 2 Chainz)"
+    },
+    {
+      "id": "743",
+      "title": "Everlong",
+      "artist": "Foo Fighters",
+      "year": "1997",
+      "search": "Foo Fighters Everlong"
+    },
+    {
+      "id": "747",
+      "title": "HOODBYAIR (CARTI)",
+      "artist": "Launchr",
+      "year": "2023",
+      "search": "Launchr HOODBYAIR (CARTI)"
+    },
+    {
+      "id": "749",
+      "title": "Track After Track (snippet)",
+      "artist": "ch4rlyy",
+      "year": "2023",
+      "search": "ch4rlyy Track After Track (snippet)"
+    },
+    {
+      "id": "751",
+      "title": "A10/E19",
+      "artist": "Niaks",
+      "year": "2023",
+      "search": "Niaks A10/E19"
+    },
+    {
+      "id": "760",
+      "title": "FYP",
+      "artist": "Nemzzz",
+      "year": "2023",
+      "search": "Nemzzz FYP"
+    },
+    {
+      "id": "811",
+      "title": "Jennifer’s Body",
+      "artist": "Ken Carson",
+      "year": "2023",
+      "search": "Ken Carson Jennifer’s Body"
+    },
+    {
+      "id": "812",
+      "title": "Fighting My Demons",
+      "artist": "Ken Carson",
+      "year": "2023",
+      "search": "Ken Carson Fighting My Demons"
+    },
+    {
+      "id": "814",
+      "title": "Need It",
+      "artist": "Migos;YoungBoy Never Broke Again",
+      "year": "2020",
+      "search": "Migos Need It"
+    },
+    {
+      "id": "815",
+      "title": "PDBMH",
+      "artist": "Ken Carson",
+      "year": "2022",
+      "search": "Ken Carson PDBMH"
+    },
+    {
+      "id": "821",
+      "title": "Bad bënd / DëMON",
+      "artist": "Yeat",
+      "year": "2023",
+      "search": "Yeat Bad bënd / DëMON"
+    },
+    {
+      "id": "823",
+      "title": "Never Changed",
+      "artist": "kidthvldd",
+      "year": "2022",
+      "search": "kidthvldd Never Changed"
+    },
+    {
+      "id": "824",
+      "title": "Dead or Alive",
+      "artist": "Lil Tecca",
+      "year": "2023",
+      "search": "Lil Tecca Dead or Alive"
+    },
+    {
+      "id": "825",
+      "title": "HVN ON EARTH (with Kodak Black)",
+      "artist": "Lil Tecca;Kodak Black",
+      "year": "2023",
+      "search": "Lil Tecca HVN ON EARTH (with Kodak Black)"
+    },
+    {
+      "id": "826",
+      "title": "bitch im joe biden",
+      "artist": "yvngxchris",
+      "year": "2021",
+      "search": "yvngxchris bitch im joe biden"
+    },
+    {
+      "id": "827",
+      "title": "Meat Grinder",
+      "artist": "Madvillain;Madlib;MF DOOM",
+      "year": "2004",
+      "search": "Madvillain Meat Grinder"
+    },
+    {
+      "id": "828",
+      "title": "IDGAF",
+      "artist": "Lil Shmadonka",
+      "year": "2022",
+      "search": "Lil Shmadonka IDGAF"
+    },
+    {
+      "id": "829",
+      "title": "Racks",
+      "artist": "La Kadrilla",
+      "year": "2022",
+      "search": "La Kadrilla Racks"
+    },
+    {
+      "id": "833",
+      "title": "Phénomène",
+      "artist": "La Plaie",
+      "year": "2023",
+      "search": "La Plaie Phénomène"
+    },
+    {
+      "id": "835",
+      "title": "In The Air",
+      "artist": "Destroy Lonely",
+      "year": "2020",
+      "search": "Destroy Lonely In The Air"
+    },
+    {
+      "id": "838",
+      "title": "Teen Bean",
+      "artist": "Ken Carson",
+      "year": "2022",
+      "search": "Ken Carson Teen Bean"
+    },
+    {
+      "id": "849",
+      "title": "Nightcrawler (feat. Swae Lee & Chief Keef)",
+      "artist": "Travis Scott;Swae Lee;Chief Keef",
+      "year": "2015",
+      "search": "Travis Scott Nightcrawler (feat. Swae Lee & Chief Keef)"
+    },
+    {
+      "id": "851",
+      "title": "Freestyle RIT",
+      "artist": "Voleur2Voleur",
+      "year": "2023",
+      "search": "Voleur2Voleur Freestyle RIT"
+    },
+    {
+      "id": "863",
+      "title": "ball w/o you",
+      "artist": "21 Savage",
+      "year": "2018",
+      "search": "21 Savage ball w/o you"
+    },
+    {
+      "id": "867",
+      "title": "Divine Failure",
+      "artist": "Lemuel Tay",
+      "year": "2022",
+      "search": "Lemuel Tay Divine Failure"
+    },
+    {
+      "id": "868",
+      "title": "Aye (feat. Travis Scott)",
+      "artist": "Lil Uzi Vert;Travis Scott",
+      "year": "2023",
+      "search": "Lil Uzi Vert Aye (feat. Travis Scott)"
+    },
+    {
+      "id": "869",
+      "title": "NOSTYLIST",
+      "artist": "Destroy Lonely",
+      "year": "2022",
+      "search": "Destroy Lonely NOSTYLIST"
+    },
+    {
+      "id": "871",
+      "title": "Take Me Home",
+      "artist": "PinkPantheress",
+      "year": "2022",
+      "search": "PinkPantheress Take Me Home"
+    },
+    {
+      "id": "881",
+      "title": "Systëm",
+      "artist": "Yeat",
+      "year": "2022",
+      "search": "Yeat Systëm"
+    },
+    {
+      "id": "888",
+      "title": "Fetty Wap",
+      "artist": "Maes",
+      "year": "2023",
+      "search": "Maes Fetty Wap"
+    },
+    {
+      "id": "930",
+      "title": "Day 'N' Nite (Nightmare)",
+      "artist": "Kid Cudi",
+      "year": "2009",
+      "search": "Kid Cudi Day 'N' Nite (Nightmare)"
+    },
+    {
+      "id": "948",
+      "title": "SAD!",
+      "artist": "XXXTENTACION",
+      "year": "2018",
+      "search": "XXXTENTACION SAD!"
+    },
+    {
+      "id": "956",
+      "title": "Broke Boi",
+      "artist": "Playboi Carti",
+      "year": "2017",
+      "search": "Playboi Carti Broke Boi"
+    },
+    {
+      "id": "979",
+      "title": "Too Many Nights (feat. Don Toliver & with Future)",
+      "artist": "Metro Boomin;Future;Don Toliver",
+      "year": "2022",
+      "search": "Metro Boomin Too Many Nights (feat. Don Toliver & with Future)"
+    },
+    {
+      "id": "1014",
+      "title": "Passionfruit",
+      "artist": "Drake",
+      "year": "2017",
+      "search": "Drake Passionfruit"
+    },
+    {
+      "id": "1016",
+      "title": "Juste en crime",
+      "artist": "La Honda 19",
+      "year": "2022",
+      "search": "La Honda 19 Juste en crime"
+    },
+    {
+      "id": "1026",
+      "title": "Wok / Oh My God, Boy He Got A Glock",
+      "artist": "YounLAHeat Codey",
+      "year": "2022",
+      "search": "YounLAHeat Codey Wok / Oh My God, Boy He Got A Glock"
+    },
+    {
+      "id": "1031",
+      "title": "Maytag (Tax Free)",
+      "artist": "Ben Reilly",
+      "year": "2021",
+      "search": "Ben Reilly Maytag (Tax Free)"
+    },
+    {
+      "id": "1051",
+      "title": "Freestyle 3",
+      "artist": "Ken Carson",
+      "year": "2022",
+      "search": "Ken Carson Freestyle 3"
+    },
+    {
+      "id": "1067",
+      "title": "Two Pieces",
+      "artist": "Floaty",
+      "year": "2022",
+      "search": "Floaty Two Pieces"
+    },
+    {
+      "id": "1080",
+      "title": "Forrest Gump",
+      "artist": "yvngxchris",
+      "year": "2022",
+      "search": "yvngxchris Forrest Gump"
+    },
+    {
+      "id": "1135",
+      "title": "Doja",
+      "artist": "$NOT;A$AP Rocky",
+      "year": "2022",
+      "search": "$NOT Doja"
+    },
+    {
+      "id": "1143",
+      "title": "GANG GANG",
+      "artist": "JACKBOYS;Sheck Wes",
+      "year": "2019",
+      "search": "JACKBOYS GANG GANG"
+    },
+    {
+      "id": "1157",
+      "title": "Vamp Anthem",
+      "artist": "Playboi Carti",
+      "year": "2020",
+      "search": "Playboi Carti Vamp Anthem"
+    },
+    {
+      "id": "1159",
+      "title": "Lucid Dreams",
+      "artist": "Juice WRLD",
+      "year": "2018",
+      "search": "Juice WRLD Lucid Dreams"
+    },
+    {
+      "id": "1166",
+      "title": "Dans le noir !",
+      "artist": "menace Santana",
+      "year": "2021",
+      "search": "menace Santana Dans le noir !"
+    },
+    {
+      "id": "1167",
+      "title": "L'apprentie sorcière !",
+      "artist": "menace Santana",
+      "year": "2021",
+      "search": "menace Santana L'apprentie sorcière !"
+    },
+    {
+      "id": "1174",
+      "title": "No Idea",
+      "artist": "Don Toliver",
+      "year": "2020",
+      "search": "Don Toliver No Idea"
+    },
+    {
+      "id": "1179",
+      "title": "Double Bang 5",
+      "artist": "Leto",
+      "year": "2019",
+      "search": "Leto Double Bang 5"
+    },
+    {
+      "id": "1188",
+      "title": "Raspoutine",
+      "artist": "Ziak",
+      "year": "2020",
+      "search": "Ziak Raspoutine"
+    },
+    {
+      "id": "1211",
+      "title": "After Party",
+      "artist": "Don Toliver",
+      "year": "2020",
+      "search": "Don Toliver After Party"
+    },
+    {
+      "id": "1230",
+      "title": "FRANCHISE (feat. Future, Young Thug & M.I.A.) - REMIX",
+      "artist": "Travis Scott;Future;Young Thug;M.I.A.",
+      "year": "2020",
+      "search": "Travis Scott FRANCHISE (feat. Future, Young Thug & M.I.A.) - REMIX"
+    },
+    {
+      "id": "1243",
+      "title": "FRANCHISE (feat. Young Thug & M.I.A.)",
+      "artist": "Travis Scott;Young Thug;M.I.A.",
+      "year": "2020",
+      "search": "Travis Scott FRANCHISE (feat. Young Thug & M.I.A.)"
+    },
+    {
+      "id": "1254",
+      "title": "Off White - Remix",
+      "artist": "Global Dan;Rich The Kid;MadeinTYO",
+      "year": "2018",
+      "search": "Global Dan Off White - Remix"
+    },
+    {
+      "id": "1258",
+      "title": "Fazer",
+      "artist": "ISK;YL",
+      "year": "2020",
+      "search": "ISK Fazer"
+    },
+    {
+      "id": "1260",
+      "title": "Bande organisée",
+      "artist": "Kofs;Soso Maness;Elams;Jul;SCH;Naps;Solda;Houari;13 Organisé",
+      "year": "2020",
+      "search": "Kofs Bande organisée"
+    },
+    {
+      "id": "1263",
+      "title": "4 Phones",
+      "artist": "Rich The Kid",
+      "year": "2019",
+      "search": "Rich The Kid 4 Phones"
+    },
+    {
+      "id": "1289",
+      "title": "R44",
+      "artist": "Koba LaD",
+      "year": "2019",
+      "search": "Koba LaD R44"
+    },
+    {
+      "id": "1293",
+      "title": "Pop Out Again (feat. Lil Baby & Gunna)",
+      "artist": "Polo G;Lil Baby;Gunna",
+      "year": "2019",
+      "search": "Polo G Pop Out Again (feat. Lil Baby & Gunna)"
+    },
+    {
+      "id": "1300",
+      "title": "Boston George (feat. Black D & Leto)",
+      "artist": "Cheu-B;Black D;Leto",
+      "year": "2017",
+      "search": "Cheu-B Boston George (feat. Black D & Leto)"
+    },
+    {
+      "id": "1306",
+      "title": "Myron",
+      "artist": "Lil Uzi Vert",
+      "year": "2020",
+      "search": "Lil Uzi Vert Myron"
+    },
+    {
+      "id": "1310",
+      "title": "Fuckboi",
+      "artist": "Zola",
+      "year": "2019",
+      "search": "Zola Fuckboi"
+    },
+    {
+      "id": "1311",
+      "title": "Two Cups (feat. Offset & Big Sean)",
+      "artist": "Rich The Kid;Offset;Big Sean",
+      "year": "2019",
+      "search": "Rich The Kid Two Cups (feat. Offset & Big Sean)"
+    },
+    {
+      "id": "1313",
+      "title": "Plug Walk",
+      "artist": "Rich The Kid",
+      "year": "2018",
+      "search": "Rich The Kid Plug Walk"
+    },
+    {
+      "id": "1358",
+      "title": "CAN'T SAY",
+      "artist": "Travis Scott",
+      "year": "2018",
+      "search": "Travis Scott CAN'T SAY"
+    },
+    {
+      "id": "1360",
+      "title": "Look Alive (feat. Drake)",
+      "artist": "BlocBoy JB;Drake",
+      "year": "2018",
+      "search": "BlocBoy JB Look Alive (feat. Drake)"
+    },
+    {
+      "id": "1364",
+      "title": "Walk It Talk It",
+      "artist": "Migos;Drake",
+      "year": "2018",
+      "search": "Migos Walk It Talk It"
+    }
+  ]
+}

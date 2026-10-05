@@ -1,0 +1,798 @@
+{
+ "replaced": [
+  {
+   "id": "3",
+   "title": "Good Life",
+   "artist": "Inner City",
+   "audio": 238.028,
+   "lrc": 244.0,
+   "was": 34661818,
+   "now": 33627263,
+   "now_duration": 236.0
+  },
+  {
+   "id": "5",
+   "title": "American Boy",
+   "artist": "Estelle (feat. Kanye West)",
+   "audio": 241.871,
+   "lrc": 285.0,
+   "was": 3614113,
+   "now": 35128749,
+   "now_duration": 244.0
+  },
+  {
+   "id": "27",
+   "title": "Bohemian Rhapsody",
+   "artist": "Queen",
+   "audio": 354.337,
+   "lrc": 148.306667,
+   "was": 18787896,
+   "now": 19079,
+   "now_duration": 355.0
+  },
+  {
+   "id": "35",
+   "title": "I Don't Know",
+   "artist": "Erika",
+   "audio": 196.07,
+   "lrc": 202.0,
+   "was": 11818677,
+   "now": 17059773,
+   "now_duration": 196.263292
+  },
+  {
+   "id": "44",
+   "title": "Where's Your Head At",
+   "artist": "Basement Jaxx",
+   "audio": 239.7,
+   "lrc": 284.0,
+   "was": 271479,
+   "now": 18775776,
+   "now_duration": 241.867755
+  },
+  {
+   "id": "46",
+   "title": "Changes",
+   "artist": "Charles Bradley, The Budos Band",
+   "audio": 343.0,
+   "lrc": 361.0,
+   "was": 35435686,
+   "now": 28495359,
+   "now_duration": 343.0
+  },
+  {
+   "id": "55",
+   "title": "Serrure #667",
+   "artist": "La Rvfleuze, Freeze corleone",
+   "audio": 152.921,
+   "lrc": 148.0,
+   "was": 27984113,
+   "now": 27984686,
+   "now_duration": 153.0
+  },
+  {
+   "id": "56",
+   "title": "the kill",
+   "artist": "Lex Amarni, 2muchmotion",
+   "audio": 121.392,
+   "lrc": 81.0,
+   "was": 33713632,
+   "now": 33738422,
+   "now_duration": 122.0
+  },
+  {
+   "id": "71",
+   "title": "Firestarter",
+   "artist": "Torre Florim",
+   "audio": 227.579,
+   "lrc": 217.0,
+   "was": 3253442,
+   "now": 12929402,
+   "now_duration": 228.0
+  },
+  {
+   "id": "83",
+   "title": "MONTERO (Call Me By Your Name)",
+   "artist": "Lil Nas X",
+   "audio": 170.11,
+   "lrc": 138.0,
+   "was": 173563,
+   "now": 10237455,
+   "now_duration": 170.0
+  },
+  {
+   "id": "105",
+   "title": "Anyone Who Knows What Love Is (Will Understand)",
+   "artist": "Irma Thomas",
+   "audio": 181.238,
+   "lrc": 175.0,
+   "was": 1660514,
+   "now": 3762405,
+   "now_duration": 183.0
+  },
+  {
+   "id": "120",
+   "title": "Amazing",
+   "artist": "INNA",
+   "audio": 192.967,
+   "lrc": 209.0,
+   "was": 4144578,
+   "now": 33742458,
+   "now_duration": 192.0
+  },
+  {
+   "id": "195",
+   "title": "Riley",
+   "artist": "Juicy J",
+   "audio": 204.853,
+   "lrc": 173.0,
+   "was": 34876508,
+   "now": 35503427,
+   "now_duration": 205.0
+  },
+  {
+   "id": "352",
+   "title": "La vie en rose",
+   "artist": "Édith Piaf",
+   "audio": 188.422,
+   "lrc": 196.0,
+   "was": 9379453,
+   "now": 397074,
+   "now_duration": 186.0
+  },
+  {
+   "id": "360",
+   "title": "Michigan",
+   "artist": "Chavo",
+   "audio": 161.646,
+   "lrc": 149.0,
+   "was": 8886079,
+   "now": 15020719,
+   "now_duration": 162.0
+  },
+  {
+   "id": "371",
+   "title": "trauma",
+   "artist": "2hollis",
+   "audio": 126.989,
+   "lrc": 132.0,
+   "was": 10952853,
+   "now": 38402718,
+   "now_duration": 129.0
+  },
+  {
+   "id": "395",
+   "title": "Cumbia Sobre El Río",
+   "artist": "Celso Piña",
+   "audio": 343.014,
+   "lrc": 190.0,
+   "was": 12450998,
+   "now": 14936823,
+   "now_duration": 343.0
+  },
+  {
+   "id": "418",
+   "title": "Reap",
+   "artist": "BAK Jay",
+   "audio": 144.223,
+   "lrc": 102.0,
+   "was": 10133355,
+   "now": 37732803,
+   "now_duration": 144.0
+  },
+  {
+   "id": "444",
+   "title": "Lambtruck",
+   "artist": "OsamaSon",
+   "audio": 110.054,
+   "lrc": 106.0,
+   "was": 10422081,
+   "now": 19438115,
+   "now_duration": 107.0
+  },
+  {
+   "id": "496",
+   "title": "My Baby",
+   "artist": "Chief Keef",
+   "audio": 130.874,
+   "lrc": 192.0,
+   "was": 299767,
+   "now": 7526112,
+   "now_duration": 131.0
+  },
+  {
+   "id": "603",
+   "title": "Don't Like.1",
+   "artist": "Kanye West;Chief Keef;Pusha T;Big Sean;Jadakiss",
+   "audio": 279.093,
+   "lrc": 284.0,
+   "was": 2466311,
+   "now": 38610608,
+   "now_duration": 283.0
+  },
+  {
+   "id": "797",
+   "title": "Runaway",
+   "artist": "Kanye West;Pusha T",
+   "audio": 339.618,
+   "lrc": 548.0,
+   "was": 3619570,
+   "now": 1623043,
+   "now_duration": 339.0
+  },
+  {
+   "id": "799",
+   "title": "Heartless",
+   "artist": "Kanye West",
+   "audio": 220.761,
+   "lrc": 211.0,
+   "was": 571902,
+   "now": 5393659,
+   "now_duration": 221.0
+  },
+  {
+   "id": "883",
+   "title": "Swërved It",
+   "artist": "Yeat",
+   "audio": 154.071,
+   "lrc": 137.0,
+   "was": 3989553,
+   "now": 151555,
+   "now_duration": 154.0
+  },
+  {
+   "id": "928",
+   "title": "Swimming Pools (Drank)",
+   "artist": "Kendrick Lamar",
+   "audio": 313.914,
+   "lrc": 248.0,
+   "was": 985599,
+   "now": 3687632,
+   "now_duration": 314.0
+  },
+  {
+   "id": "3012",
+   "title": "Too Many Nights (feat. Don Toliver & with Future)",
+   "artist": "Metro Boomin; Future; Don Toliver",
+   "audio": 194.787,
+   "lrc": 199.0,
+   "was": 8985803,
+   "now": 32496598,
+   "now_duration": 192.0
+  },
+  {
+   "id": "1000",
+   "title": "456",
+   "artist": "Douly G",
+   "audio": 127.922,
+   "lrc": 133.0,
+   "was": 13643308,
+   "now": 23831986,
+   "now_duration": 128.0
+  },
+  {
+   "id": "1018",
+   "title": "J'ai tout su",
+   "artist": "Jul",
+   "audio": 184.985,
+   "lrc": 190.0,
+   "was": 6097536,
+   "now": 31216900,
+   "now_duration": 183.0
+  },
+  {
+   "id": "1124",
+   "title": "FLEX",
+   "artist": "Lil Yachty",
+   "audio": 171.024,
+   "lrc": 131.0,
+   "was": 2815858,
+   "now": 8799773,
+   "now_duration": 171.0
+  },
+  {
+   "id": "1223",
+   "title": "French Drill",
+   "artist": "Saamou",
+   "audio": 163.867,
+   "lrc": 150.0,
+   "was": 13396719,
+   "now": 34768850,
+   "now_duration": 164.0
+  },
+  {
+   "id": "1304",
+   "title": "La callé",
+   "artist": "Guy2Bezbar",
+   "audio": 130.769,
+   "lrc": 189.0,
+   "was": 11930710,
+   "now": 34548394,
+   "now_duration": 131.0
+  },
+  {
+   "id": "1307",
+   "title": "Babushka Boi",
+   "artist": "A$AP Rocky",
+   "audio": 196.258,
+   "lrc": 187.0,
+   "was": 1003283,
+   "now": 23843821,
+   "now_duration": 196.231837
+  },
+  {
+   "id": "2987",
+   "title": "Look Alive (feat. Drake)",
+   "artist": "BlocBoy JB; Drake",
+   "audio": 191.087,
+   "lrc": 181.0,
+   "was": 1995716,
+   "now": 10850258,
+   "now_duration": 194.0
+  },
+  {
+   "id": "1392",
+   "title": "On The Floor",
+   "artist": "Jennifer Lopez, Pitbull, Pitbull",
+   "audio": 292.187,
+   "lrc": 285.0,
+   "was": 4425484,
+   "now": 3866890,
+   "now_duration": 292.0
+  },
+  {
+   "id": "1402",
+   "title": "LET ME BE",
+   "artist": "The Second Voice",
+   "audio": 189.854,
+   "lrc": 197.0,
+   "was": 33608738,
+   "now": 29296600,
+   "now_duration": 189.0
+  },
+  {
+   "id": "1443",
+   "title": "Don't Stop 'Til You Get Enough",
+   "artist": "Michael Jackson",
+   "audio": 220.627,
+   "lrc": 237.0,
+   "was": 4067704,
+   "now": 30463354,
+   "now_duration": 220.0
+  },
+  {
+   "id": "1455",
+   "title": "Dai Dai",
+   "artist": "Shakira, Burna Boy",
+   "audio": 223.449,
+   "lrc": 232.0,
+   "was": 36879718,
+   "now": 33712381,
+   "now_duration": 223.0
+  },
+  {
+   "id": "1540",
+   "title": "Petit Génie",
+   "artist": "Jungeli ft. Imen Es, Alonzo, Abou Debeing & Lossa, Abou Debeing, Alonzo, Imen Es, Lossa (FRA)",
+   "audio": 217.26,
+   "lrc": 232.0,
+   "was": 35613787,
+   "now": 8808660,
+   "now_duration": 217.0
+  },
+  {
+   "id": "2958",
+   "title": "How You Every O Shot ?",
+   "artist": "Cj Goon; Sha EK, 30taketheshot",
+   "audio": 177.446,
+   "lrc": 201.639,
+   "was": 9898479,
+   "now": 35681219,
+   "now_duration": 177.0
+  },
+  {
+   "id": "2065",
+   "title": "Brownie",
+   "artist": "Trafiquinte; Ziak",
+   "audio": 166.058,
+   "lrc": 179.0,
+   "was": 12340591,
+   "now": 34054975,
+   "now_duration": 166.0
+  },
+  {
+   "id": "3166",
+   "title": "September",
+   "artist": "Mariya Takeuchi",
+   "audio": 272.32,
+   "lrc": 280.0,
+   "was": 5001810,
+   "now": 956029,
+   "now_duration": 272.0
+  },
+  {
+   "id": "2911",
+   "title": "41 Bop",
+   "artist": "TaTa; Dee Billz; Jenn Carter; Kyle Richh; Jay Gelato; Miah Kenzo",
+   "audio": 248.675,
+   "lrc": 257.0,
+   "was": 10107687,
+   "now": 19272131,
+   "now_duration": 249.0
+  },
+  {
+   "id": "3460",
+   "title": "Love Blur",
+   "artist": "slayr",
+   "audio": 154.688,
+   "lrc": 167.0,
+   "was": 25050343,
+   "now": 27196832,
+   "now_duration": 154.687
+  }
+ ],
+ "dropped": [
+  {
+   "id": "29",
+   "title": "L'amour pour Bouclier",
+   "artist": "Elaine Kibaro",
+   "audio": 262.525,
+   "lrc": 258.0,
+   "was": 32577248
+  },
+  {
+   "id": "36",
+   "title": "Duvet",
+   "artist": "Bôa",
+   "audio": 252.614,
+   "lrc": 258.507771,
+   "was": 27135356
+  },
+  {
+   "id": "58",
+   "title": "Yume no Tsuzuki",
+   "artist": "Mariya Takeuchi",
+   "audio": 303.674,
+   "lrc": 323.0,
+   "was": 958809
+  },
+  {
+   "id": "61",
+   "title": "masked up (feat. YoungBoy Never Broke Again)",
+   "artist": "Nettspend, YoungBoy Never Broke Again",
+   "audio": 142.263,
+   "lrc": 137.0,
+   "was": 29357259
+  },
+  {
+   "id": "144",
+   "title": "FUK SUMN",
+   "artist": "¥$;Kanye West;Ty Dolla $ign",
+   "audio": 121.183,
+   "lrc": 210.0,
+   "was": 6731319
+  },
+  {
+   "id": "302",
+   "title": "Black & Tan",
+   "artist": "YT;Lancey Foux",
+   "audio": 130.665,
+   "lrc": 138.0,
+   "was": 10611923
+  },
+  {
+   "id": "341",
+   "title": "Skeleton",
+   "artist": "cr0ss ♱",
+   "audio": 216.573,
+   "lrc": 178.0,
+   "was": 12314550
+  },
+  {
+   "id": "374",
+   "title": "Prayer",
+   "artist": "KATANAZ",
+   "audio": 311.876,
+   "lrc": 321.0,
+   "was": 16343608
+  },
+  {
+   "id": "3092",
+   "title": "Kennington Where It Started",
+   "artist": "Bis; Blanco; ACTIVE; MizOrMac, Bis (UK), Blanco (UK), Active (Harlem Spartans)",
+   "audio": 232.302,
+   "lrc": 237.0,
+   "was": 10071458
+  },
+  {
+   "id": "439",
+   "title": "Foreign",
+   "artist": "VampViolence",
+   "audio": 61.284,
+   "lrc": 83.0,
+   "was": 11741627
+  },
+  {
+   "id": "570",
+   "title": "BODY",
+   "artist": "narr",
+   "audio": 139.39,
+   "lrc": 96.292,
+   "was": 17981593
+  },
+  {
+   "id": "590",
+   "title": "Earned It",
+   "artist": "Chief Keef",
+   "audio": 201.013,
+   "lrc": 316.0,
+   "was": 8030198
+  },
+  {
+   "id": "606",
+   "title": "Punch Anthem",
+   "artist": "Punchmade Dev",
+   "audio": 114.417,
+   "lrc": 91.0,
+   "was": 9987146
+  },
+  {
+   "id": "607",
+   "title": "Internet Swiping",
+   "artist": "Punchmade Dev",
+   "audio": 83.07,
+   "lrc": 97.568,
+   "was": 18404873
+  },
+  {
+   "id": "740",
+   "title": "N95",
+   "artist": "Kendrick Lamar",
+   "audio": 177.685,
+   "lrc": 195.950292,
+   "was": 18789859
+  },
+  {
+   "id": "795",
+   "title": "molly - sped up",
+   "artist": "Contingency",
+   "audio": 132.337,
+   "lrc": 102.0,
+   "was": 9955334
+  },
+  {
+   "id": "1019",
+   "title": "J'éteins mon téléphone",
+   "artist": "Jul",
+   "audio": 208.64,
+   "lrc": 198.0,
+   "was": 6097538
+  },
+  {
+   "id": "1203",
+   "title": "Heart Mind",
+   "artist": "Kodak Black;Plies",
+   "audio": 198.74,
+   "lrc": 204.0,
+   "was": 1966086
+  },
+  {
+   "id": "2998",
+   "title": "FRANCHISE (feat. Future, Young Thug & M.I.A.) - REMIX",
+   "artist": "Travis Scott; Future; Young Thug; M.I.A.",
+   "audio": 202.795,
+   "lrc": 207.0,
+   "was": 6403362
+  },
+  {
+   "id": "2997",
+   "title": "REEL IT IN (feat. Gucci Mane) - Remix",
+   "artist": "Aminé; Gucci Mane",
+   "audio": 172.014,
+   "lrc": 166.0,
+   "was": 10417854
+  },
+  {
+   "id": "1326",
+   "title": "Double Bang 6",
+   "artist": "Leto",
+   "audio": 157.44,
+   "lrc": 179.0,
+   "was": 7095083
+  },
+  {
+   "id": "1343",
+   "title": "Méchant méchant méchant",
+   "artist": "Kodes",
+   "audio": 130.613,
+   "lrc": 140.0,
+   "was": 5963018
+  },
+  {
+   "id": "1357",
+   "title": "GTA #16",
+   "artist": "Kodes;Guette l'ascension",
+   "audio": 115.36,
+   "lrc": 121.0,
+   "was": 12360737
+  },
+  {
+   "id": "1399",
+   "title": "Sexy Nana",
+   "artist": "Aya Nakamura & @larvfleuze",
+   "audio": 150.587,
+   "lrc": 156.0,
+   "was": 33608283
+  },
+  {
+   "id": "1418",
+   "title": "ZOMBIE",
+   "artist": "LAZARO, Andy Milonakis",
+   "audio": 183.009,
+   "lrc": 179.0,
+   "was": 36153962
+  },
+  {
+   "id": "2152",
+   "title": "GUZU SHIFT",
+   "artist": "V9; Smokes",
+   "audio": 110.77,
+   "lrc": 106.0,
+   "was": 14132484
+  },
+  {
+   "id": "2283",
+   "title": "Z To A",
+   "artist": "Sus",
+   "audio": 169.337,
+   "lrc": 174.0,
+   "was": 4791039
+  },
+  {
+   "id": "2282",
+   "title": "Bags And Bodies",
+   "artist": "Sus",
+   "audio": 179.566,
+   "lrc": 158.0,
+   "was": 4785249
+  },
+  {
+   "id": "2376",
+   "title": "Astyle",
+   "artist": "Sus",
+   "audio": 113.334,
+   "lrc": 100.0,
+   "was": 4785098
+  },
+  {
+   "id": "2726",
+   "title": "Parler d'amour c guez",
+   "artist": "Tom D.",
+   "audio": 159.892,
+   "lrc": 152.0,
+   "was": 11927386
+  },
+  {
+   "id": "1919",
+   "title": "Fourmi",
+   "artist": "La Mano 1.9; Vacra",
+   "audio": 169.88,
+   "lrc": 174.0,
+   "was": 26484400
+  },
+  {
+   "id": "1665",
+   "title": "HEADPOP",
+   "artist": "Jenn Carter; Kyle Richh; Leeky Jack; Jerry West, Leeky Jackson",
+   "audio": 213.135,
+   "lrc": 187.0,
+   "was": 12272671
+  },
+  {
+   "id": "1719",
+   "title": "Blockwork \"Freestyle\"",
+   "artist": "TaTa; Jenn Carter; Kyle Richh",
+   "audio": 172.9,
+   "lrc": 200.0,
+   "was": 12201199
+  },
+  {
+   "id": "3691",
+   "title": "Keep Quiet Shhhh",
+   "artist": "Brennan Jones",
+   "audio": 79.109,
+   "lrc": 97.0,
+   "was": 22208562
+  },
+  {
+   "id": "4092",
+   "title": "Late Night Drinks",
+   "artist": "Tdf; Okaymar; 1oneam",
+   "audio": 198.92,
+   "lrc": 226.272,
+   "was": 18525304
+  },
+  {
+   "id": "4198",
+   "title": "Geeker Day",
+   "artist": "Yeat",
+   "audio": 132.894,
+   "lrc": 118.0,
+   "was": 9381806
+  },
+  {
+   "id": "4375",
+   "title": "Imagination",
+   "artist": "Mo Kartii",
+   "audio": 146.6,
+   "lrc": 125.0,
+   "was": 10230800
+  },
+  {
+   "id": "4836",
+   "title": "Intro",
+   "artist": "Freeze corleone",
+   "audio": 145.566,
+   "lrc": 150.0,
+   "was": 38684754
+  },
+  {
+   "id": "4903",
+   "title": "NIRVANA",
+   "artist": "Moji x Sboy",
+   "audio": 164.676,
+   "lrc": 169.0,
+   "was": 32291746
+  }
+ ],
+ "unmeasured": [
+  {
+   "id": "329",
+   "title": "Bohemian Rhapsody - Remastered 2011",
+   "audio": null,
+   "lrc": 148.0
+  },
+  {
+   "id": "643",
+   "title": "Gunninhimdown",
+   "audio": null,
+   "lrc": 109.0
+  },
+  {
+   "id": "994",
+   "title": "No morë talk",
+   "audio": null,
+   "lrc": 239.0
+  },
+  {
+   "id": "1080",
+   "title": "Forrest Gump",
+   "audio": null,
+   "lrc": 101.0
+  },
+  {
+   "id": "1135",
+   "title": "Doja",
+   "audio": null,
+   "lrc": 171.0
+  },
+  {
+   "id": "1260",
+   "title": "Bande organisée",
+   "audio": null,
+   "lrc": 356.0
+  },
+  {
+   "id": "1310",
+   "title": "Fuckboi",
+   "audio": null,
+   "lrc": 154.0
+  },
+  {
+   "id": "4320",
+   "title": "40 Clip",
+   "audio": null,
+   "lrc": 267.0
+  }
+ ]
+}
