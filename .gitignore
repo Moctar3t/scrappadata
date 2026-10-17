@@ -40,3 +40,8 @@ test_bunny_key.py
 intake_work/
 intake_state.json
 .intake.lock
+
+# The ingest manifest is state, not code — it lives on the ingest host (the VPS).
+ingest_gpu_state.json
+ingest_gpu_state.mac-archive.json
+.ingest_on_vps
