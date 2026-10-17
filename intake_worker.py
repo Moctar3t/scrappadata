@@ -151,7 +151,7 @@ def poll() -> None:
         fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
     except BlockingIOError:
         return                                   # the previous poll is still working
-    intakes = api("/claim")
+    intakes = api("/claim", {"health": health()})
     if not intakes:
         return
     log(f"── {len(intakes)} lien(s) à traiter ──")
@@ -172,6 +172,44 @@ def loop(every: int = 60) -> None:
         except Exception as e:
             log(f"  ! poll failed: {type(e).__name__}: {str(e)[:300]}")
         time.sleep(every)
+
+def _port_open(port: int) -> bool:
+    import socket
+    try:
+        with socket.create_connection(("127.0.0.1", port), timeout=2):
+            return True
+    except OSError:
+        return False
+
+def health() -> dict:
+    """What the admin page shows next to the queue. TCP checks only (is each
+    tunnel up?): no YouTube request every minute while nothing is queued."""
+    if not ON_VPS:
+        return {"worker": "mac", "line": LINE}
+    return {"worker": "vps", "line": LINE,
+            "exits": {"box": _port_open(1081), "mac": _port_open(1082),
+                      "proxy": bool(os.environ.get("ZINGY_YT_PROXY"))},
+            "box_gpu": _port_open(int(os.environ.get("ZINGY_BOX_PORT", "2222"))),
+            "cookies": Path(os.environ.get("ZINGY_YT_COOKIES", "/etc/zingy/youtube_cookies.txt")).exists()}
+
+def rescue(live: list[dict], st: dict) -> None:
+    """A song Replicate could not make gets a go on the GPU box, when it is up:
+    the box splits locally and downloads from its own (home) address."""
+    if LINE != "replicate":
+        return
+    tracks = load_tracks()
+    ids = [str(s["catalog_id"]) for it in live for s in st[it["id"]]
+           if (tracks.get(str(s.get("catalog_id"))) or {}).get("status") == "failed"
+           and (tracks[str(s["catalog_id"])].get("line") or "gpu") == "replicate"]
+    if not ids:
+        return
+    import ingest_gpu as ig
+    # On the VPS the box is only there while its tunnel is: check that first (instant).
+    if (ON_VPS and not _port_open(int(ig.BOX_PORT))) or not ig.box_alive():
+        log(f"  {len(ids)} failed on Replicate; the GPU box is off, so they stay failed for now")
+        return
+    log(f"  {len(ids)} failed on Replicate → another go on the GPU box")
+    stage(["produce", "--line", "gpu", "--relane", "--ids", ",".join(ids)])
 
 def youtube_ready() -> bool:
     """On the VPS, YouTube is only reachable through an exit (box / Mac / proxy)."""
@@ -271,6 +309,8 @@ def run(intakes: list[dict]) -> None:
             if rc != 0 and args[0] in ("resolve",):
                 log(f"  {args[0]} failed (rc={rc}) — stopping before the long work")
                 break
+            if args[0] == "produce":
+                rescue(live, st)
         verify(live, st)
     report_all(None, final=True)
     for it in live:

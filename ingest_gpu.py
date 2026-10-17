@@ -47,7 +47,7 @@ YOUTUBE AGE GATES (and why cookies are the LAST resort)
      (track["alternates"]); when a fetch hits the gate, produce walks them —
      the label's "- Topic" auto-upload of the same master is usually open.
   2. Only if every alternate is gated too, the box uses ONE cookie jar,
-     %USERPROFILE%\zingy_ingest\cookies.txt, under a lock so yt-dlp can write the
+     %USERPROFILE%/zingy_ingest/cookies.txt, under a lock so yt-dlp can write the
      rotated tokens back. Google rotates session cookies on every use, so the
      jar must come from a THROWAWAY account exported from a PRIVATE window that
      you then close — export from your everyday browser and it is dead within
@@ -1062,8 +1062,20 @@ def produce_one_replicate(track: dict) -> dict:
 
 def cmd_produce(args):
     state = load_state()
+    ids = {i for i in (getattr(args, "ids", None) or "").split(",") if i}
+    # --relane (the intake's fallback): failed tracks named by --ids move to this
+    # line before producing — a Replicate failure gets a go on the GPU box. Done
+    # here, under the manifest lock, and written into each track's history.
+    if ids and getattr(args, "relane", False) and getattr(args, "line", None):
+        for t in state["tracks"]:
+            if str(t.get("catalog_id")) in ids and t["status"] == "failed" and line_of(t) != args.line:
+                t.setdefault("history", []).append({"at": time.strftime("%Y-%m-%dT%H:%M:%S"),
+                    "event": f"relaned {line_of(t)} -> {args.line} after: {(t.get('error') or '')[:150]}"})
+                t["line"] = args.line
+        save_state(state)
     todo = [t for t in state["tracks"] if t["status"] in ("resolved", "failed")
-            and (not getattr(args, "line", None) or line_of(t) == args.line)]
+            and (not getattr(args, "line", None) or line_of(t) == args.line)
+            and (not ids or str(t.get("catalog_id")) in ids)]
     if args.limit:
         todo = todo[:args.limit]
     if not todo:
@@ -1636,6 +1648,8 @@ def main():
     p.add_argument("--report", help="link intake: write what became of each CSV row (JSON)")
     p.add_argument("--line", choices=["gpu", "replicate"], default="gpu")
     pr = sub.add_parser("produce"); pr.add_argument("--limit", type=int, default=0)
+    pr.add_argument("--ids", help="only these catalogue ids (comma-separated)")
+    pr.add_argument("--relane", action="store_true", help="move failed --ids tracks to --line first")
     pr.add_argument("--line", choices=["gpu", "replicate"])
     pu = sub.add_parser("publish"); pu.add_argument("--skip-upload", action="store_true")
     pa = sub.add_parser("all")
