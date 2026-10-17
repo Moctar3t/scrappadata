@@ -35,3 +35,8 @@ __pycache__/
 
 # A throwaway that tried variations of a mistyped storage key: key fragments.
 test_bunny_key.py
+
+# Link intake (intake_worker.py): per-run CSVs, resume state, log.
+intake_work/
+intake_state.json
+.intake.lock

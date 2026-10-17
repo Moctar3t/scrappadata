@@ -1,4 +1,31 @@
-# How to add songs to Zingy — the whole trifecta (stems + info + on the app)
+# How to add songs to Zingy
+
+## The easy way: paste a link (2026-10)
+
+**https://zingy.dime.systems/api/admin/catalogue** (DIME ADMIN → CATALOGUE → AJOUTS)
+
+Paste a **Spotify** track / album / playlist link or a **YouTube** video / playlist link,
+press AJOUTER. Within 2 minutes (if the Mac is awake) the Mac picks it up and runs the
+whole ingest on the **Replicate line** (no GPU box needed): identification, source,
+stems, BPM/key, Genius credits, cover, publish. The page shows each song's status live
+and says when the Mac last looked at the queue. 100 songs max per link.
+
+- YouTube link: if Deezer knows the song and your video is the same length (±5 s), your
+  video is the source; if it's another cut (clip intro), the original release is used;
+  if nobody knows it (leak, freestyle), it's ingested from the video itself.
+- From the terminal: `python3 zingy.py intake submit "<link>"`, `… intake status`,
+  `… intake poll` (run now), `… intake schedule on|off` (the 2-minute poll, on).
+- Code: `link_intake.py` (link → songs), `intake_worker.py` (the Mac side),
+  zingy-api `src/intake` + `src/admin/admin-intake.controller.ts` (queue + page).
+
+**CSV files** still go through `python3 zingy.py add --csv <file> [--line replicate]`
+(or `ingest_gpu.py all --csv <file>` for the GPU box).
+
+> ⚠️ Everything below describes `auto_ingest.py` + the VPS split queue, which stopped
+> working on 2026-08-28 when the API dropped the GPU worker routes. Kept for history.
+
+---
+
 
 **One command does everything.** You give it a link. It finds the real recordings, splits
 them on the GPU PC, pulls producers/writers/year/label/BPM/key/cover from Genius (+ Deezer,

@@ -208,6 +208,28 @@ def cmd_produce(a):
     src.unlink(missing_ok=True)
     emit(res)
 
+# ── info: what a link IS, for link_intake.py ────────────────────────────────
+INFO_KEYS = ("id", "title", "channel", "uploader", "duration", "track", "artist", "artists",
+             "album", "release_date", "release_year", "thumbnail", "age_limit")
+
+def cmd_info(a):
+    """One video's metadata (YouTube Music's track/artist/album when it has them),
+    or a playlist's video ids. Read here because this yt-dlp is current; the Mac's
+    Python is too old for one that still reads YouTube."""
+    url = a["url"]
+    if a.get("playlist"):
+        rc, out, err = sh(ytdlp(a) + ["--flat-playlist", "--print", "%(id)s", url],
+                          int(a.get("timeout", 150)))
+        ids = [l.strip() for l in out.splitlines() if len(l.strip()) == 11]
+        emit({"ok": bool(ids), "ids": ids, "error": "" if ids else (err.strip()[-300:] or "empty playlist")})
+        return
+    rc, out, err = sh(ytdlp(a) + ["--no-playlist", "--skip-download", "--dump-json", url],
+                      int(a.get("timeout", 120)))
+    if rc != 0 or not out.strip():
+        emit({"ok": False, "error": (err.strip() or "no metadata")[-400:]}); return
+    info = json.loads(out.splitlines()[-1])
+    emit({"ok": True, "info": {k: info.get(k) for k in INFO_KEYS if info.get(k) is not None}})
+
 def cmd_cleanup(a):
     for k in a.get("keys", []):
         shutil.rmtree(ROOT / str(k), ignore_errors=True)
@@ -217,6 +239,6 @@ if __name__ == "__main__":
     cmd, blob = sys.argv[1], sys.argv[2] if len(sys.argv) > 2 else ""
     args = json.loads(base64.b64decode(blob).decode("utf-8")) if blob else {}
     try:
-        {"search": cmd_search, "produce": cmd_produce, "cleanup": cmd_cleanup}[cmd](args)
+        {"search": cmd_search, "produce": cmd_produce, "info": cmd_info, "cleanup": cmd_cleanup}[cmd](args)
     except Exception as e:
         emit({"ok": False, "error": f"{type(e).__name__}: {e}"[:300]})

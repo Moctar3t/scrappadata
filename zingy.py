@@ -12,6 +12,7 @@ how a step gets missed.
   zingy.py audit    [--deep N]        every health check, read-only
   zingy.py fix      romaji | artists | covers | producers | bpmkey | vibe
   zingy.py spotify  login | pull [--apply] | status     the playlist inbox
+  zingy.py intake   poll | submit "<link>" | status | schedule on|off   links from DIME ADMIN
   zingy.py dedupe   [--apply]         resolve songs the app hides as duplicates
   zingy.py repair   [--apply]         re-split catalogue songs that have no stems
   zingy.py relabel  ID --title ... --artist ...      correct a mislabelled song
@@ -93,6 +94,22 @@ def cmd_spotify(a):
             si.schedule(a.arg == "on")
     except si.SpotifyError as e:
         sys.exit(f"  ! {e}")
+
+# ── intake: links pasted on DIME ADMIN > CATALOGUE ─────────────────────────
+def cmd_intake(a):
+    import intake_worker as iw
+    if a.action == "poll":
+        iw.poll()
+    elif a.action == "submit":
+        if not a.arg:
+            sys.exit('  submit needs the link: zingy.py intake submit "<spotify or youtube link>"')
+        iw.submit(a.arg)
+    elif a.action == "status":
+        iw.status()
+    elif a.action == "schedule":
+        if a.arg not in ("on", "off"):
+            sys.exit("  schedule on | off")
+        iw.schedule(a.arg == "on")
 
 # ── audit ───────────────────────────────────────────────────────────────────
 def primary_artist(s: str) -> str:
@@ -1127,9 +1144,11 @@ def main():
 
     p = sub.add_parser("spotify"); p.add_argument("action", choices=["login", "use", "pull", "status", "schedule"])
     p.add_argument("arg", nargs="?"); p.add_argument("--apply", action="store_true")
+    p = sub.add_parser("intake"); p.add_argument("action", choices=["poll", "submit", "status", "schedule"])
+    p.add_argument("arg", nargs="?")
 
     a = ap.parse_args()
-    {"add": cmd_add, "audit": cmd_audit, "fix": cmd_fix, "relabel": cmd_relabel, "spotify": cmd_spotify,
+    {"add": cmd_add, "audit": cmd_audit, "fix": cmd_fix, "relabel": cmd_relabel, "spotify": cmd_spotify, "intake": cmd_intake,
      "dedupe": cmd_dedupe, "repair": cmd_repair,
      "verify": cmd_verify, "status": lambda _a: run(["status"])}[a.cmd](a)
 

@@ -74,6 +74,10 @@ def call(command: str, args: dict, timeout: int) -> dict:
     return {"ok": False, "error": f"vps {command}: {((r.stderr or r.stdout) or '').strip()[-300:]}",
             "unavailable": r.returncode == 255}
 
+def info(url: str, port: int, playlist: bool = False) -> dict:
+    """A video's metadata, or a playlist's ids (link_intake.py)."""
+    return call("info", {"url": url, "proxy": port, "playlist": playlist, "timeout": 150}, 200)
+
 def search(query: str, port: int, limit: int = 12) -> dict:
     return call("search", {"query": query, "limit": limit, "proxy": port, "timeout": 150}, 200)
 

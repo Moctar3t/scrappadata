@@ -461,6 +461,18 @@ def parse_csv(path: Path) -> list[dict]:
             "features": feats,
             "spotify_uri": (r.get("Track URI") or "").strip() or None,
         })
+        # Link intake (link_intake.py): the video the song was submitted with is its
+        # source — no search — and a cover to fall back on. Absent from any CSV export.
+        src = (r.get("Source URL") or "").strip()
+        if src:
+            out[-1]["source_pin"] = {"url": src, "title": (r.get("Source Title") or "").strip() or None,
+                                     "channel": (r.get("Source Channel") or "").strip() or None,
+                                     "duration": fnum(r.get("Source Duration (s)"))}
+        if (r.get("Cover URL") or "").strip():
+            out[-1]["cover_hint"] = r["Cover URL"].strip()
+            out[-1]["cover_hint_source"] = (r.get("Cover Source") or "").strip() or "link"
+        if (r.get("Intake Note") or "").strip():
+            out[-1]["intake_note"] = r["Intake Note"].strip()
     return out
 
 def cmd_prepare(args):
@@ -471,9 +483,10 @@ def cmd_prepare(args):
 
     cat = local_index()
     songs = cat.get("songsList", [])
-    idx = {}
+    idx, idx_ids = {}, {}
     for s in songs:
         idx.setdefault(ntitle(s.get("title", "")), []).append(atoks(s.get("artist", "")))
+        idx_ids.setdefault(ntitle(s.get("title", "")), []).append((atoks(s.get("artist", "")), s.get("id")))
     next_id = max((int(str(s["id"])) for s in songs if str(s.get("id", "")).isdigit()), default=0)
 
     state = load_state()
@@ -481,14 +494,35 @@ def cmd_prepare(args):
         if str(t.get("catalog_id", "")).isdigit():
             next_id = max(next_id, int(t["catalog_id"]))
     seen = {(ntitle(t["title"]), frozenset(atoks(t["artist"]))) for t in state["tracks"]}
+    by_key = {(ntitle(t["title"]), frozenset(atoks(t["artist"]))): t for t in state["tracks"]}
+    rearm = getattr(args, "rearm", False)
+    report = []                      # one entry per CSV row, in order (--report)
 
-    added = dups = 0
+    added = dups = rearmed = 0
     for r in rows:
         k = (ntitle(r["title"]), frozenset(atoks(r["artist"])))
         if k in seen:
+            t = by_key.get(k)
+            # --rearm (link intake): a song someone just asked for again gets another
+            # go on this line, with the source they sent — unless it is already being
+            # made or done. A plain CSV re-run never touches existing tracks.
+            if rearm and t is not None and t["status"] in ("pending", "unresolved", "failed", "resolved"):
+                t["line"] = getattr(args, "line", None) or line_of(t)
+                for f in ("source_pin", "cover_hint", "cover_hint_source", "intake_note"):
+                    if r.get(f):
+                        t[f] = r[f]
+                if r.get("source_pin") or t["status"] in ("unresolved", "failed"):
+                    t["status"], t["error"] = "pending", ""
+                t.setdefault("history", []).append({"at": time.strftime("%Y-%m-%dT%H:%M:%S"), "event": "rearmed by link intake"})
+                rearmed += 1
+            report.append({"outcome": "existing", "catalog_id": (t or {}).get("catalog_id"),
+                           "status": (t or {}).get("status")})
             continue
         if is_dup(idx, r["artist"], r["title"]):
             dups += 1
+            cand = atoks(r["artist"])
+            cid = next((i for toks, i in idx_ids.get(ntitle(r["title"]), []) if cand & toks), None)
+            report.append({"outcome": "catalogue", "catalog_id": str(cid) if cid is not None else None})
             continue
         seen.add(k)
         next_id += 1
@@ -519,9 +553,14 @@ def cmd_prepare(args):
             "line": getattr(args, "line", None) or "gpu",
         })
         state["tracks"].append(r)
+        by_key[k] = r
         added += 1
+        report.append({"outcome": "added", "catalog_id": r["catalog_id"], "status": "pending"})
     save_state(state)
-    log(f"  + {added} new | {dups} already in the catalogue (skipped) | manifest total: {len(state['tracks'])}")
+    log(f"  + {added} new | {dups} already in the catalogue (skipped)"
+        + (f" | {rearmed} re-armed" if rearmed else "") + f" | manifest total: {len(state['tracks'])}")
+    if getattr(args, "report", None):
+        Path(args.report).write_text(json.dumps(report, ensure_ascii=False), encoding="utf-8")
 
 # ════════════════════════════════════════════════════════════════════════════
 # STAGE: resolve  — the source-verification gate
@@ -726,6 +765,18 @@ class line_tunnel:
             LINE_PORT = None
 
 def resolve_one(track: dict) -> dict:
+    pin = track.get("source_pin") or {}
+    if pin.get("url"):
+        # The link it was submitted with IS the source. Its runtime is still checked
+        # against the song's at produce, like every other source.
+        want = (track.get("duration_ms") or 0) / 1000.0
+        track["source"] = {"url": pin["url"], "title": pin.get("title"), "channel": pin.get("channel") or "pinned",
+                           "duration": pin.get("duration"), "pinned": True,
+                           "delta_s": round(abs(pin["duration"] - want), 1) if pin.get("duration") and want else None}
+        track["alternates"] = []
+        track["resolve_notes"] = ["source pinned by the link the song was submitted with"]
+        track["status"], track["error"] = "resolved", ""
+        return track
     # Search with the ORIGINAL title where we have one: a Japanese upload is
     # titled in Japanese, so querying the romaji finds far less.
     q = (f"{track.get('artist_original') or track['artist']} "
@@ -1262,11 +1313,18 @@ def enrich_one(track: dict) -> dict:
             meta["writers"] = ", ".join(writ)
         if song.get("song_art_image_url"):
             meta["coverArt"] = song["song_art_image_url"]
+    # A cover from the link the song came in by: Spotify's / Deezer's own art for
+    # exactly this recording beats an iTunes title search; a video thumbnail doesn't.
+    hint, hsrc = track.get("cover_hint"), track.get("cover_hint_source") or "link"
+    if not meta.get("coverArt") and hint and hsrc in ("spotify", "deezer"):
+        meta["coverArt"], meta["coverSource"] = hint, hsrc
     if not meta.get("coverArt"):
         art = itunes_cover(track["artist"], track["title"], track.get("album"))
         if art:
             meta["coverArt"] = art
             meta["coverSource"] = "itunes"
+    if not meta.get("coverArt") and hint:
+        meta["coverArt"], meta["coverSource"] = hint, hsrc
     track["genius"] = meta          # {} means "Genius had nothing" — not a fake value
     track["cover_attempted"] = True
     return track
@@ -1560,6 +1618,9 @@ def main():
         sub.add_parser(name)
     sub.add_parser("resolve").add_argument("--line", choices=["gpu", "replicate"])
     p = sub.add_parser("prepare"); p.add_argument("--csv", required=True)
+    p.add_argument("--rearm", action="store_true",
+                   help="link intake: give songs already in the manifest (not yet made) another go on this line")
+    p.add_argument("--report", help="link intake: write what became of each CSV row (JSON)")
     p.add_argument("--line", choices=["gpu", "replicate"], default="gpu")
     pr = sub.add_parser("produce"); pr.add_argument("--limit", type=int, default=0)
     pr.add_argument("--line", choices=["gpu", "replicate"])
