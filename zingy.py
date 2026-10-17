@@ -17,7 +17,8 @@ how a step gets missed.
   zingy.py repair   [--apply]         re-split catalogue songs that have no stems
   zingy.py relabel  ID --title ... --artist ...      correct a mislabelled song
   zingy.py verify   [--ids ...]       re-check songs against the LIVE CDN
-  zingy.py status                     ingest manifest state
+  zingy.py status                     ingest manifest state (on the VPS, which hosts the ingest)
+  zingy.py remote STAGE ... | log     run an ingest_gpu.py stage on the VPS / follow the last add
 
 Every mutating command loads the whole index, so `save_index` refuses to write
 if the file changed underneath — two commands at once would otherwise be
@@ -27,7 +28,7 @@ Ingest itself still lives in ingest_gpu.py — this drives it rather than
 duplicating it, so there is one implementation of the gate.
 """
 from __future__ import annotations
-import argparse, json, re, struct, subprocess, sys, time, urllib.request
+import argparse, json, os, re, shlex, struct, subprocess, sys, time, urllib.request
 from collections import defaultdict
 from pathlib import Path
 
@@ -41,9 +42,48 @@ from ingest_gpu import title_matches, atoks  # noqa: E402  (one gate, used every
 def log(m): print(m, flush=True)
 def run(args): return subprocess.run([sys.executable, str(HERE / "ingest_gpu.py")] + args).returncode
 
+# ── the VPS is the ingest host (2026-10) ────────────────────────────────────
+# Links (DIME ADMIN > CATALOGUE) and CSVs both run on the VPS, 24/7: one
+# manifest, one machine publishing. From the Mac, `add` and `status` run there;
+# `remote` runs any ingest_gpu.py stage there. The marker says the Mac's own
+# manifest moved (its copy is kept as ingest_gpu_state.mac-archive.json).
+MOVED = HERE / ".ingest_on_vps"
+VPS_HOST = os.environ.get("ZINGY_VPS_HOST", "zingy-vps")      # ~/.ssh/config alias
+VPS_DIR = "/opt/zingy-ingest"
+
+def on_vps() -> bool:
+    return os.environ.get("ZINGY_HOST") == "vps"
+
+def forwarded() -> bool:
+    return MOVED.exists() and not on_vps()
+
+def remote(args: list[str], script: str = "zingy.py", background: bool = False) -> int:
+    """Run `<script> <args>` in the VPS's ingest checkout, with its host settings."""
+    line = f"cd {VPS_DIR} && ./vps_run.sh {script} " + " ".join(shlex.quote(x) for x in args)
+    if background:
+        stamp = time.strftime("%Y%m%d-%H%M%S")
+        line = f"mkdir -p {VPS_DIR}/logs && nohup sh -c {shlex.quote(line)} > {VPS_DIR}/logs/add-{stamp}.log 2>&1 &"
+        log(f"  running on the VPS: follow it with  python3 zingy.py remote log")
+    return subprocess.run(["ssh", VPS_HOST, line]).returncode
+
+def cmd_remote(a):
+    if a.args == ["log"]:
+        sys.exit(subprocess.run(["ssh", VPS_HOST, f"tail -n 40 -f $(ls -t {VPS_DIR}/logs/add-*.log | head -1)"]).returncode)
+    sys.exit(remote(a.args, script="ingest_gpu.py"))
+
 # ── add ─────────────────────────────────────────────────────────────────────
 def cmd_add(a):
     """Acquire authoritative durations, then run the ingest stages in order."""
+    if forwarded():
+        args = ["--line", a.line] + sum((["--album", x] for x in a.album or []), []) \
+            + sum((["--track", x] for x in a.track or []), [])
+        if a.csv:
+            name = f"{time.strftime('%Y%m%d-%H%M%S')}-{Path(a.csv).name}"
+            subprocess.run(["ssh", VPS_HOST, f"mkdir -p {VPS_DIR}/inbox"], check=True)
+            subprocess.run(["scp", "-q", a.csv, f"{VPS_HOST}:{VPS_DIR}/inbox/{name}"], check=True)
+            args += ["--csv", f"inbox/{name}"]
+        log(f"  the ingest runs on the VPS now: sending it there")
+        sys.exit(remote(["add"] + args, background=True))
     csv_path = a.csv
     if a.album or a.track:
         import build_add_csv as bac
@@ -66,10 +106,12 @@ def ingest_csv(csv_path: str, line: str = "gpu") -> None:
     """Every stage, in order, for the songs of one Exportify-shaped CSV. `line`:
     gpu (the home box) or replicate (the VPS + Replicate, no home GPU); resolve
     and produce touch only that line's tracks."""
+    import intake_worker as iw
     for stage in (["prepare", "--csv", csv_path, "--line", line], ["resolve", "--line", line],
                   ["produce", "--line", line], ["upload"], ["enrich"], ["vibe"], ["publish"], ["report"]):
         log(f"\n══ {stage[0]} ══")
-        if run(stage) != 0 and stage[0] in ("prepare", "resolve"):
+        # iw.stage waits its turn on the manifest: the intake worker shares it.
+        if iw.stage(stage) != 0 and stage[0] in ("prepare", "resolve"):
             sys.exit(f"  {stage[0]} failed — stopping before the long work")
 
 # ── spotify: the playlist inbox ─────────────────────────────────────────────
@@ -98,7 +140,11 @@ def cmd_spotify(a):
 # ── intake: links pasted on DIME ADMIN > CATALOGUE ─────────────────────────
 def cmd_intake(a):
     import intake_worker as iw
-    if a.action == "poll":
+    if forwarded() and a.action in ("poll", "loop", "schedule") and a.arg != "off":
+        sys.exit("  the VPS runs the intake now (pm2: zingy-intake); nothing to do here")
+    if a.action == "loop":
+        iw.loop()
+    elif a.action == "poll":
         iw.poll()
     elif a.action == "submit":
         if not a.arg:
@@ -1141,16 +1187,19 @@ def main():
     p.add_argument("--last", type=int, default=0)
 
     sub.add_parser("status")
+    p = sub.add_parser("remote", help="run an ingest_gpu.py stage on the VPS, or `remote log`")
+    p.add_argument("args", nargs=argparse.REMAINDER)
 
     p = sub.add_parser("spotify"); p.add_argument("action", choices=["login", "use", "pull", "status", "schedule"])
     p.add_argument("arg", nargs="?"); p.add_argument("--apply", action="store_true")
-    p = sub.add_parser("intake"); p.add_argument("action", choices=["poll", "submit", "status", "schedule"])
+    p = sub.add_parser("intake"); p.add_argument("action", choices=["poll", "loop", "submit", "status", "schedule"])
     p.add_argument("arg", nargs="?")
 
     a = ap.parse_args()
     {"add": cmd_add, "audit": cmd_audit, "fix": cmd_fix, "relabel": cmd_relabel, "spotify": cmd_spotify, "intake": cmd_intake,
      "dedupe": cmd_dedupe, "repair": cmd_repair,
-     "verify": cmd_verify, "status": lambda _a: run(["status"])}[a.cmd](a)
+     "verify": cmd_verify, "remote": cmd_remote,
+     "status": lambda _a: sys.exit(remote(["status"], script="ingest_gpu.py")) if forwarded() else run(["status"])}[a.cmd](a)
 
 if __name__ == "__main__":
     main()

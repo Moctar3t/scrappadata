@@ -40,7 +40,10 @@ STATE = HERE / "intake_state.json"     # intake id → its songs' catalogue ids 
 LOGFILE = HERE / "intake.log"
 LABEL = "systems.dime.zingy.intake"
 PLIST = Path.home() / f"Library/LaunchAgents/{LABEL}.plist"
-LINE = "replicate"
+LINE = os.environ.get("ZINGY_INTAKE_LINE", "replicate")
+ON_VPS = os.environ.get("ZINGY_HOST") == "vps"
+API_ENV = Path("/var/www/zingy-api/.env")
+WAITING = "en attente d’une sortie YouTube : la box est éteinte (le lien partira dès qu’elle revient)"
 
 STAGES = [
     (["resolve", "--line", LINE], "recherche de la source"),
@@ -60,6 +63,10 @@ _secret: str | None = None
 
 def secret() -> str:
     global _secret
+    if _secret is None and ON_VPS:
+        for line in API_ENV.read_text(encoding="utf-8").splitlines():
+            if line.startswith("WORKER_SECRET="):
+                _secret = line.split("=", 1)[1].strip().strip('"')
     if _secret is None:
         r = subprocess.run(["ssh", "-o", "BatchMode=yes", "-o", "ConnectTimeout=15", f"root@{VPS}",
                             "grep '^WORKER_SECRET=' /var/www/zingy-api/.env | cut -d= -f2-"],
@@ -148,12 +155,34 @@ def poll() -> None:
     if not intakes:
         return
     log(f"── {len(intakes)} lien(s) à traiter ──")
-    # Keep the Mac awake while there is work (launchd only runs us while it is).
-    awake = subprocess.Popen(["caffeinate", "-i", "-w", str(os.getpid())])
+    # On the Mac: keep it awake while there is work (launchd only runs us while it is).
+    awake = None if ON_VPS else subprocess.Popen(["caffeinate", "-i", "-w", str(os.getpid())])
     try:
         run(intakes)
     finally:
-        awake.terminate()
+        if awake:
+            awake.terminate()
+
+def loop(every: int = 60) -> None:
+    """The VPS service (pm2): poll forever. One bad poll never stops the next."""
+    log(f"intake worker up on {'the VPS' if ON_VPS else 'this machine'}, line={LINE}, every {every}s")
+    while True:
+        try:
+            poll()
+        except Exception as e:
+            log(f"  ! poll failed: {type(e).__name__}: {str(e)[:300]}")
+        time.sleep(every)
+
+def youtube_ready() -> bool:
+    """On the VPS, YouTube is only reachable through an exit (box / Mac / proxy)."""
+    if not ON_VPS:
+        return True
+    import replicate_line
+    try:
+        replicate_line.live_exit()
+        return True
+    except replicate_line.NoExit:
+        return False
 
 def run(intakes: list[dict]) -> None:
     import link_intake as li
@@ -170,8 +199,13 @@ def run(intakes: list[dict]) -> None:
             continue                             # prepared on an earlier poll: resume from the manifest
         progress(it["id"], status="processing", stage="identification du lien")
         log(f"  identify {it['url']}")
+        import replicate_line
         try:
             rs, notes = li.expand(it["url"])
+        except replicate_line.NoExit as e:            # YouTube unreachable: wait, don't fail
+            log(f"    … {e}")
+            progress(it["id"], status="claimed", stage=WAITING)
+            continue
         except li.IntakeError as e:
             log(f"    ✗ {e}")
             progress(it["id"], status="failed", stage=None, error=str(e))
@@ -224,6 +258,11 @@ def run(intakes: list[dict]) -> None:
 
     work = any(s["outcome"] != "catalogue" and not (s["outcome"] == "existing" and s.get("status0") == "published")
                for it in live for s in st[it["id"]])
+    if work and not youtube_ready():
+        log(f"  {WAITING}")
+        for it in live:
+            progress(it["id"], status="processing", stage=WAITING, items=items_for(st[it["id"]]))
+        return
     if work:
         for args, label in STAGES:
             report_all(label)

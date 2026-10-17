@@ -25,7 +25,7 @@ from __future__ import annotations
 import json, os, re, subprocess, tempfile, time, urllib.request
 from pathlib import Path
 
-REPO = Path("/Users/dime/Developer/ios-zingy")
+REPO = Path(os.environ.get("ZINGY_REPO", "/Users/dime/Developer/ios-zingy"))
 MUSICDATA = REPO / "App/ZingyApp/Resources/musicdata"
 INDEX_PATH = MUSICDATA / "music-index.json"
 SONGS_DIR = MUSICDATA / "songs"
@@ -49,9 +49,82 @@ def _index_digest() -> str:
     import hashlib
     return hashlib.sha256(INDEX_PATH.read_bytes()).hexdigest()
 
+# ── the LIVE index is the truth ─────────────────────────────────────────────
+# Two machines write the catalogue: the VPS publishes ingests around the clock,
+# and this Mac's tools (fix, relabel, dedupe, …) edit it. Each used to write its
+# own local copy over the whole live index, so whichever wrote second erased what
+# the other had added. Now every load starts from the live index, and every save
+# is a three-way merge by song id: this command's own edits applied on top of
+# whatever is live at that moment.
+_loaded_base: dict[int, dict] = {}
+
+def _env() -> dict:
+    env = {}
+    for p in (REPO / "scripts/.env",):
+        if p.exists():
+            for line in p.read_text(encoding="utf-8", errors="replace").splitlines():
+                if "=" in line and not line.lstrip().startswith("#"):
+                    k, v = line.split("=", 1)
+                    env.setdefault(k.strip(), v.strip().strip('"').strip("'"))
+    return env
+
+def live_index() -> dict:
+    """The index as Bunny storage holds it (authoritative: no edge cache)."""
+    e = _env()
+    if e.get("BUNNY_STORAGE_PASSWORD") and e.get("BUNNY_STORAGE_ZONE"):
+        host = e.get("BUNNY_STORAGE_HOST") or "storage.bunnycdn.com"
+        req = urllib.request.Request(f"https://{host}/{e['BUNNY_STORAGE_ZONE']}/musicdata/music-index.json",
+                                     headers={"AccessKey": e["BUNNY_STORAGE_PASSWORD"]})
+    else:
+        req = urllib.request.Request(f"{CDN}/musicdata/music-index.json?v={int(time.time())}")
+    with urllib.request.urlopen(req, timeout=60) as r:
+        cat = json.loads(r.read().decode("utf-8"))
+    if not isinstance(cat.get("songsList"), list) or len(cat["songsList"]) < 1000:
+        raise RuntimeError(f"live index looks wrong ({len(cat.get('songsList') or [])} songs)")
+    return cat
+
+def sync_from_live(required: bool = False) -> bool:
+    """Make the local index the live one (backing up the local copy if they differ)."""
+    try:
+        live = live_index()
+    except Exception as e:
+        if required:
+            raise RuntimeError(f"could not read the live index ({e}) — refusing to write over it blind")
+        log(f"    ! live index unreachable ({e}); working from the local copy")
+        return False
+    body = json.dumps(live, separators=(",", ":"), ensure_ascii=False)
+    if not INDEX_PATH.exists() or INDEX_PATH.read_text(encoding="utf-8") != body:
+        if INDEX_PATH.exists():
+            BACKUP_DIR.mkdir(parents=True, exist_ok=True)
+            (BACKUP_DIR / f"music-index.json.bak-{time.strftime('%Y%m%d-%H%M%S')}-prelive").write_bytes(INDEX_PATH.read_bytes())
+        INDEX_PATH.parent.mkdir(parents=True, exist_ok=True)
+        tmp = INDEX_PATH.with_suffix(".tmp")
+        tmp.write_text(body, encoding="utf-8")
+        os.replace(tmp, INDEX_PATH)
+    return True
+
+def merge3(base: dict, mine: dict, live: dict) -> dict:
+    """Apply what `mine` changed relative to `base` onto `live`, entry by entry."""
+    def by(c): return {str(s.get("id")): s for s in c.get("songsList", [])}
+    b, m, l = by(base), by(mine), by(live)
+    out = dict(live)
+    songs = []
+    for sid, s in l.items():
+        if sid in b and sid not in m:
+            continue                                   # I removed it
+        songs.append(m[sid] if sid in m and m[sid] != b.get(sid) else s)
+    songs += [s for sid, s in m.items() if sid not in b and sid not in l]   # I added it
+    out["songsList"] = songs
+    for k, v in mine.items():                          # top-level keys I changed
+        if k != "songsList" and v != base.get(k):
+            out[k] = v
+    return out
+
 def load_index() -> dict:
+    sync_from_live(required=False)
     cat = json.loads(INDEX_PATH.read_text(encoding="utf-8"))
     _loaded_digest[id(cat)] = _index_digest()
+    _loaded_base[id(cat)] = json.loads(json.dumps(cat))
     return cat
 
 def index_by_id(cat: dict) -> dict:
@@ -98,6 +171,16 @@ def save_index(cat: dict, label: str = "", force: bool = False) -> Path:
             "the index changed on disk since this command loaded it — another "
             "command wrote to it. Re-run this one; do not force, or you will "
             "revert whatever the other command did.")
+    base = _loaded_base.get(id(cat))
+    if base is not None:
+        try:
+            live = live_index()
+            if live != base:
+                merged = merge3(base, cat, live)
+                cat.clear(); cat.update(merged)        # the caller keeps working on the merged copy
+                log(f"    merged onto the live index ({len(cat['songsList'])} songs)")
+        except Exception as e:
+            log(f"    ! live index unreachable at save ({e}); saving the local copy")
     stamp = time.strftime("%Y%m%d-%H%M%S")
     # Backups live HERE, never next to the index: the app bundles musicdata, so a
     # backup written beside music-index.json shipped inside the app (54 of them had
@@ -110,6 +193,7 @@ def save_index(cat: dict, label: str = "", force: bool = False) -> Path:
     tmp.write_text(json.dumps(cat, separators=(",", ":"), ensure_ascii=False), encoding="utf-8")
     os.replace(tmp, INDEX_PATH)      # atomic
     _loaded_digest[id(cat)] = _index_digest()
+    _loaded_base[id(cat)] = json.loads(json.dumps(cat))
     return backup
 
 def publish(files: list[str], expect_ids: list[str] | None = None) -> bool:

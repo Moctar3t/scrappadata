@@ -58,8 +58,18 @@ def duration(p: Path) -> float | None:
         return None
 
 def ytdlp(a: dict) -> list[str]:
+    """`proxy`: a port on this machine's loopback (a tunnel), or a full proxy URL."""
+    p = a["proxy"]
+    url = p if isinstance(p, str) and "://" in p else f"socks5h://127.0.0.1:{int(p)}"
     return [YTDLP, "--no-warnings", "--no-update", "--js-runtimes", "node",
-            "--proxy", f"socks5h://127.0.0.1:{int(a['proxy'])}", "--socket-timeout", "20"]
+            "--proxy", url, "--socket-timeout", "20"]
+
+# A signed-in YouTube jar, for age-gated uploads only (a throwaway account; see
+# ingest_gpu's docstring). ONE jar, used under a lock: Google rotates the session
+# on every use and yt-dlp writes the new tokens back, so two concurrent users of
+# one jar would each invalidate the other. Only ever sent through an exit (home
+# IP or proxy), never from this machine's own address.
+COOKIES = Path(os.environ.get("ZINGY_YT_COOKIES", "/etc/zingy/youtube_cookies.txt"))
 
 # ── search ──────────────────────────────────────────────────────────────────
 def cmd_search(a):
@@ -98,6 +108,19 @@ def fetch(a: dict, url: str, work: Path) -> tuple[Path | None, str, bool]:
         full = se or so
         gated = gated or bool(re.search(r"confirm your age|age-restricted", full, re.I))
         last = full.strip()[-300:]
+    if gated and COOKIES.exists():
+        import fcntl
+        with open(str(COOKIES) + ".lock", "w") as lk:
+            fcntl.flock(lk, fcntl.LOCK_EX)
+            for f in work.glob("src.*"):
+                f.unlink()
+            rc, so, se = sh(ytdlp(a) + ["--cookies", str(COOKIES), "--no-playlist", "--no-part",
+                                        "-f", "bestaudio/best", "--retries", "3",
+                                        "-o", str(work / "src.%(ext)s"), url], 420)
+        got = [f for f in work.glob("src.*") if f.stat().st_size > 10_000]
+        if rc == 0 and got:
+            return got[0], "", False
+        last = ("[with cookies] " + (se or so).strip())[-300:]
     return None, last, gated
 
 def replicate_split(src: Path, work: Path, token: str, version: str) -> dict:

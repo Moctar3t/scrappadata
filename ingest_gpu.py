@@ -92,7 +92,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from romaji import to_romaji, has_japanese, romanize_artist
 
 HERE = Path(__file__).resolve().parent
-REPO = Path("/Users/dime/Developer/ios-zingy")
+# Where the catalogue (musicdata + scripts/upload-catalog.sh) lives. The Mac's
+# ios-zingy checkout by default; on the VPS (the 24/7 ingest host) a mirror of it.
+REPO = Path(os.environ.get("ZINGY_REPO", "/Users/dime/Developer/ios-zingy"))
 MUSICDATA = REPO / "App/ZingyApp/Resources/musicdata"
 INDEX_PATH = MUSICDATA / "music-index.json"
 SONGS_DIR = MUSICDATA / "songs"
@@ -108,6 +110,8 @@ BOX_HOSTS = [h for h in (os.environ.get("ZINGY_BOX_HOST")
                          or "100.76.91.119,technica.home,192.168.1.64").split(",") if h.strip()]
 BOX_HOST = BOX_HOSTS[0]
 BOX_KEY = os.path.expanduser(os.environ.get("ZINGY_BOX_KEY", "~/.ssh/id_ed25519_gpu"))
+# From the VPS the box is reached through its own reverse tunnel (127.0.0.1:2222).
+BOX_PORT = os.environ.get("ZINGY_BOX_PORT", "22")
 REMOTE_AGENT = "%USERPROFILE%\\zingy_ingest\\gpu_agent.py"
 VPS = os.environ.get("ZINGY_VPS", "204.168.236.140")
 
@@ -210,7 +214,7 @@ def _clean(s: str) -> str:
     return _SSH_NOISE.sub("", s or "").strip()
 
 def _ssh_once(host: str, remote_cmd: list[str], timeout: int) -> tuple[int, str, str]:
-    cmd = ["ssh", "-i", BOX_KEY, "-o", "BatchMode=yes", "-o", "StrictHostKeyChecking=accept-new",
+    cmd = ["ssh", "-i", BOX_KEY, "-p", BOX_PORT, "-o", "BatchMode=yes", "-o", "StrictHostKeyChecking=accept-new",
            "-o", "ConnectTimeout=10", "-o", "ServerAliveInterval=15", "-o", "ServerAliveCountMax=4",
            f"{BOX_USER}@{host}"] + remote_cmd
     try:
@@ -299,7 +303,7 @@ def push_agent() -> bool:
         log(f"    ! could not create the remote work dir: {err[-160:]}")
         return False
     dst = f"{BOX_HOST}:zingy_ingest/gpu_agent.py"
-    r = subprocess.run(["scp", "-i", BOX_KEY, "-o", "BatchMode=yes",
+    r = subprocess.run(["scp", "-i", BOX_KEY, "-P", BOX_PORT, "-o", "BatchMode=yes",
                         "-o", f"User={BOX_USER}",
                         "-o", "StrictHostKeyChecking=accept-new", "-o", "ConnectTimeout=15",
                         str(HERE / "gpu_agent.py"), dst],
@@ -481,6 +485,8 @@ def cmd_prepare(args):
     rows = parse_csv(Path(args.csv).expanduser())
     log(f"  parsed {len(rows)} rows from {Path(args.csv).name}")
 
+    import catalog_lib                       # dedup against what is LIVE, not a stale copy
+    catalog_lib.sync_from_live(required=False)
     cat = local_index()
     songs = cat.get("songsList", [])
     idx, idx_ids = {}, {}
@@ -847,7 +853,7 @@ def pull_stems(track: dict) -> tuple[bool, str]:
     # *source* parser rejects a non-ASCII user ("dimé: invalid user name"), even
     # though the same spec works as a destination.
     remote = f"{BOX_HOST}:zingy_ingest/enc/{key}/*.m4a"
-    r = subprocess.run(["scp", "-i", BOX_KEY, "-o", "BatchMode=yes",
+    r = subprocess.run(["scp", "-i", BOX_KEY, "-P", BOX_PORT, "-o", "BatchMode=yes",
                         "-o", f"User={BOX_USER}",
                         "-o", "StrictHostKeyChecking=accept-new", "-o", "ConnectTimeout=15",
                         remote, str(dest)],
@@ -1474,6 +1480,13 @@ def cmd_publish(args):
     todo = [t for t in state["tracks"] if t["status"] == "verified"]
     if not todo:
         log("  nothing verified to publish."); return
+    # Start from the LIVE index: the other machine may have published since this
+    # one last looked, and writing a stale copy back would erase its songs.
+    import catalog_lib
+    try:
+        catalog_lib.sync_from_live(required=True)
+    except RuntimeError as e:
+        log(f"  ✗ {e}"); return
 
     # Mandatory: the app shows BPM and key on every song, and Mixima matches on
     # key, so a song without them is broken in the library rather than merely thin.
@@ -1631,6 +1644,11 @@ def main():
     pa.add_argument("--skip-upload", action="store_true")
     pa.add_argument("--line", choices=["gpu", "replicate"], default="gpu")
     a = ap.parse_args()
+
+    if (HERE / ".ingest_on_vps").exists() and os.environ.get("ZINGY_HOST") != "vps":
+        sys.exit("  the ingest runs on the VPS now (this Mac's manifest moved there):\n"
+                 "    python3 zingy.py add --csv FILE [--line gpu|replicate]   a CSV, run there\n"
+                 f"    python3 zingy.py remote {a.stage} ...   any stage, run there")
 
     # The box's preconditions mean nothing to a replicate-line run.
     if a.stage == "preflight" or (a.stage == "all" and a.line == "gpu"):
