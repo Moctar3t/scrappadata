@@ -43,7 +43,7 @@ PLIST = Path.home() / f"Library/LaunchAgents/{LABEL}.plist"
 LINE = os.environ.get("ZINGY_INTAKE_LINE", "replicate")
 ON_VPS = os.environ.get("ZINGY_HOST") == "vps"
 API_ENV = Path("/var/www/zingy-api/.env")
-WAITING = "en attente d’une sortie YouTube : la box est éteinte (le lien partira dès qu’elle revient)"
+WAITING = "en attente d’une sortie YouTube (box et Mac éteints) : repart tout seul dès que l’un des deux revient"
 
 STAGES = [
     (["resolve", "--line", LINE], "recherche de la source"),

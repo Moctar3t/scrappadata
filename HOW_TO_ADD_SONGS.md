@@ -1,28 +1,79 @@
 # How to add songs to Zingy
 
-## The easy way: paste a link (2026-10)
+## The easy way: paste a link (24/7, 2026-10)
 
 **https://zingy.dime.systems/api/admin/catalogue** (DIME ADMIN → CATALOGUE → AJOUTS)
 
-Paste a **Spotify** track / album / playlist link or a **YouTube** video / playlist link,
-press AJOUTER. Within 2 minutes (if the Mac is awake) the Mac picks it up and runs the
-whole ingest on the **Replicate line** (no GPU box needed): identification, source,
-stems, BPM/key, Genius credits, cover, publish. The page shows each song's status live
-and says when the Mac last looked at the queue. 100 songs max per link.
+Paste a **Spotify** track / album / playlist or a **YouTube** video / playlist, press
+AJOUTER. Within a minute the **VPS** picks it up and runs the whole ingest on the
+Replicate line: identification, source, stems, BPM/key, Genius credits, cover,
+publish. The Mac does not need to be on. 100 songs max per link.
 
-- YouTube link: if Deezer knows the song and your video is the same length (±5 s), your
-  video is the source; if it's another cut (clip intro), the original release is used;
-  if nobody knows it (leak, freestyle), it's ingested from the video itself.
-- From the terminal: `python3 zingy.py intake submit "<link>"`, `… intake status`,
-  `… intake poll` (run now), `… intake schedule on|off` (the 2-minute poll, on).
-- Code: `link_intake.py` (link → songs), `intake_worker.py` (the Mac side),
-  zingy-api `src/intake` + `src/admin/admin-intake.controller.ts` (queue + page).
+The line above the queue is the system's health:
+`WORKER (VPS) : il y a 30 s | SORTIE YOUTUBE : BOX ✓ · MAC ✗ | GPU BOX ✓ | LIGNE REPLICATE`
 
-**CSV files** still go through `python3 zingy.py add --csv <file> [--line replicate]`
-(or `ingest_gpu.py all --csv <file>` for the GPU box).
+- YouTube link: Deezer knows the song and your video is the same length (±5 s) → your
+  video is the source; another cut (clip intro) → the original release is found; nobody
+  knows it (leak, freestyle) → ingested from the video itself.
+- A song already in the app is reported (DÉJÀ DANS L'APP), never redone. Failed or partial
+  links get a RELANCER button.
 
-> ⚠️ Everything below describes `auto_ingest.py` + the VPS split queue, which stopped
-> working on 2026-08-28 when the API dropped the GPU worker routes. Kept for history.
+## Where everything runs
+
+| piece | where | how it stays up |
+|---|---|---|
+| the queue + page | zingy-api (VPS) | pm2 `zingy-api` |
+| the ingest worker | VPS `/opt/zingy-ingest` (this repo) | pm2 `zingy-intake`, restarts on crash and reboot |
+| the manifest | VPS `/opt/zingy-ingest/ingest_gpu_state.json` | the Mac's copy is archived (`ingest_gpu_state.mac-archive.json`) |
+| YouTube exit #1 | GPU box → VPS `127.0.0.1:1081` | box scheduled task `ZingyExit` (SYSTEM, at boot, reconnects) |
+| YouTube exit #2 | Mac → VPS `127.0.0.1:1082` | launchd `systems.dime.zingy.exit` (while the Mac is awake) |
+| YouTube exit #3 | paid residential proxy | `ZINGY_YT_PROXY=…` in `/etc/zingy/host.env` on the VPS (none yet) |
+| GPU box for the VPS | box SSH → VPS `127.0.0.1:2222` | same `ZingyExit` tunnel |
+| age-gate cookies | VPS `/etc/zingy/youtube_cookies.txt` | used locked, through an exit only |
+| yt-dlp | VPS `/usr/local/bin/yt-dlp` | `/etc/cron.daily/yt-dlp-update` |
+
+**Why exits:** YouTube blocks the VPS's address ("Sign in to confirm you're not a bot"),
+so YouTube traffic leaves through your home connection (box or Mac). With no exit up,
+links **wait** ("en attente d'une sortie YouTube") and start by themselves when one returns.
+
+**Fallback:** a song Replicate fails on gets another go on the GPU box when the box is up.
+
+**Two machines, one catalogue:** the VPS publishes ingests; the Mac's tools (`zingy.py fix /
+relabel / dedupe …`) edit the catalogue. Every save is a three-way merge with the **live**
+index, so neither can erase the other's songs.
+
+## From the Mac (a remote control now)
+
+```bash
+python3 zingy.py add --csv ~/Downloads/playlist.csv --line gpu   # runs ON THE VPS, Mac can sleep
+python3 zingy.py remote log          # follow that run
+python3 zingy.py status              # the manifest (on the VPS)
+python3 zingy.py intake submit "<link>"   # same as the page
+python3 zingy.py remote produce --line gpu  # any ingest_gpu.py stage, on the VPS
+```
+
+`ingest_gpu.py` refuses to run on the Mac now (its manifest moved): use the above.
+
+## When something is down
+
+| the page says | do |
+|---|---|
+| `SORTIE YOUTUBE : BOX ✗ · MAC ✗` and links wait | power the box on (or open the Mac). Nothing to restart. |
+| `LE WORKER NE RÉPOND PLUS` | `ssh zingy-vps 'pm2 restart zingy-intake && pm2 logs zingy-intake --lines 30'` |
+| a song `SOURCE INTROUVABLE` | no YouTube upload matches its length (±5 s): paste the right YouTube video instead |
+| a song `ÉCHEC … age-gated` | that video needs a signed-in, **age-verified** account: see cookies below |
+| everything fails on download | `ssh zingy-vps /etc/cron.daily/yt-dlp-update` (YouTube changed) |
+
+**Cookies (age-gated videos):** sign in to a *throwaway* YouTube account in a **private
+window**, confirm it's 18+ (open an age-restricted video, complete YouTube's check), export
+cookies.txt, **close the window**, then
+`scp cookies.txt zingy-vps:/etc/zingy/youtube_cookies.txt && ssh zingy-vps chmod 600 /etc/zingy/youtube_cookies.txt`.
+Never use the same session in two places: Google rotates it and both copies die.
+
+**CSV files** go through `python3 zingy.py add --csv <file> [--line gpu|replicate]` (on the VPS).
+
+> ⚠️ Everything below describes `auto_ingest.py` + the old VPS split queue, which stopped
+> working on 2026-08-28 when the API dropped the GPU worker routes. Kept for history only.
 
 ---
 
