@@ -83,8 +83,32 @@ def live_index() -> dict:
         raise RuntimeError(f"live index looks wrong ({len(cat.get('songsList') or [])} songs)")
     return cat
 
+# What the live index was at the last sync. The base of every merge: anything the
+# local copy changed relative to it is a local edit not yet published, and must
+# survive; anything live changed relative to it came from the other machine.
+# Kept beside the backups, never in musicdata (the app bundles that folder).
+LIVE_SNAPSHOT = BACKUP_DIR / "live-index.json"
+
+def _read_json(p: Path):
+    try:
+        return json.loads(p.read_text(encoding="utf-8"))
+    except Exception:
+        return None
+
+def _write_index(cat: dict) -> None:
+    INDEX_PATH.parent.mkdir(parents=True, exist_ok=True)
+    tmp = INDEX_PATH.with_suffix(".tmp")
+    tmp.write_text(json.dumps(cat, separators=(",", ":"), ensure_ascii=False), encoding="utf-8")
+    os.replace(tmp, INDEX_PATH)
+
+def mark_published() -> None:
+    """After a verified publish, live == local: that is the new merge base."""
+    BACKUP_DIR.mkdir(parents=True, exist_ok=True)
+    LIVE_SNAPSHOT.write_bytes(INDEX_PATH.read_bytes())
+
 def sync_from_live(required: bool = False) -> bool:
-    """Make the local index the live one (backing up the local copy if they differ)."""
+    """Three-way: this copy's unpublished edits (vs the last live snapshot), applied
+    onto the live index as it is now. Neither side loses anything."""
     try:
         live = live_index()
     except Exception as e:
@@ -92,15 +116,26 @@ def sync_from_live(required: bool = False) -> bool:
             raise RuntimeError(f"could not read the live index ({e}) — refusing to write over it blind")
         log(f"    ! live index unreachable ({e}); working from the local copy")
         return False
-    body = json.dumps(live, separators=(",", ":"), ensure_ascii=False)
-    if not INDEX_PATH.exists() or INDEX_PATH.read_text(encoding="utf-8") != body:
+    local, snap = _read_json(INDEX_PATH), _read_json(LIVE_SNAPSHOT)
+    if local is None:
+        result = live
+    elif snap is None:
+        # No record of what was live: local edits can't be told from staleness.
+        # Take live (the safe side: nothing removed elsewhere comes back).
+        extra = len({str(x.get("id")) for x in local.get("songsList", [])}
+                    - {str(x.get("id")) for x in live.get("songsList", [])})
+        if extra:
+            log(f"    ! {extra} song(s) only in the local copy, no sync record: taking the live index")
+        result = live
+    else:
+        result = merge3(snap, local, live)
+    if local != result:
         if INDEX_PATH.exists():
             BACKUP_DIR.mkdir(parents=True, exist_ok=True)
-            (BACKUP_DIR / f"music-index.json.bak-{time.strftime('%Y%m%d-%H%M%S')}-prelive").write_bytes(INDEX_PATH.read_bytes())
-        INDEX_PATH.parent.mkdir(parents=True, exist_ok=True)
-        tmp = INDEX_PATH.with_suffix(".tmp")
-        tmp.write_text(body, encoding="utf-8")
-        os.replace(tmp, INDEX_PATH)
+            (BACKUP_DIR / f"music-index.json.bak-{time.strftime('%Y%m%d-%H%M%S')}-presync").write_bytes(INDEX_PATH.read_bytes())
+        _write_index(result)
+    BACKUP_DIR.mkdir(parents=True, exist_ok=True)
+    LIVE_SNAPSHOT.write_text(json.dumps(live, separators=(",", ":"), ensure_ascii=False), encoding="utf-8")
     return True
 
 def merge3(base: dict, mine: dict, live: dict) -> dict:
@@ -124,7 +159,9 @@ def load_index() -> dict:
     sync_from_live(required=False)
     cat = json.loads(INDEX_PATH.read_text(encoding="utf-8"))
     _loaded_digest[id(cat)] = _index_digest()
-    _loaded_base[id(cat)] = json.loads(json.dumps(cat))
+    # The merge base is what was LIVE when this command loaded — not the local
+    # copy, which may already hold edits of ours that live has not seen yet.
+    _loaded_base[id(cat)] = _read_json(LIVE_SNAPSHOT) or json.loads(json.dumps(cat))
     return cat
 
 def index_by_id(cat: dict) -> dict:
@@ -171,7 +208,7 @@ def save_index(cat: dict, label: str = "", force: bool = False) -> Path:
             "the index changed on disk since this command loaded it — another "
             "command wrote to it. Re-run this one; do not force, or you will "
             "revert whatever the other command did.")
-    base = _loaded_base.get(id(cat))
+    base, live = _loaded_base.get(id(cat)), None
     if base is not None:
         try:
             live = live_index()
@@ -193,7 +230,9 @@ def save_index(cat: dict, label: str = "", force: bool = False) -> Path:
     tmp.write_text(json.dumps(cat, separators=(",", ":"), ensure_ascii=False), encoding="utf-8")
     os.replace(tmp, INDEX_PATH)      # atomic
     _loaded_digest[id(cat)] = _index_digest()
-    _loaded_base[id(cat)] = json.loads(json.dumps(cat))
+    if live is not None:                 # we just saw live: that is the base from here on
+        _loaded_base[id(cat)] = live
+        LIVE_SNAPSHOT.write_text(json.dumps(live, separators=(",", ":"), ensure_ascii=False), encoding="utf-8")
     return backup
 
 def publish(files: list[str], expect_ids: list[str] | None = None) -> bool:
@@ -225,6 +264,8 @@ def publish(files: list[str], expect_ids: list[str] | None = None) -> bool:
                 log(f"    ✗ id {cid} is NOT in the live index"); ok = False
     except Exception as e:
         log(f"    ! could not verify the live index ({e})"); ok = False
+    if ok and r.returncode == 0:
+        mark_published()
     return ok
 
 def head_ok(url: str) -> bool:

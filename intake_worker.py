@@ -165,13 +165,18 @@ def poll() -> None:
 
 def loop(every: int = 60) -> None:
     """The VPS service (pm2): poll forever. One bad poll never stops the next."""
+    import signal
+    signal.signal(signal.SIGTERM, lambda *_: sys.exit(0))    # pm2 stop/restart: a clean exit, not a traceback
     log(f"intake worker up on {'the VPS' if ON_VPS else 'this machine'}, line={LINE}, every {every}s")
-    while True:
-        try:
-            poll()
-        except Exception as e:
-            log(f"  ! poll failed: {type(e).__name__}: {str(e)[:300]}")
-        time.sleep(every)
+    try:
+        while True:
+            try:
+                poll()
+            except Exception as e:
+                log(f"  ! poll failed: {type(e).__name__}: {str(e)[:300]}")
+            time.sleep(every)
+    except KeyboardInterrupt:
+        log("intake worker stopping (the manifest resumes where it was)")
 
 def _port_open(port: int) -> bool:
     import socket

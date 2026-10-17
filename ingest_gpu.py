@@ -1581,6 +1581,7 @@ def cmd_publish(args):
                 f"{missing[:8]}{' …' if len(missing) > 8 else ''}")
             log("    re-run:  bash scripts/upload-catalog.sh --only music-index.json")
         else:
+            catalog_lib.mark_published()
             log(f"  ✓ live index verified: {len(live.get('songsList', []))} songs, "
                 f"all {len(want)} new id(s) present")
     except Exception as e:

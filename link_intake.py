@@ -188,9 +188,38 @@ def same_recording_title(want: str, cand: str) -> bool:
     extra = {m.group(0).lower() for m in VERSION.finditer(cand)} - {m.group(0).lower() for m in VERSION.finditer(want)}
     return not extra
 
-def deezer_identify(artist: str, title: str) -> list[dict]:
+def _words(s: str) -> set:
+    import unicodedata
+    s = unicodedata.normalize("NFKD", (s or "").lower())
+    return {w for w in re.split(r"[^a-z0-9]+", s) if w}
+
+def deezer_identify(artist: str, title: str, video_title: str = "", channel: str = "") -> list[dict]:
     """Deezer tracks that ARE this title by this artist: the same recording's title
-    (version words must agree) and a shared artist. Exact titles rank first."""
+    (version words must agree) and a shared artist. Exact titles rank first.
+
+    A video's credit line is often too messy to parse ("BAD BITCH( Honey Bees) x
+    DJ 113 FT JD - TON MEC" is the artist "BAD BITCH JD DJ 113"), so when the
+    parsed artist finds nothing, a candidate also counts when every word of its
+    artist appears in the video's own title or channel."""
+    out = _deezer_identify(artist, title)
+    if out or not video_title:
+        return out
+    seen_words = _words(video_title) | _words(channel)
+    for q in (f"{title} {artist}", title):
+        try:
+            data = _json("https://api.deezer.com/search?limit=15&q=" + urllib.parse.quote(q)).get("data") or []
+        except Exception:
+            continue
+        for c in data:
+            aw = {w for w in _words((c.get("artist") or {}).get("name", "")) if len(w) > 1}
+            if aw and aw <= seen_words and same_recording_title(title, c.get("title") or "") \
+                    and c.get("id") not in {x.get("id") for x in out}:
+                out.append(c)
+        if out:
+            break
+    return sorted(out, key=lambda c: ntitle(c.get("title") or "") != ntitle(title))
+
+def _deezer_identify(artist: str, title: str) -> list[dict]:
     out, seen = [], set()
     for q in (f'artist:"{artist}" track:"{title}"', f"{artist} {title}"):
         try:
@@ -261,7 +290,10 @@ def parse_video_title(video_title: str, channel: str) -> tuple[str, list[str]]:
     for sep in (" - ", " – ", " — "):
         if sep in t:
             a, _, ti = t.partition(sep)
-            return ti.strip(" -"), [x.strip() for x in re.split(r"\s+(?:x|&|feat\.?|ft\.?)\s+", a) if x.strip()]
+            names = re.split(r"\s+(?:x|&|feat\.?|ft\.?|featuring)\s+|,\s*", a, flags=re.I)
+            # "BAD BITCH( Honey Bees)": an aside inside a name is not part of it
+            names = [re.sub(r"\s*[\(\[][^)\]]*[\)\]]\s*", " ", x).strip() for x in names]
+            return ti.strip(" -"), [x for x in names if x]
     ch = re.sub(r"\s*-\s*topic$|vevo$|\s*officiel$", "", (channel or "").strip(), flags=re.I).strip()
     return t, ([ch] if ch else [])
 
@@ -308,7 +340,7 @@ def youtube_video_row(vid: str, port: int) -> dict:
         raise IntakeError(f"impossible de lire artiste/titre dans « {info.get('title')} »")
     dur = float(info["duration"]) if info.get("duration") else None
 
-    hits = deezer_identify(artists[0], title)
+    hits = deezer_identify(artists[0], title, info.get("title") or "", channel)
     if hits and dur is not None:
         exact = [c for c in hits if ntitle(c.get("title") or "") == ntitle(title)] or hits
         fits = [c for c in exact if abs((c.get("duration") or 0) - dur) <= DURATION_TOLERANCE_S]
